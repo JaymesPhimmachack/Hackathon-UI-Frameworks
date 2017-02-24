@@ -1,0 +1,26 @@
+.grid {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+}
+
+.grid__row {
+  display: flex;
+}
+
+[class*="col"] {
+  float: left;
+  background-color: gray;
+  opacity: 0.7;
+  border: 2px solid black;
+  margin: 0px 5px 0px 5px;
+}
+
+
+@for $i from 1 through 12 {
+   .grid__col#{$i}{
+      width: $i * 8.333;
+  } 
+}
