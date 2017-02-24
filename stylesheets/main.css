@@ -1,43 +1,212 @@
-/*
-Error: Invalid CSS after "...variables.scss'": expected "{", was ";"
-        on line 3 of stylesheets/main.scss
+.grid {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  overflow: auto;
+  text-align: center; }
 
-1: <<<<<<< HEAD
-2: 
-3: @import 'components/_variables.scss';
-4: @import 'layout/_grid.scss';
-5: @import 'base/_base.scss';
-6: 
-7: 
-8: //Place elements below
+.grid__row {
+  display: flex; }
 
-Backtrace:
-stylesheets/main.scss:3
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/var/lib/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...variables.scss'\": expected \"{\", was \";\"\A         on line 3 of stylesheets/main.scss\A \A 1: <<<<<<< HEAD\A 2: \A 3: @import 'components/_variables.scss';\A 4: @import 'layout/_grid.scss';\A 5: @import 'base/_base.scss';\A 6: \A 7: \A 8: //Place elements below"; }
+[class*="col"] {
+  float: left;
+  background-color: gray;
+  opacity: 0.7;
+  border: 2px solid black;
+  margin: 0px 5px 0px 5px; }
+
+.grid__col1 {
+  width: 8.333%; }
+
+.grid__col2 {
+  width: 16.666%; }
+
+.grid__col3 {
+  width: 24.999%; }
+
+.grid__col4 {
+  width: 33.332%; }
+
+.grid__col5 {
+  width: 41.665%; }
+
+.grid__col6 {
+  width: 49.998%; }
+
+.grid__col7 {
+  width: 58.331%; }
+
+.grid__col8 {
+  width: 66.664%; }
+
+.grid__col9 {
+  width: 74.997%; }
+
+.grid__col10 {
+  width: 83.33%; }
+
+.grid__col11 {
+  width: 91.663%; }
+
+.grid__col12 {
+  width: 99.996%; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Georgia;
+  background-color: #ffe5ff; }
+
+a {
+  text-decoration: none; }
+
+.badge, .badge--square {
+  display: inline-block;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  background: #ababab;
+  color: inherit;
+  font-size: 0.85rem;
+  min-width: 20px;
+  padding: 2px;
+  white-space: nowrap;
+  vertical-align: middle; }
+  .badge:empty, .badge--square:empty {
+    display: none; }
+  .badge:focus, .badge--square:focus {
+    outline: 0; }
+  .badge:hover, .badge--square:hover, .badge:focus, .badge--square:focus {
+    cursor: pointer; }
+
+.badge--square {
+  border-radius: 2px; }
+
+a .badge, a .badge--square {
+  padding-bottom: 4px; }
+
+button .badge, button .badge--square {
+  font-size: 0.8rem; }
+
+/**
+ * Accordion
+ */
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+body {
+  color: #2c3e50;
+  background: #ecf0f1; }
+
+/* Container */
+.accordion {
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
+
+h1 {
+  text-align: center; }
+
+.half {
+  float: left;
+  width: 50%;
+  padding: 0 1em; }
+
+.accordion-panel {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden; }
+
+/* Content */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fa9b92;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s; }
+
+.accordion-content p {
+  margin: 1em; }
+
+.blue .accordion-content {
+  background: #3498db; }
+
+.blue .accordion-content {
+  background: #3498db; }
+
+/* Input */
+.accordion-input {
+  display: none; }
+
+/* :checked */
+input:checked ~ .accordion-content {
+  max-height: 10em; }
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg); }
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg); }
+
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s; }
+
+input[type=checkbox] + label::after {
+  content: "+"; }
+
+input[type=radio] + label::after {
+  content: "\25BC"; }
+
+/* Label */
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer; }
+
+.blue label {
+  background: #2980b9; }
+
+.red label {
+  background: #f7594a; }
+
+.blue .accordion-content {
+  background: #3498db; }
+
+/* Toggle */
+.accordion-toggle {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0px;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  font: inherit;
+  line-height: inherit;
+  text-align: left; }
+
+.accordion-toggle + * {
+  border-bottom: 1px solid #e5e5e5; }
+
+.accordion-toggle:hover {
+  background: #385670; }
+
+/*# sourceMappingURL=main.css.map */
