@@ -1,5 +1,9 @@
-@import 'stylesheets/layout/grid';
+@import 'components/_variables.scss';
 
-@import 'stylesheets/base/base';
+@import 'layout/_grid.scss';
 
+@import 'base/_base.scss';
 
+@import 'components/_accordion.scss';
+
+import 'components/_buttons.scss';
