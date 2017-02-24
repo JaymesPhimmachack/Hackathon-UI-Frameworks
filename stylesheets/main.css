@@ -1,3 +1,5 @@
+/* code goes here */
+
 .grid {
   width: 100%;
   border: 1px solid black;
@@ -55,8 +57,9 @@
   box-sizing: border-box; }
 
 html {
-  font-family: Georgia;
-  background-color: #ffe5ff; }
+  font-family: $font-family;
+  background-color: #ffe5ff; 
+}
 
 /**
  * Accordion
@@ -179,4 +182,5 @@ label {
 .accordion-toggle:hover {
   background: #385670; }
 
+>>>>>>> 15f80f246c2e5044192fd858de3cbe4e8074090b
 /*# sourceMappingURL=main.css.map */
