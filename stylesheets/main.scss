@@ -1,5 +1,8 @@
-@import 'stylesheets/layout/grid';
+@import 'layout/_grid.scss';
 
-@import 'stylesheets/base/base';
+@import 'base/_base.scss';
 
+@import '../font-awesome-4.7.0/scss/font-awesome.scss';
+
+@import 'components/_buttons.scss';
 
