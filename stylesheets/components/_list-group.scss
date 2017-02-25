@@ -1,0 +1,19 @@
+.list-group{
+  text-align: left;
+  
+  .list-group-item{
+    display: block;
+    padding: 10px;
+    border: 1px solid $list-group-bg;
+
+    &:first-child{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child{
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
