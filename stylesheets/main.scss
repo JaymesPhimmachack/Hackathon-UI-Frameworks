@@ -1,10 +1,11 @@
 
-@import 'components/_variables';
+@import 'components/_variables.scss';
+@import 'layout/_grid.scss';
+@import 'base/_base.scss';
 
-@import 'layout/_grid';
 
-@import 'base/_base';
-
+//Place elements below
+@import 'components/_badge.scss';
+@import 'components/_variables.scss';
 @import 'components/_accordion.scss';
-
 @import 'components/_buttons.scss';
