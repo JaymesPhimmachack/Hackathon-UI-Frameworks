@@ -1,5 +1,11 @@
-@import 'stylesheets/layout/grid';
 
-@import 'stylesheets/base/base';
+@import 'components/_variables.scss';
+@import 'layout/_grid.scss';
+@import 'base/_base.scss';
 
 
+//Place elements below
+@import 'components/_badge.scss';
+@import 'components/_variables.scss';
+@import 'components/_accordion.scss';
+@import 'components/_buttons.scss';

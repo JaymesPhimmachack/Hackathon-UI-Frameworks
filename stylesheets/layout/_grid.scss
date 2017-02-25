@@ -21,6 +21,6 @@
 
 @for $i from 1 through 12 {
    .grid__col#{$i}{
-      width: $i * 8.333;
+      width: $i * 8.333%;
   } 
 }
