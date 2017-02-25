@@ -1,0 +1,141 @@
+.carousel input[type=radio] {
+  display: none;
+}
+
+.carousel {
+  font-size: 1.4rem;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  -moz-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  width: 80rem;
+  top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* carousel item */
+.carousel .carousel--item {
+  width: 100%;
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.carousel--item img {
+  width: 80rem;
+  height: 40rem;
+  -webkit-background-size:cover;
+  background-size:cover;
+}
+
+.carousel--item span {
+  position: absolute;
+  top: 20%;
+  font-size: 2rem;
+  right: 20%;
+}
+
+.carousel--bullet:checked + .carousel--item {
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel--item {
+  visibility: visible;
+  opacity: 0;
+  transition: .5s ease-out opacity, .5s ease-out visibility;
+}
+
+/* carousel navigation */
+.carousel--nav {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  z-index: 88;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.carousel--nav::before {
+  font-size: 1.25rem;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.carousel--nav:hover::before {
+  color: rgba(255, 255, 255, 1);
+}
+
+.carousel--nav-previous {
+  left: 10px;
+}
+
+.carousel--nav-next {
+  left: 96%;
+}
+
+.carousel--bullet {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+  top: 75%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 1em;
+  -webkit-transition: background ease-out 0.3s, transform 0.3s ease-out;
+  -moz-transition: background ease-out 0.3s, transform 0.3s ease-out;
+  transition: background ease-out 0.3s, transform 0.3s ease-out;
+}
+
+.carousel--bullet:nth-of-type(1):checked + .carousel--item + label:nth-of-type(1),
+.carousel--bullet:nth-of-type(2):checked + .carousel--item + label:nth-of-type(2),
+.carousel--bullet:nth-of-type(3):checked + .carousel--item + label:nth-of-type(3),
+.carousel--bullet:nth-of-type(4):checked + .carousel--item + label:nth-of-type(4) {
+  background: #FFFFFF;
+  outline: none;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+.carousel-caption {
+  bottom: 2rem;
+  color: #fff;
+  left: 15%;
+  padding-bottom: 2rem;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  z-index: 1;
+}
+
+.carousel-caption h3 {
+  margin: 0;
+}
+
+.carousel-caption p {
+  margin-top: 0;
+  font-size: 1rem;
+}

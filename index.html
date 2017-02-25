@@ -36,13 +36,12 @@
       <label>Tabs &amp; Pills</label>
       <label>Miscellaneous</label>
     </div>
-
+    <div class = "grid__col11">
          <section><h3>Labels </h3></section>
          <section><h3>Input Switches </h3></section>
          <section><h3>Forms </h3></section>
          <section><h3>Range Sliders</h3></section>
          <section><h3>Mage Card</h3></section>
-
          <section class="accordion">
              <h3>Accordion</h3>
              <div class="half">
@@ -99,7 +98,6 @@
                 </div> <!-- accordion panel -->
             </div> <!-- half-->
          </section> <!--accordion -->
-         
          <section><h3>Wave Buttons</h3></section>
          <section><h3>Tab</h3></section>
          <section><h3>Badges </h3></section>
@@ -114,7 +112,7 @@
          <section><h3>Cards</h3></section>
          <section><h3>Tabs &amp; Pills</h3></section>  
         <section><h3>Miscellaneous</h3></section>
-    <div class = "grid__col11">
+    
       <section><h3>Labels </h3></section>
       <section><h3>Input Switches </h3></section>
       <section><h3>Forms </h3></section>
@@ -157,13 +155,107 @@
              Messages <span class="badge--square">1</span>
            </button>
           </section>
-      <section><h3>List Groups</h3></section>
+      <section>
+        <h3>List Groups</h3>
+        <div class="list-group-example">
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </section>
       <section><h3>Dropdowns</h3></section>
       <section><h3>Breadcrumbs</h3></section>
       <section><h3>Icon Bar</h3></section>
       <section><h3>Modal</h3></section>
       <section><h3>Nav Bar </h3></section>
       <section><h3>Progress Bar</h3></section>
+      <section>
+        <h3>Carousel with Caption</h3>
+        <div class = "carousel">
+          <input type = "radio" name = "carousel-cap-item" id = "ci-1" checked = "checked" class = "carousel--bullet"/>
+          <div class = "carousel--item">
+            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+            <label for = "ci-4" class = "carousel--nav carousel--nav-previous fa fa-arrow-left"></label>
+            <label for = "ci-2" class = "carousel--nav carousel--nav-next fa fa-arrow-right"></label>
+            <div class = "carousel-caption">
+              <h3>Heading 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <label class = "carousel--bullet" for = "ci-1"></label>
+          <input type = "radio" name = "carousel-cap-item" id = "ci-2" class = "carousel--bullet"/>
+          <div class = "carousel--item">
+            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <label for = "ci-1" class = "carousel--nav carousel--nav-previous fa fa-arrow-left"></label>
+            <label for = "ci-3" class = "carousel--nav carousel--nav-next fa fa-arrow-right"></label>
+            <div class = "carousel-caption">
+              <h3>Heading 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <label class = "carousel--bullet" for = "ci-2"></label>
+          <input type = "radio" name = "carousel-cap-item" id = "ci-3" class = "carousel--bullet"/>
+          <div class = "carousel--item">
+            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+            <label for = "ci-2" class = "carousel--nav carousel--nav-previous fa fa-arrow-left"></label>
+            <label for = "ci-4" class = "carousel--nav carousel--nav-next fa fa-arrow-right"></label>
+            <div class = "carousel-caption">
+              <h3>Heading 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <label class = "carousel--bullet" for = "ci-3"></label>
+          <input type = "radio" name = "carousel-cap-item" id = "ci-4" class = "carousel--bullet"/>
+          <div class = "carousel--item">
+            <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+            <label for = "ci-3" class = "carousel--nav carousel--nav-previous fa fa-arrow-left"></label>
+            <label for = "ci-1" class = "carousel--nav carousel--nav-next fa fa-arrow-right"></label>
+            <div class = "carousel-caption">
+              <h3>Heading 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <label class = "carousel--bullet" for = "ci-4"></label>
+        </div>
+      </section>
+      <section>
+        <h3>Carousel with Thumb</h3>
+        <div class="slide-wrapper">
+          <input type = "radio" name = "carousel-item" id = "item-1" class = "bullet" checked="checked"/>
+          <input type = "radio" name = "carousel-item" id = "item-2" class = "bullet"/>
+          <input type = "radio" name = "carousel-item" id = "item-3" class = "bullet"/>
+          <input type = "radio" name = "carousel-item" id = "item-4" class = "bullet"/>
+          <input type = "radio" name = "carousel-item" id = "item-5" class = "bullet"/>
+          <div class="slide-wrapper__images">
+            <img class="slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+            <img class="slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+            <img class="slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+            <img class="slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+            <img class="slide-wrapper__image-item" src = "https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg"/>
+          </div>
+          <div class="slide-wrapper__indicators">
+            <label class = "slide-wrapper__indicators-item" for = "item-1">
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg" width="120"/>
+            </label>
+            <label class = "slide-wrapper__indicators-item" for = "item-2">
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg" width="120"/>
+            </label>
+            <label class = "slide-wrapper__indicators-item" for = "item-3">
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg" width="120"/>
+            </label>
+            <label class = "slide-wrapper__indicators-item" for = "item-4">
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg" width="120"/>
+            </label>
+            <label class = "slide-wrapper__indicators-item" for = "item-5">
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(75).jpg" width="120"/>
+            </label>
+          </div>
+        </div>
+      </section>
       <section>
         <h3>Buttons</h3>
         <div class = "section-button">
