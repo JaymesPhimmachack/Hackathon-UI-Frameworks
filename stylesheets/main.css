@@ -99,20 +99,10 @@ button .badge, button .badge--square {
 /**
  * Accordion
  */
-*, *::after, *::before {
-  box-sizing: border-box; }
-
-body {
-  color: #2c3e50;
-  background: #ecf0f1; }
-
 /* Container */
 .accordion {
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15); }
-
-h1 {
-  text-align: center; }
 
 .half {
   float: left;
