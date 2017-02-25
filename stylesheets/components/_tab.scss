@@ -1,5 +1,22 @@
+/*--------------- Tab ---------------------------*/
+ 
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+
+//colors
+$tab-bg-body-color: #eee;
+$tab-body-color: #555;
+$tab-section-border-color: #ddd;
+$tab-label-color: #bbb;
+$tab-bg-color: #fff;
+$tab-label-hover-color: #888;
+$tab-input-checked-color: #555;
+$tab-input-checked-border-color: #ddd;
+$tab-input-checked-border-bottom-color: #0EBFE9;
+$tab-input-checked-border-top-color: #fff;
+$tab-btn-bg-color: #0EBFE9;
+$tab-btn-color: #fff;
+$tab-btn-border-color: #72bcd4;
 
 *, *:before, *:after {
   margin: 0;
@@ -13,8 +30,8 @@ html, body {
 
 body {
   font: 14px/1 'Open Sans', sans-serif;
-  color: #555;
-  background: #eee;
+  color: $tab-body-color;
+  background: $tab-bg-body-color;
 }
 
 h1 {
@@ -28,18 +45,18 @@ p {
   line-height: 1.5;
 }
 
-main {
+.tab {
   min-width: 320px;
   max-width: 800px;
   padding: 50px;
   margin: 0 auto;
-  background: #fff;
+  background: $tab-bg-color;
 }
 
 section {
   display: none;
   padding: 20px 0 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $tab-section-border-color;
 }
 
 input {
@@ -52,7 +69,7 @@ label {
   padding: 15px 25px;
   font-weight: 600;
   text-align: center;
-  color: #bbb;
+  color: $tab-label-color;
   border: 1px solid transparent;
 }
 
@@ -68,42 +85,42 @@ label[for*='3']:before { content: '\f3ab'; }
 label[for*='4']:before { content: '\f3ac'; }
 
 label:hover {
-  color: #888;
+  color: $tab-label-hover-color;
   cursor: pointer;
 }
 
 input:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 1px solid #fff;
-  border-bottom: 2px solid #0EBFE9;
+  color: $tab-input-checked-color;
+  border: 1px solid $tab-input-checked-border-color;
+  border-top: 1px solid $tab-input-checked-border-top-color;
+  border-bottom: 2px solid $tab-input-checked-border-bottom-color;
 }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab-tab1:checked ~ #tab-content1,
+#tab-tab2:checked ~ #tab-content2,
+#tab-tab3:checked ~ #tab-content3,
+#tab-tab4:checked ~ #tab-content4 {
   display: block;
 }
 
-.img{
+.tab-img{
   float:left;
   margin-right:50px;
   margin-top:10px;
 
 }
-.btn-read-more {
+.tab-btn-read-more {
   margin-left: 0px;
-	background: #0EBFE9;
-	font-size: 12px;
-	font-weight: 400;
-	letter-spacing: -0.5px;
-	line-height: 24px;
+  background: $tab-btn-bg-color;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 24px;
   height: 35px;
   width: 100px;
-	text-transform: uppercase;
-  border: 3px solid lightblue;
+  text-transform: uppercase;
+  border: 3px solid #tab-btn-border-color;
 }
-.btn-read-more a{
-  color:white
+.tab-btn-read-more a{
+  color: $tab-btn-color;
 }
