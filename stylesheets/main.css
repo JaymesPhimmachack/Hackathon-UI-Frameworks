@@ -61,6 +61,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
   background-color: #ffe5ff; }
 
 a {
@@ -69,10 +70,13 @@ a {
 .badge-example {
   font-size: 2rem; }
 
+.breadcrumb-example {
+  width: 80%;
+  margin: 0 auto; }
+
 .list-group-example {
   max-width: 50%;
-  margin: 0 auto;
-  font-size: 2rem; }
+  margin: 0 auto; }
   .list-group-example .list-group .list-group-item, .list-group-example .list-group .list-group-item--success, .list-group-example .list-group .list-group-item--info, .list-group-example .list-group .list-group-item--warning, .list-group-example .list-group .list-group-item--danger {
     padding-bottom: 2rem; }
     .list-group-example .list-group .list-group-item img, .list-group-example .list-group .list-group-item--success img, .list-group-example .list-group .list-group-item--info img, .list-group-example .list-group .list-group-item--warning img, .list-group-example .list-group .list-group-item--danger img {
@@ -940,5 +944,20 @@ label:hover {
 
 .tab-btn-read-more a {
   color: #fff; }
+
+.breadcrumb {
+  display: block;
+  background: #959595;
+  font-size: 15px;
+  padding: 1rem;
+  text-align: left; }
+  .breadcrumb li {
+    display: inline-block; }
+    .breadcrumb li::before {
+      content: "/\00a0"; }
+    .breadcrumb li:first-child::before {
+      content: ""; }
+    .breadcrumb li.active {
+      color: #212121; }
 
 /*# sourceMappingURL=main.css.map */
