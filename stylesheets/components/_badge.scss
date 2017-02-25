@@ -1,18 +1,12 @@
-//Variables
-$badge__bg--gray: #ababab;
-$badge__border--gray: #757575;
-$text--black: #020102;
-
-
 .badge{
   display: inline-block;
   border: 1px solid $badge__border--gray;
   border-radius: 10px;
   background: $badge__bg--gray;
   color: inherit;
-  font-size: 0.85rem;
-  min-width: 20px;
-  padding: 2px;
+  font-size: 0.9rem;
+  min-width: 25px;
+  padding: 2px 3px;
   white-space: nowrap;
   vertical-align: middle;
 
@@ -36,9 +30,9 @@ $text--black: #020102;
 }
 
 a .badge{
-  padding-bottom: 4px;
+  padding: 4px;
 }
 
 button .badge{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
