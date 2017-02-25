@@ -1,5 +1,7 @@
 .badge{
   display: inline-block;
+  position: relative;
+  top: -2px;
   border: 1px solid $badge__border--gray;
   border-radius: 10px;
   background: $badge__bg--gray;

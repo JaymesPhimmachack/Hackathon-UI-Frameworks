@@ -64,12 +64,23 @@ html {
 a {
   text-decoration: none; }
 
+.badge-example {
+  font-size: 2rem; }
+
 .list-group-example {
   max-width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 2rem; }
+  .list-group-example .list-group .list-group-item, .list-group-example .list-group .list-group-item--success, .list-group-example .list-group .list-group-item--info, .list-group-example .list-group .list-group-item--warning, .list-group-example .list-group .list-group-item--danger {
+    padding-bottom: 2rem; }
+    .list-group-example .list-group .list-group-item img, .list-group-example .list-group .list-group-item--success img, .list-group-example .list-group .list-group-item--info img, .list-group-example .list-group .list-group-item--warning img, .list-group-example .list-group .list-group-item--danger img {
+      float: left;
+      margin-right: 1rem; }
 
 .badge, .badge--square {
   display: inline-block;
+  position: relative;
+  top: -2px;
   border: 1px solid #757575;
   border-radius: 10px;
   background: #ababab;
@@ -760,15 +771,37 @@ html {
 
 .list-group {
   text-align: left; }
-  .list-group .list-group-item {
+  .list-group a, .list-group span, .list-group i {
+    display: block; }
+  .list-group .list-group-item, .list-group .list-group-item--success, .list-group .list-group-item--info, .list-group .list-group-item--warning, .list-group .list-group-item--danger {
     display: block;
     padding: 10px;
-    border: 1px solid #959595; }
-    .list-group .list-group-item:first-child {
+    border: 1px solid #959595;
+    transition: all 0.25s; }
+    .list-group .list-group-item:first-child, .list-group .list-group-item--success:first-child, .list-group .list-group-item--info:first-child, .list-group .list-group-item--warning:first-child, .list-group .list-group-item--danger:first-child {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px; }
-    .list-group .list-group-item:last-child {
+    .list-group .list-group-item:last-child, .list-group .list-group-item--success:last-child, .list-group .list-group-item--info:last-child, .list-group .list-group-item--warning:last-child, .list-group .list-group-item--danger:last-child {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
+    .list-group .list-group-item:hover, .list-group .list-group-item--success:hover, .list-group .list-group-item--info:hover, .list-group .list-group-item--warning:hover, .list-group .list-group-item--danger:hover, .list-group .list-group-item:active, .list-group .list-group-item--success:active, .list-group .list-group-item--info:active, .list-group .list-group-item--warning:active, .list-group .list-group-item--danger:active {
+      background: #969696;
+      outline: 0; }
+    .list-group .list-group-item--success {
+      background: #00C851; }
+      .list-group .list-group-item--success:hover {
+        background: #00D255; }
+    .list-group .list-group-item--info {
+      background: #33b5e5; }
+      .list-group .list-group-item--info:hover {
+        background: #49BDE8; }
+    .list-group .list-group-item--warning {
+      background: #eb9316; }
+      .list-group .list-group-item--warning:hover {
+        background: #FF961F; }
+    .list-group .list-group-item--danger {
+      background: #c12e2a; }
+      .list-group .list-group-item--danger:hover {
+        background: #DB0000; }
 
 /*# sourceMappingURL=main.css.map */
