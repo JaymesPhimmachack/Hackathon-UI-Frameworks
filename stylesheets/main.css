@@ -1109,7 +1109,7 @@ section.tab-content {
   color: #bbb;
   border: 1px solid transparent; }
 
-label:before {
+.tab label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px; }
@@ -1126,7 +1126,7 @@ label:before {
 .tab label[for*='4']:before {
   content: '\f3ac'; }
 
-label:hover {
+.tab label:hover {
   color: #888;
   cursor: pointer; }
 
@@ -1370,18 +1370,12 @@ figure.card-back,
   padding: 0;
   list-style: none; }
 
-.pagination {
+.pagination2 {
   width: 1000px;
   height: auto;
   margin: 0 auto; }
 
-.pagination-row {
-  width: 1000px;
-  height: auto;
-  margin: 0 auto;
-  position: relative; }
-
-.pagination-row h1 {
+.pagination2 h1 {
   width: 100%;
   height: auto;
   float: left;
@@ -1595,18 +1589,12 @@ figure.card-back,
   padding: 0;
   list-style: none; }
 
-.pagination {
+.pagination2 {
   width: 1000px;
   height: auto;
   margin: 0 auto; }
 
-.pagination-row {
-  width: 1000px;
-  height: auto;
-  margin: 0 auto;
-  position: relative; }
-
-.pagination-row h1 {
+.pagination2 h1 {
   width: 100%;
   height: auto;
   float: left;

@@ -65,7 +65,7 @@ section.tab-content {
   border: 1px solid transparent;
 }
 
-label:before {
+.tab label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
@@ -76,7 +76,7 @@ label:before {
 .tab label[for*='3']:before { content: '\f3ab'; }
 .tab label[for*='4']:before { content: '\f3ac'; }
 
-label:hover {
+.tab label:hover {
   color: $tab-label-hover-color;
   cursor: pointer;
 }
