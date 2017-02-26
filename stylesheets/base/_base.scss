@@ -4,5 +4,33 @@
 
 html {
   font-family: $font_family;
+  font-size: 15px;
   background-color: #ffe5ff;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.badge-example{
+  font-size: 2rem;
+}
+
+.breadcrumb-example{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list-group-example{
+  max-width: 50%;
+  margin: 0 auto;
+
+  .list-group .list-group-item{
+    padding-bottom: 2rem;
+    img{
+      float: left;
+      margin-right: 1rem;
+    }
+  }
 }

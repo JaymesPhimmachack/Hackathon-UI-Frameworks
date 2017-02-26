@@ -1,0 +1,72 @@
+
+.list-group{
+  text-align: left;
+  
+  a, span, i{
+    display: block;
+  }
+
+  .list-group-item{
+    display: block;
+    padding: 10px;
+    border: 1px solid $list-group__bg--gray;
+    transition: all 0.25s;
+
+    &:first-child{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child{
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &:hover, &:active{
+      background: $list-group--hover;
+      outline: 0;
+    }
+
+    &.disabled, &.disabled:hover, &.disabled:active{
+      background: darken($list-group__hover, 25%);
+    }
+
+    //Contextual list-group-items
+    //Usage: .list-group-item--danger
+    &--success{
+      @extend .list-group-item;
+      background: $success-color;
+
+      &:hover{
+        background: $success-color-hover;
+      }
+    }
+
+    &--info{
+      @extend .list-group-item;
+      background: $info-color;
+
+      &:hover{
+        background: $info-color-hover;
+      }
+    }
+
+    &--warning{
+      @extend .list-group-item;
+      background: $warning-color;
+
+      &:hover{
+        background: $warning-color-hover;
+      }
+    }
+
+    &--danger{
+      @extend .list-group-item;
+      background: $danger-color;
+
+      &:hover{
+        background: $danger-color-hover;
+      }
+    }
+  }
+}

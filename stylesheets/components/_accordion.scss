@@ -1,14 +1,4 @@
-/**
- * Accordion
- */
-*, *::after, *::before{
-  box-sizing: border-box;
-}
-	body {		
-  color: #2c3e50;
-  background: #ecf0f1;
-}
-		
+	
 /* Container */
 .accordion {
   border: 1px solid #e5e5e5;
@@ -64,15 +54,15 @@ h1 {
 input:checked ~ .accordion-content {
   max-height: 10em;
 }
-input[type=checkbox]:checked + label::after {
+input[type=checkbox]:checked + .accordion-toggle::after {
   transform: rotate(315deg);
 }
-input[type=radio]:checked + label::after {
+input[type=radio]:checked + .accordion-toggle::after {
   transform: rotateX(180deg);
 }
 
 /* Icon */
-label::after {
+.blue label::after, .red label::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -86,15 +76,15 @@ label::after {
   transition: all .35s;
 }
 
-input[type=checkbox] + label::after {
+input[type=checkbox] + .accordion-toggle::after {
   content: "+";
 }
-input[type=radio] + label::after {
+input[type=radio] + .accordion-toggle::after {
   content: "\25BC";
 }
 
 /* Label */
-label {
+.blue label, .red label {
   position: relative;
   display: block;
   padding: 0 0 0 1em;

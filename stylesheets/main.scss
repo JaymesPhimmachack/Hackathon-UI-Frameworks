@@ -1,10 +1,18 @@
 
-@import 'components/_variables';
+@import 'components/_variables.scss';
+@import 'layout/_grid.scss';
+@import 'base/_base.scss';
 
-@import 'layout/_grid';
 
-@import 'base/_base';
-
+//Place elements below
+@import 'components/_badge.scss';
+@import 'components/_variables.scss';
 @import 'components/_accordion.scss';
-
-import 'components/_buttons.scss';
+@import 'components/_buttons.scss';
+@import 'components/_carousel_caption.scss';
+@import 'components/_carousel_thumb.scss';
+@import 'components/_chips.scss';
+@import 'components/_list-group.scss';
+@import 'components/_tab.scss';
+@import 'components/_card.scss';
+@import 'components/_breadcrumb.scss';

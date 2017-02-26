@@ -1,0 +1,40 @@
+.badge{
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  border: 1px solid $badge__border--gray;
+  border-radius: 10px;
+  background: $badge__bg--gray;
+  color: inherit;
+  font-size: 0.9rem;
+  min-width: 25px;
+  padding: 2px 3px;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  &:empty{
+    display: none;
+  }
+
+  &:focus{
+    outline: 0;
+  }
+
+  &:hover, &:focus {
+    cursor: pointer;
+  }
+}
+
+.badge--square{
+  @extend .badge;
+  border-radius: 2px;
+
+}
+
+a .badge{
+  padding: 4px;
+}
+
+button .badge{
+  font-size: 0.9rem;
+}
