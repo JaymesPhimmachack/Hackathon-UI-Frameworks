@@ -13,7 +13,7 @@
 .grid__row {
   display: flex; }
 
-[class*="col"] {
+[class*="grid_col"] {
   float: left;
   background-color: gray;
   opacity: 0.7;
@@ -945,7 +945,6 @@ label:hover {
 .tab-btn-read-more a {
   color: #fff; }
 
-<<<<<<< HEAD
 .card-container {
   left: 50%;
   margin-left: -225px;
@@ -1060,7 +1059,7 @@ figure.card-back,
 .card-front:hover p {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
-=======
+
 .breadcrumb {
   display: block;
   background: #959595;
@@ -1075,6 +1074,3 @@ figure.card-back,
       content: ""; }
     .breadcrumb li.active {
       color: #212121; }
->>>>>>> upstream/master
-
-/*# sourceMappingURL=main.css.map */
