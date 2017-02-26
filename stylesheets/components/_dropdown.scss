@@ -1,0 +1,56 @@
+.dropdown{
+  text-align: left;
+  position: relative;
+
+  .dropdown-toggle{
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+
+    i, span{
+      margin-left: 1rem;
+    }
+
+    &.disabled{
+        background: $bg--gray;
+        pointer-events: none;
+    }     
+  }
+
+  input[type="checkbox"]{
+    display: none;
+
+    &:checked ~ .dropdown-menu{
+      display: block;
+      position: absolute;
+    }
+
+    &:checked ~ .popup-menu{
+      display: block;
+      position: absolute;
+      bottom: 100%;
+    }
+  }
+  
+  .dropdown-menu{
+    display: none;
+    color: $text--black;
+    text-align: left;
+    z-index: 1;
+
+    li{
+      display: block;
+      white-space: nowrap;
+    }
+
+    .divider{
+      border: 1px solid $dropdown__seperator;
+      opacity: 0.5;
+      margin: 0.5rem 0;
+    }
+  }
+
+  .popup-menu{
+    @extend .dropdown-menu;
+  }
+}
