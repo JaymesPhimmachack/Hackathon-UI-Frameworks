@@ -5,8 +5,6 @@
 html {
   font-family: $font_family;
   font-size: 62.5%;
-  background-color: #ffe5ff;
-
 }
 
 a{
@@ -51,4 +49,8 @@ h3{
       margin-right: 1rem;
     }
   }
+}
+
+#sidebar {
+  background: #F3F5F8;
 }
