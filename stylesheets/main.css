@@ -13,7 +13,7 @@
 .grid__row {
   display: flex; }
 
-[class*="col"] {
+[class*="grid__col"] {
   float: left;
   background-color: gray;
   opacity: 0.7;
@@ -959,5 +959,3 @@ label:hover {
       content: ""; }
     .breadcrumb li.active {
       color: #212121; }
-
-/*# sourceMappingURL=main.css.map */

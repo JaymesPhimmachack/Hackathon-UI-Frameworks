@@ -10,7 +10,7 @@
   display: flex;
 }
 
-[class*="col"] {
+[class*="grid_col"] {
   float: left;
   background-color: gray;
   opacity: 0.7;
