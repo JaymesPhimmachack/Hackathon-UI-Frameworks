@@ -1074,3 +1074,14 @@ figure.card-back,
       content: ""; }
     .breadcrumb li.active {
       color: #212121; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .dropdown-menu {
+    position: absolute;
+    display: none; }
+    .dropdown .dropdown-menu li {
+      display: block; }
+
+.dropdown-show {
+  display: block; }
