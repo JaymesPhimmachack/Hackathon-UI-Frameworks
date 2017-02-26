@@ -1074,3 +1074,76 @@ figure.card-back,
       content: ""; }
     .breadcrumb li.active {
       color: #212121; }
+
+.switches {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  background: #959595;
+  width: 100%;
+  height: 150px; }
+
+.m-container {
+  position: relative;
+  display: inline-block; }
+
+.s-container {
+  position: relative;
+  border: 2px solid #ee6e73;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  padding-top: 1.5%;
+  padding-left: 1%; }
+
+.s-container label {
+  position: relative;
+  float: left;
+  color: #fff;
+  font-weight: 200; }
+
+.s-container label:hover {
+  color: #fff; }
+
+.s-container label[for='s1']:before {
+  content: ''; }
+
+.s-background {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding-left: 2%; }
+
+.s-container .s-background input {
+  display: none; }
+
+.s-container .s-background input label {
+  z-index: 100;
+  position: relative; }
+
+.s-container .s-background input + label:before {
+  width: 75px;
+  height: 20px;
+  position: absolute;
+  content: " ";
+  background: #222;
+  top: 0px;
+  left: 0px; }
+
+.s-container .s-background label:after {
+  position: absolute;
+  content: " ";
+  background: #777;
+  width: 25px;
+  height: 30px;
+  z-index: 1;
+  top: -5px;
+  left: 5px;
+  transition: all 0.5s;
+  border-radius: 4px; }
+
+.s-container .s-background input:checked + label:after {
+  transform: translateX(40px);
+  background: #ee6e73; }
+
+/*# sourceMappingURL=main.css.map */
