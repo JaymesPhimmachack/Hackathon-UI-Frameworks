@@ -85,7 +85,12 @@ h3 {
   margin: 0 auto; }
 
 .dropdown-example {
-  margin: 1rem 0 10rem; }
+  margin: 1rem auto 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; }
+  .dropdown-example .dropdown {
+    margin: 0 auto; }
 
 .list-group-example {
   max-width: 50%;
@@ -1293,24 +1298,35 @@ figure.card-back,
       color: #212121; }
 
 .dropdown {
-  display: block;
   text-align: left;
-  width: 100%; }
+  position: relative; }
   .dropdown .dropdown-toggle {
-    position: absolute; }
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none; }
+    .dropdown .dropdown-toggle i, .dropdown .dropdown-toggle span {
+      margin-left: 1rem; }
+    .dropdown .dropdown-toggle.disabled {
+      background: #959595;
+      pointer-events: none; }
   .dropdown input[type="checkbox"] {
     display: none; }
-    .dropdown input[type="checkbox"]:checked ~ .dropdown-menu {
+    .dropdown input[type="checkbox"]:checked ~ .dropdown-menu, .dropdown input[type="checkbox"]:checked ~ .popup-menu {
+      display: block;
+      position: absolute; }
+    .dropdown input[type="checkbox"]:checked ~ .popup-menu {
       display: block;
       position: absolute;
-      top: 5rem; }
-  .dropdown .dropdown-menu {
+      bottom: 100%; }
+  .dropdown .dropdown-menu, .dropdown .popup-menu {
     display: none;
     color: #020102;
-    text-align: left; }
-    .dropdown .dropdown-menu li {
-      display: block; }
-    .dropdown .dropdown-menu .divider {
+    text-align: left;
+    z-index: 1; }
+    .dropdown .dropdown-menu li, .dropdown .popup-menu li {
+      display: block;
+      white-space: nowrap; }
+    .dropdown .dropdown-menu .divider, .dropdown .popup-menu .divider {
       border: 1px solid #020102;
       opacity: 0.5;
       margin: 0.5rem 0; }

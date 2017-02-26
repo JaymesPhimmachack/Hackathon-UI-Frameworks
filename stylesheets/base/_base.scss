@@ -31,7 +31,13 @@ h3{
 }
 
 .dropdown-example{
-  margin: 1rem 0 10rem;
+  margin: 1rem auto 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  .dropdown{
+    margin: 0 auto;
+  }
 }
 
 .list-group-example{

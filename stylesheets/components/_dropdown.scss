@@ -1,11 +1,20 @@
 .dropdown{
-  display: block;
   text-align: left;
-  width: 100%;
+  position: relative;
 
   .dropdown-toggle{
-    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
 
+    i, span{
+      margin-left: 1rem;
+    }
+
+    &.disabled{
+        background: $bg--gray;
+        pointer-events: none;
+    }     
   }
 
   input[type="checkbox"]{
@@ -14,7 +23,12 @@
     &:checked ~ .dropdown-menu{
       display: block;
       position: absolute;
-      top: 5rem;
+    }
+
+    &:checked ~ .popup-menu{
+      display: block;
+      position: absolute;
+      bottom: 100%;
     }
   }
   
@@ -22,9 +36,11 @@
     display: none;
     color: $text--black;
     text-align: left;
+    z-index: 1;
 
     li{
       display: block;
+      white-space: nowrap;
     }
 
     .divider{
@@ -32,5 +48,9 @@
       opacity: 0.5;
       margin: 0.5rem 0;
     }
+  }
+
+  .popup-menu{
+    @extend .dropdown-menu;
   }
 }
