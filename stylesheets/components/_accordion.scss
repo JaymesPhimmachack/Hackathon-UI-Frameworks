@@ -1,12 +1,15 @@
 	
 /* Container */
+
 .accordion {
+  color: #2c3e50;
+  background: #ecf0f1;
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
  
 }
 
-h1 {
+.accordion h1 {
   text-align: center;
 }
 .half {
@@ -51,13 +54,13 @@ h1 {
 }
 
 /* :checked */
-input:checked ~ .accordion-content {
+.accordion-input:checked ~ .accordion-content {
   max-height: 10em;
 }
-input[type=checkbox]:checked + .accordion-toggle::after {
+.accordion-input[type=checkbox]:checked + .accordion-toggle::after {
   transform: rotate(315deg);
 }
-input[type=radio]:checked + .accordion-toggle::after {
+accordion-input[type=radio]:checked + .accordion-toggle::after {
   transform: rotateX(180deg);
 }
 
@@ -76,10 +79,10 @@ input[type=radio]:checked + .accordion-toggle::after {
   transition: all .35s;
 }
 
-input[type=checkbox] + .accordion-toggle::after {
+.accordion-input[type=checkbox] + .accordion-toggle::after {
   content: "+";
 }
-input[type=radio] + .accordion-toggle::after {
+.accordion-input[type=radio] + .accordion-toggle::after {
   content: "\25BC";
 }
 
