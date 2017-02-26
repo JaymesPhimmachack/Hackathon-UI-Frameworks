@@ -40,11 +40,24 @@
 
     li{
       display: block;
+      padding: 0.5rem 0;
+      white-space: nowrap;
+      font-size: 1.25rem;
       white-space: nowrap;
     }
 
     .divider{
       border: 1px solid $dropdown__seperator;
+      padding: 0;
+      opacity: 0.5;
+      margin: 0.5rem 0;
+
+    }
+
+    .heading{
+      color: $text--dark-gray;
+      font-weight: bold;
+      font-size: 1.3rem;
       opacity: 0.5;
       margin: 0.5rem 0;
     }
