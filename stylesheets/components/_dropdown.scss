@@ -1,18 +1,36 @@
 .dropdown{
-  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
 
+  .dropdown-toggle{
+    position: absolute;
+
+  }
+
+  input[type="checkbox"]{
+    display: none;
+
+    &:checked ~ .dropdown-menu{
+      display: block;
+      position: absolute;
+      top: 5rem;
+    }
+  }
   
   .dropdown-menu{
-    position: absolute;
     display: none;
+    color: $text--black;
+    text-align: left;
 
     li{
       display: block;
     }
+
+    .divider{
+      border: 1px solid $dropdown__seperator;
+      opacity: 0.5;
+      margin: 0.5rem 0;
+    }
   }
-}
-
-.dropdown-show{
-  display: block;
-
 }

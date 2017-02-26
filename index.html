@@ -128,14 +128,30 @@
           <div class="dropdown-example">
             <h3>Dropdowns</h3>
             <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle"type="button">
+              <input type="checkbox" id="dd-menu-1">
+              <label for="dd-menu-1" class="btn btn-primary dropdown-toggle">
                 Dropdown
                 <i class="fa fa-caret-down"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+              </label>
+              <ul class="dropdown-menu btn btn-primary">
+                <li><a href="#!">Action</a></li>
+                <li><a href="#!">Another action</a></li>
+                <li><a href="#!">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <input type="checkbox" id="dd-menu-2">
+              <label for="dd-menu-2" class="btn btn-primary dropdown-toggle">
+                Dropdown
+                <i class="fa fa-caret-up"></i>
+              </label>
+              <ul class="dropdown-menu btn btn-primary">
+                <li><a href="#!">Action</a></li>
+                <li><a href="#!">Another action</a></li>
+                <li><a href="#!">Something else here</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Separated link</a></li>
               </ul>
@@ -339,7 +355,6 @@
 
         </div>
       </section>
-      <section><h3>Dropdowns</h3></section>
       <section>
         <h3>Breadcrumbs</h3>
         <div class="breadcrumb-example">
@@ -730,6 +745,5 @@
 </div>
 </body>
 <script src = "js/buttons.js"></script>
-<script src="js/dropdown.js"></script>
 </html>
 

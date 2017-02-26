@@ -71,12 +71,21 @@ html {
 a {
   text-decoration: none; }
 
+section {
+  position: relative; }
+
+h3 {
+  padding: 0.75rem; }
+
 .badge-example {
   font-size: 2rem; }
 
 .breadcrumb-example {
   width: 80%;
   margin: 0 auto; }
+
+.dropdown-example {
+  margin: 1rem 0 10rem; }
 
 .list-group-example {
   max-width: 50%;
@@ -1284,15 +1293,27 @@ figure.card-back,
       color: #212121; }
 
 .dropdown {
-  position: relative; }
-  .dropdown .dropdown-menu {
-    position: absolute;
+  display: block;
+  text-align: left;
+  width: 100%; }
+  .dropdown .dropdown-toggle {
+    position: absolute; }
+  .dropdown input[type="checkbox"] {
     display: none; }
+    .dropdown input[type="checkbox"]:checked ~ .dropdown-menu {
+      display: block;
+      position: absolute;
+      top: 5rem; }
+  .dropdown .dropdown-menu {
+    display: none;
+    color: #020102;
+    text-align: left; }
     .dropdown .dropdown-menu li {
       display: block; }
-
-.dropdown-show {
-  display: block; }
+    .dropdown .dropdown-menu .divider {
+      border: 1px solid #020102;
+      opacity: 0.5;
+      margin: 0.5rem 0; }
 
 .pagination {
   text-align: center; }
