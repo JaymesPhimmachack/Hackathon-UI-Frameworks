@@ -1322,11 +1322,18 @@ figure.card-back,
     z-index: 1; }
     .dropdown .dropdown-menu li, .dropdown .popup-menu li {
       display: block;
-      white-space: nowrap; }
+      padding: 0.5rem 0;
+      white-space: nowrap;
+      font-size: 1.25rem; }
     .dropdown .dropdown-menu .divider, .dropdown .popup-menu .divider {
       border: 1px solid #020102;
+      padding: 0;
       opacity: 0.5;
       margin: 0.5rem 0; }
+    .dropdown .dropdown-menu .heading, .dropdown .popup-menu .heading {
+      color: #212121;
+      font-weight: bold;
+      font-size: 1.3rem; }
 
 .pagination {
   text-align: center; }
