@@ -2313,3 +2313,80 @@ figure.card-back,
 
 .s-container label[for='s1']:before, .s-container2 label[for='r1']:before, .s-container2 label[for='r2']:before {
   content: ''; }
+
+.flip-card {
+  padding: 1em;
+  margin: 50px auto;
+  max-width: 1000px;
+  text-align: center;
+  -webkit-perspective: 800px;
+  perspective: 800px; }
+
+.flip-card h3 {
+  width: 100%;
+  height: auto;
+  margin: 1.5% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 2em; }
+
+.flip-card-card {
+  width: 560px;
+  border-radius: 20px;
+  height: 490px;
+  margin: 10px auto;
+  position: relative;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.flip-card-marathon:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  display: block;
+  content: '';
+  height: 22px;
+  width: 100%;
+  background-size: 100%; }
+
+.flip-card-marathon {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out; }
+
+.flip-card-front {
+  background: url(http://i.imgur.com/PAkcHAd.jpg?1) center center;
+  background-size: cover;
+  z-index: 2; }
+
+.flip-card-back {
+  z-index: 1;
+  background-color: #28255f;
+  transform: rotateY(180deg); }
+
+.flip-card-back p {
+  font-size: 1.4em;
+  text-align: center; }
+
+.flip-card-card:hover .flip-card-front {
+  transform: rotateY(-180deg); }
+
+.flip-card-card:hover .flip-card-back {
+  transform: rotateY(0deg); }
+
+/*# sourceMappingURL=main.css.map */
+
