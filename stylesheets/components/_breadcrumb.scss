@@ -1,0 +1,23 @@
+.breadcrumb{
+  display: block;
+  background: $bg--gray;
+  font-size: $base-font-size * 1.5;
+  padding: 1rem;
+  text-align: left;
+
+  li{
+    display: inline-block;
+
+    &::before{
+      content:  "/\00a0";
+    }
+
+    &:first-child::before{
+      content: "";
+    }
+
+    &.active{
+      color: $breadcrumb-active;
+    }
+  }
+}
