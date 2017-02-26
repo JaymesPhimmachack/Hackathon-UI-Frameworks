@@ -11,9 +11,10 @@
 }
 
 .card-container{
+
+  position:absolute;
+  margin-top:-135px;
   position: absolute;
-  perspective: 1000;
-  margin-top: -135px;
   top:50%;
   height: 500px;
 }
