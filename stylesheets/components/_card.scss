@@ -1,22 +1,17 @@
 .card-container{
+  position:relative;
   left: 50%;
   margin-left:-225px;
   font-weight: 400;
   font-size: 1em;
+  margin-top:135px;
+  top:50%;
+  height: 500px;
   
 }
 .card-container, figure{
   width:416px;
   height: 270px;
-}
-
-.card-container{
-
-  position:absolute;
-  margin-top:-135px;
-  position: absolute;
-  top:50%;
-  height: 500px;
 }
 
 .card{
