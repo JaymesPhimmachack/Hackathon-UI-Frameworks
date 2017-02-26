@@ -1281,6 +1281,8 @@ figure.card-back,
     .breadcrumb li.active {
       color: #212121; }
 
+
+
 .switches {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -1382,6 +1384,7 @@ figure.card-back,
 
 .s-container label[for='s1']:before, .s-container2 label[for='r1']:before, .s-container2 label[for='r2']:before {
   content: ''; }
+
 
 .pagination {
   text-align: center; }
