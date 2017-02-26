@@ -5,6 +5,7 @@
   a, span, i{
     display: block;
   }
+
   .list-group-item{
     display: block;
     padding: 10px;
@@ -24,6 +25,10 @@
     &:hover, &:active{
       background: $list-group--hover;
       outline: 0;
+    }
+
+    &.disabled, &.disabled:hover, &.disabled:active{
+      background: darken($list-group__hover, 25%);
     }
 
     //Contextual list-group-items

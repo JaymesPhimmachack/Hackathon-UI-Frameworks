@@ -61,6 +61,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 15px;
   background-color: #ffe5ff; }
 
 a {
@@ -69,10 +70,13 @@ a {
 .badge-example {
   font-size: 2rem; }
 
+.breadcrumb-example {
+  width: 80%;
+  margin: 0 auto; }
+
 .list-group-example {
   max-width: 50%;
-  margin: 0 auto;
-  font-size: 2rem; }
+  margin: 0 auto; }
   .list-group-example .list-group .list-group-item, .list-group-example .list-group .list-group-item--success, .list-group-example .list-group .list-group-item--info, .list-group-example .list-group .list-group-item--warning, .list-group-example .list-group .list-group-item--danger {
     padding-bottom: 2rem; }
     .list-group-example .list-group .list-group-item img, .list-group-example .list-group .list-group-item--success img, .list-group-example .list-group .list-group-item--info img, .list-group-example .list-group .list-group-item--warning img, .list-group-example .list-group .list-group-item--danger img {
@@ -830,6 +834,8 @@ html {
     .list-group .list-group-item:hover, .list-group .list-group-item--success:hover, .list-group .list-group-item--info:hover, .list-group .list-group-item--warning:hover, .list-group .list-group-item--danger:hover, .list-group .list-group-item:active, .list-group .list-group-item--success:active, .list-group .list-group-item--info:active, .list-group .list-group-item--warning:active, .list-group .list-group-item--danger:active {
       background: #969696;
       outline: 0; }
+    .list-group .list-group-item.disabled, .list-group .disabled.list-group-item--success, .list-group .disabled.list-group-item--info, .list-group .disabled.list-group-item--warning, .list-group .disabled.list-group-item--danger, .list-group .list-group-item.disabled:hover, .list-group .disabled.list-group-item--success:hover, .list-group .disabled.list-group-item--info:hover, .list-group .disabled.list-group-item--warning:hover, .list-group .disabled.list-group-item--danger:hover, .list-group .list-group-item.disabled:active, .list-group .disabled.list-group-item--success:active, .list-group .disabled.list-group-item--info:active, .list-group .disabled.list-group-item--warning:active, .list-group .disabled.list-group-item--danger:active {
+      background: #565656; }
     .list-group .list-group-item--success {
       background: #00C851; }
       .list-group .list-group-item--success:hover {
@@ -939,6 +945,7 @@ label:hover {
 .tab-btn-read-more a {
   color: #fff; }
 
+<<<<<<< HEAD
 .card-container {
   left: 50%;
   margin-left: -225px;
@@ -1053,5 +1060,21 @@ figure.card-back,
 .card-front:hover p {
   opacity: 1;
   transform: translate3d(0, 0, 0); }
+=======
+.breadcrumb {
+  display: block;
+  background: #959595;
+  font-size: 15px;
+  padding: 1rem;
+  text-align: left; }
+  .breadcrumb li {
+    display: inline-block; }
+    .breadcrumb li::before {
+      content: "/\00a0"; }
+    .breadcrumb li:first-child::before {
+      content: ""; }
+    .breadcrumb li.active {
+      color: #212121; }
+>>>>>>> upstream/master
 
 /*# sourceMappingURL=main.css.map */
