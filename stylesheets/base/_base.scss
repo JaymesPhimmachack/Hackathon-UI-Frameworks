@@ -7,6 +7,21 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6em;
+}
+
+nav a {
+  display: block;
+  margin: 1.6em 0;
+  padding-left: 30px;
+}
+
+.section-content {
+  margin: 0 0 30px;
+  font-weight: 300;
+}
+
 a{
   text-decoration: none;
 }
