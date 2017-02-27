@@ -54,23 +54,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  color: inherit;
+  margin-top: .5em;
+  margin-bottom: 1.2em; }
+
 h1 {
-  font-size: 2.5rem; }
+  font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 2.25rem; }
 
 h4 {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 h5 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1.25rem; }
 
 .highlighted {
   color: #33b5e5; }
@@ -143,6 +149,18 @@ h6 {
 html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%; }
+
+body {
+  font-size: 1.6em; }
+
+nav a {
+  display: block;
+  margin: 1.6em 0;
+  padding-left: 30px; }
+
+.section-content {
+  margin: 0 0 30px;
+  font-weight: 300; }
 
 a {
   text-decoration: none; }
@@ -1991,6 +2009,7 @@ figure.card-back,
   width: 100%;
   height: 100%;
   outline: none;
+  border: 1px solid #2E2E2E;
   border-radius: 50%;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.5);
@@ -2397,42 +2416,6 @@ figure.card-back,
 
 .s-container label[for='s1']:before, .s-container2 label[for='r1']:before, .s-container2 label[for='r2']:before {
   content: ''; }
-
-.la {
-  padding: 1.2rem 2.4rem;
-  border-radius: 2px;
-  font-size: 1.4rem;
-  margin-right: 1%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  color: #fff; }
-
-.la-btn-default {
-  background: #959595;
-  border: 1px solid #959595; }
-
-.la-btn-default:hover, .la-btn-primary:hover, .la-btn-success:hover, .la-btn-info:hover, .la-btn-warning:hover, .la-btn-danger:hover {
-  opacity: 0.9; }
-
-.la-btn-primary {
-  background: #4285f4;
-  border: 1px solid #4285f4; }
-
-.la-btn-success {
-  background: #00D255;
-  border: 1px solid #00D255; }
-
-.la-btn-info {
-  background: #5bc0de;
-  border: 1px solid #5bc0de; }
-
-.la-btn-warning {
-  background: #f0ad4e;
-  border: 1px solid #f0ad4e; }
-
-.la-btn-danger {
-  background: #d9534f;
-  border: 1px solid #d9534f; }
 
 .flip-card {
   padding: 1em;
