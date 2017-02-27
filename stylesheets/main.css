@@ -1079,34 +1079,31 @@ figure.card-back,
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 17px;
-  background: #959595;
   width: 100%;
-  height: 150px; }
+  height: 150px;
+  color: #232423; }
 
 .m-container {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  width: 25%;
+  text-align: left; }
 
 .s-container {
   position: relative;
-  border: 2px solid #ee6e73;
   border-radius: 4px;
   width: 100%;
   height: 50px;
-  padding-top: 1.5%;
-  padding-left: 1%; }
+  padding-top: 5%;
+  padding-left: 5%; }
 
 .s-container label {
   position: relative;
   float: left;
-  color: #fff;
   font-weight: 200; }
 
-.s-container label:hover {
-  color: #fff; }
-
-.s-container label[for='s1']:before {
-  content: ''; }
+.s-container label:hover, .s-container2 label:hover {
+  color: #232423; }
 
 .s-background {
   position: relative;
@@ -1145,5 +1142,39 @@ figure.card-back,
 .s-container .s-background input:checked + label:after {
   transform: translateX(40px);
   background: #ee6e73; }
+
+.s-container2 {
+  position: relative;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  padding-top: 3%;
+  padding-left: 8%; }
+
+.s-container2 label {
+  font-weight: 200;
+  position: relative; }
+
+.s-container2 .switch-background {
+  position: relative;
+  display: inline-block;
+  background: #222;
+  border-radius: 4px;
+  width: 33%; }
+
+.s-container2 .switch-background input {
+  display: none; }
+
+.s-container2 label[for='r1'], .s-container2 label[for='r2'] {
+  color: #bbb;
+  font-size: 15px;
+  margin-left: 10px; }
+
+.s-container2 .switch-background input:checked + label[for='r1'], .s-container2 .switch-background input:checked + label[for='r2'] {
+  color: #ee6e73;
+  font-weight: 500; }
+
+.s-container label[for='s1']:before, .s-container2 label[for='r1']:before, .s-container2 label[for='r2']:before {
+  content: ''; }
 
 /*# sourceMappingURL=main.css.map */
