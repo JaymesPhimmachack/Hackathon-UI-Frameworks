@@ -68,6 +68,9 @@
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  -moz-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
 }
 
 .cart-wrapper__plus-btn:hover, .cart-wrapper__minus-btn:hover {
