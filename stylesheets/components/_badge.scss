@@ -6,7 +6,7 @@
   border-radius: 10px;
   background: $badge__bg--gray;
   color: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 25px;
   padding: 2px 3px;
   white-space: nowrap;
@@ -32,7 +32,8 @@
 }
 
 a .badge{
-  padding: 4px;
+  text-align: center;
+  padding: 2px 3px;
 }
 
 button .badge{
