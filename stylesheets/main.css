@@ -193,7 +193,7 @@ h3 {
   border-radius: 10px;
   background: #ababab;
   color: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 25px;
   padding: 2px 3px;
   white-space: nowrap;
@@ -209,7 +209,8 @@ h3 {
   border-radius: 2px; }
 
 a .badge, a .badge--square {
-  padding: 4px; }
+  text-align: center;
+  padding: 2px 3px; }
 
 button .badge, button .badge--square {
   font-size: 0.9rem; }
@@ -2786,5 +2787,3 @@ input[id^="toggle"] {
 .navbar-list__item-icon {
   color: #fff;
   margin: 0 10px 0 5px; }
-
-/*# sourceMappingURL=main.css.map */
