@@ -65,18 +65,18 @@ section.tab-content {
   border: 1px solid transparent;
 }
 
-label:before {
+.tab label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
 
-label[for*='1']:before { content: '\f14c'; }
-label[for*='2']:before { content: '\f2a3'; }
-label[for*='3']:before { content: '\f3ab'; }
-label[for*='4']:before { content: '\f3ac'; }
+.tab label[for*='1']:before { content: '\f14c'; }
+.tab label[for*='2']:before { content: '\f2a3'; }
+.tab label[for*='3']:before { content: '\f3ab'; }
+.tab label[for*='4']:before { content: '\f3ac'; }
 
-label:hover {
+.tab label:hover {
   color: $tab-label-hover-color;
   cursor: pointer;
 }

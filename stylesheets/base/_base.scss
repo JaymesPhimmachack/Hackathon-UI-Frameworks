@@ -4,13 +4,19 @@
 
 html {
   font-family: $font_family;
-  font-size: 15px;
-  background-color: #ffe5ff;
-
+  font-size: 62.5%;
 }
 
 a{
   text-decoration: none;
+}
+
+section{
+  position: relative;
+}
+
+h3{
+  padding: 0.75rem;
 }
 
 .badge-example{
@@ -20,6 +26,16 @@ a{
 .breadcrumb-example{
   width: 80%;
   margin: 0 auto;
+}
+
+.dropdown-example{
+  margin: 1rem auto 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  .dropdown{
+    margin: 0 auto;
+  }
 }
 
 .list-group-example{
@@ -33,4 +49,8 @@ a{
       margin-right: 1rem;
     }
   }
+}
+
+#sidebar {
+  background: #F3F5F8;
 }
