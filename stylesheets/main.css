@@ -2381,7 +2381,7 @@ figure.card-back,
   display: inline-block;
   background: #222;
   border-radius: 4px;
-  width: 33%; }
+  width: 38%; }
 
 .s-container2 .switch-background input {
   display: none; }
@@ -2397,6 +2397,42 @@ figure.card-back,
 
 .s-container label[for='s1']:before, .s-container2 label[for='r1']:before, .s-container2 label[for='r2']:before {
   content: ''; }
+
+.la {
+  padding: 1.2rem 2.4rem;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  margin-right: 1%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #fff; }
+
+.la-btn-default {
+  background: #959595;
+  border: 1px solid #959595; }
+
+.la-btn-default:hover, .la-btn-primary:hover, .la-btn-success:hover, .la-btn-info:hover, .la-btn-warning:hover, .la-btn-danger:hover {
+  opacity: 0.9; }
+
+.la-btn-primary {
+  background: #4285f4;
+  border: 1px solid #4285f4; }
+
+.la-btn-success {
+  background: #00D255;
+  border: 1px solid #00D255; }
+
+.la-btn-info {
+  background: #5bc0de;
+  border: 1px solid #5bc0de; }
+
+.la-btn-warning {
+  background: #f0ad4e;
+  border: 1px solid #f0ad4e; }
+
+.la-btn-danger {
+  background: #d9534f;
+  border: 1px solid #d9534f; }
 
 .flip-card {
   padding: 1em;
