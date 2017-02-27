@@ -266,7 +266,7 @@ button .badge, button .badge--square {
 .accordion-input[type=checkbox]:checked + .accordion-toggle::after {
   transform: rotate(315deg); }
 
-accordion-input[type=radio]:checked + .accordion-toggle::after {
+.accordion-input[type=radio]:checked + .accordion-toggle::after {
   transform: rotateX(180deg); }
 
 /* Icon */
