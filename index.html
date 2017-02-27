@@ -46,7 +46,14 @@
 
           <h2>Labels </h2>
           <article class="section-content">
-            Labels here.
+            <div class='label-container'>
+            <button class="la la-btn-default">Default</button>
+            <button class='la la-btn-primary'>Primary</button>
+            <button class='la la-btn-success'>Success</button>
+            <button class='la la-btn-info'>Info</button>
+            <button class='la la-btn-danger'>Danger</button>
+            <button class='la la-btn-warning'>Warning</button>
+          </div>
           </article>
 
         </section>
@@ -421,7 +428,48 @@
         <section>
           <h2>Icon Bar</h2>
           <article class="section-content">
-            Icone Bar here
+            <h3>Icon Bar</h3>
+              <div class="icon--example">
+                  <div class="icon-wrap">
+                      <h3>Basic Icon Bar</h3>
+                      <div class="icon">
+                          <a class="icon1-item"><i class="icon1-item__icon fa fa-home" aria-hidden="true"></i></a>
+                          <a class="icon1-item"><i class="icon1-item__icon fa fa-bookmark-o" aria-hidden="true"></i></a>
+                          <a class="icon1-item"><i class="icon1-item__icon fa fa-info-circle" aria-hidden="true"></i></a>
+                          <a class="icon1-item"><i class="icon1-item__icon fa fa-envelope-open-o" aria-hidden="true"></i></a>
+                          <a class="icon1-item"><i class="icon1-item__icon fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="icon-wrap">
+                      <h3>Vertical Icon Bar</h3>
+                      <div class="icon2">
+                          <a class="icon2-item"><i class="icon2-item__icon fa fa-home" aria-hidden="true"></i></a>
+                          <a class="icon2-item"><i class="icon2-item__icon fa fa-bookmark-o" aria-hidden="true"></i></a>
+                          <a class="icon2-item"><i class="icon2-item__icon fa fa-info-circle" aria-hidden="true"></i></a>
+                          <a class="icon2-item"><i class="icon2-item__icon fa fa-envelope-open-o" aria-hidden="true"></i></a>
+                          <a class="icon2-item"><i class="icon2-item__icon fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="icon-wrap">
+                      <h3>Circle Icon Bar</h3>
+                      <div class="icon">
+                          <a class="icon3"><i class="icon1-item__icon fa fa-home" aria-hidden="true"></i></a>
+                          <a class="icon3"><i class="icon1-item__icon fa fa-bookmark-o" aria-hidden="true"></i></a>
+                          <a class="icon3"><i class="icon1-item__icon fa fa-info-circle" aria-hidden="true"></i></a>
+                          <a class="icon3"><i class="icon1-item__icon fa fa-envelope-open-o" aria-hidden="true"></i></a>
+                          <a class="icon3"><i class="icon1-item__icon fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                  <div class="icon-wrap">
+                      <h3>Diamond Icon Bar</h3>
+                      <div class="icon">
+                          <a class="icon4"><i class="icon4__item fa fa-home" aria-hidden="true"></i></a>
+                          <a class="icon4"><i class="icon4__item fa fa-bookmark-o" aria-hidden="true"></i></a>
+                          <a class="icon4"><i class="icon4__item fa fa-info-circle" aria-hidden="true"></i></a>
+                          <a class="icon4"><i class="icon4__item fa fa-envelope-open-o" aria-hidden="true"></i></a>
+                          <a class="icon4"><i class="icon4__item fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
           </article>
         </section>
 
@@ -430,7 +478,40 @@
         <section>
           <h2>Modal</h2>
           <article class="section-content">
-            Modal Here
+            <div class="modal--example">
+              <div class="modal">
+                  <h5>Link Modal</h5>
+                  <label class="modal-link--toggle" for="link-modal">Click Me For A Modal </label>
+                  <input class="modal__open" id="link-modal" type="checkbox">
+                  <div class="modal-bg"></div>
+                  <div class="link-modal">
+                      <label class="modal__close" for="link-modal"><i class="fa fa-times" aria-hidden="true"></i></label>
+                      <h2>Awesome. I have it.</h2>
+                      <p>Your couch. It is mine.</p>
+                      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                  </div>
+              </div>
+              <div class="modal">
+                  <h5>Image Modal</h5>
+                  <label class="modal-button" for="image-modal">Image Modal </label>
+                  <input class="modal__open" id="image-modal" type="checkbox">
+                  <div class="modal-bg"></div>
+                  <div class="image-modal">
+                      <label class="modal__close" for="image-modal"><i class="fa fa-times" aria-hidden="true"></i></label>
+                      <img class="image-modal__img" src="http://res.cloudinary.com/dcuvoemqb/image/upload/v1488067131/photo-1444703686981-a3abbc4d4fe3_bnh8gb.jpg">
+                  </div>
+              </div>
+              <div class="modal">
+                  <h5>Video Modal</h5>
+                  <label class="modal-button" for="video-moodal">Video Modal </label>
+                  <input class="modal__open" id="video-moodal" type="checkbox">
+                  <div class="modal-bg"></div>
+                  <div class="video-modal">
+                      <label class="modal__close" for="video-moodal"><i class="fa fa-times" aria-hidden="true"></i></label>
+                      <iframe class="video-modal__video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
           </article>
         </section>
 
@@ -439,7 +520,43 @@
         <section>
           <h2>Nav Bar </h2>
           <article class="section-content">
-            Nav Bar Here
+            <div class="navbar--example">
+                        <div class="navbar-wrap">
+                            <h5></h5>
+                            <nav class="navbar navbar--left">
+                                <a class="navbar__title">Navbar</a>
+                                <div class="navbar-list">
+                                    <label class="navbar-list__item"><a>Home</a></label>
+                                    <label class="navbar-list__item"><a>Features</a></label>
+                                    <label class="navbar-list__item"><a>Pricing</a></label>
+                                    <label class="navbar-list__item" for="toggle-dropdown1">Dropdown<i class="navbar-list__item-icon fa fa-caret-down" aria-hidden="true"></i></label>
+                                    <input type="checkbox" id="toggle-dropdown1">
+                                    <div class="navbar-list-sublist">
+                                        <label class="navbar-list-sublist__item"><a>Action</a></label>
+                                        <label class="navbar-list-sublist__item"><a>Another action</a></label>
+                                        <label class="navbar-list-sublist__item"><a>Something else here</a></label>
+                                    </div>
+                                </div>
+                                <input class="navbar__search" id="search" type="search" value="Search" />
+                            </nav>
+                        </div>
+                        <div class="navbar-wrap">
+                            <nav class="navbar ">
+                                <a class="navbar__title">Navbar</a>
+                                <div class="navbar-list--right">
+                                    <label class="navbar-list__item"><a><i class="navbar-list__item-icon fa fa-envelope" aria-hidden="true"></i>Contact</a></label>
+                                    <label class="navbar-list__item"><a><i class="navbar-list__item-icon fa fa-cog" aria-hidden="true"></i>Setting</a></label>
+                                    <label class="navbar-list__item" for="toggle-dropdown2"><i class="navbar-list__item-icon fa fa-user" aria-hidden="true"></i>Profile<i class="navbar-list__item-icon fa fa-caret-down" aria-hidden="true"></i></label>
+                                    <input type="checkbox" id="toggle-dropdown2">
+                                    <div class="navbar-list-sublist">
+                                        <label class="navbar-list-sublist__item"><a>Action</a></label>
+                                        <label class="navbar-list-sublist__item"><a>Another action</a></label>
+                                        <label class="navbar-list-sublist__item"><a>Something else here</a></label>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
           </article>
         </section>
 
@@ -448,7 +565,45 @@
         <section>
           <h2>Progress Bar</h2>
           <article class="section-content">
-            Progress bar here
+            <h3>Basic Example</h3>
+            <div class="progress-example">
+                <div class="progress">
+                    <div class="progress__item"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--25-prog"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--50-prog"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--75-prog"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--100-prog"></div>
+                </div>
+            </div>
+            <h3>Contextual alternatives</h3>
+            <div class="progress-example">
+                <div class="progress">
+                    <div class="progress__item--25-prog-qtr-color"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--50-prog-half-color"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--75-prog-three-qtr-color"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress__item--100-prog-full-color"></div>
+                </div>
+            </div>
+            <h3>Infinite loading</h3>
+            <div class="progress-example">
+                <div class="progress">
+                    <div class="progress__item--inf-prog"></div>
+                </div>
+            </div>
           </article>
         </section>
 
@@ -1257,4 +1412,3 @@
 <script src = "js/buttons.js"></script>
 <script src = "js/dot-nav.js"></script>
 </html>
-

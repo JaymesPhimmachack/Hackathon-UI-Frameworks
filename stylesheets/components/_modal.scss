@@ -1,1 +1,126 @@
-/* Put code below */
+/* Modal */
+
+input[class^="modal"] {
+  display: none;
+}
+
+
+.modal{
+   margin: 40px 10px;
+   height: 400px;
+}
+
+
+
+#link-modal:checked ~ .link-modal,
+#link-modal:checked ~ .modal-bg,
+#image-modal:checked ~ .image-modal,
+#image-modal:checked ~ .modal-bg,
+#video-moodal:checked ~ .video-modal,
+#image-modal:checked ~ .modal-bg{
+  display: block;
+}
+
+.modal__close {
+  position: relative;
+  top: 5px;
+  left: 450px;
+  margin: 20px 0;
+  color: #8c8c8c;
+  font-size: 24px;
+  
+}
+
+
+.modal-button {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #008cba;
+}
+
+
+.image-modal, .video-modal{
+  position: relative;
+  top: 0;
+  left: 400px;
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  background-color: #fff;
+} 
+
+
+
+
+/* Link Modal */
+
+.link-modal {
+  position: relative;
+  top: 0;
+  left: 400px;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+} 
+
+.modal-link--toggle {
+  cursor: pointer;
+  color: blue;
+}
+
+.modal-bg {
+   width: 100%;
+    height: 5000px;
+    background-color: #8c8c8c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+/*
+  visibility: hidden;
+  width: 1000px;
+  height: 1000px;
+  background-color: #8c8c8c;*/
+  
+  display: none;
+}
+
+/* Image Modal */
+
+
+.image-modal__img{
+ 
+  top: 20px; 
+  left: 20px;
+  width: 80%;
+  margin: 10px;
+  border: 1px solid black;
+  display: block;
+    
+}
+
+
+/* Video Modal */
+
+
+
+.video-modal__video{
+
+  display: block;
+  margin: 20px;
+
+}
+
+
