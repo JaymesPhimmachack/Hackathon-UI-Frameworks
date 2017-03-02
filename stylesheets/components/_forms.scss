@@ -1,0 +1,123 @@
+$f-grey: #ccc;
+$f-blue: #4285f4;
+
+.form-container1, .form-container2{
+	position: relative;
+	width: 30%;
+	height: auto;
+	border: 1px solid $f-grey;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 5% 0 %5;
+} 
+
+.form-title, .form-title2{
+	position: relative;
+	width: 95%;
+	text-align: center;
+	font-family: $font-family;
+	font-weight: bold;
+	border-bottom: 1px solid $f-grey;
+	margin: 0 2.5% 10% 2.5%;
+
+	i{
+		padding-right: 2%;
+	}
+}
+
+.form-body, .form-body2{
+	position: relative;
+	width: 100%;
+	margin-bottom: 10%;
+
+	i{	
+		position: relative;
+		font-size: 35px;
+		padding-left: 2%;
+		bottom: 10px;
+	}
+
+	input{
+		width: 80%;
+		font-size: 18px;
+		font-weight: 300;
+		float: right;
+		border: none;
+		border-bottom: 1px solid $f-grey;
+		margin-right: 3%;
+		opacity: 1;
+		padding: 2% 0 2% 0;
+	}
+
+	label{
+		position: absolute;
+		top: 9%;
+  		bottom: 0;
+  		left: 18%;
+		width: 100%;
+		color: $f-grey;
+	}
+
+	input:focus{
+		outline: none;
+		border-bottom: 3px solid $f-blue;
+	}
+
+	input:focus + label{
+		color: $f-blue;
+		top: -35%;
+		font-size: 13px;
+		transition: all .3s;
+	}
+} 
+
+.form-btn{
+	text-align: center;
+	padding-bottom: 10%;
+	border-bottom: 1px solid $f-grey;
+
+	button{
+		padding: 2% 10% 3% 10%;
+		font-size: 20px;
+		border-radius: 3px;
+		background: $primary-color;
+		border: 1px solid $primary-color;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+	}
+
+	button:hover{
+		cursor: pointer;
+	}
+
+	button:focus{
+		outline: none;
+	}
+}
+
+.form-footer{
+	margin: 10% 3% 5% 0;
+
+	p{
+		text-align: right;
+		padding-bottom: 5%;
+	}
+
+	a{
+		color: $f-blue;
+	}
+}
+
+
+//login form 2
+.form-container2{
+	border: none;
+}
+
+.form-title2{
+	background: $primary-color;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid $primary-color;
+	padding-top: 2%;
+	color: #fff;
+}
+
