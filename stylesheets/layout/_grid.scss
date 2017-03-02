@@ -15,10 +15,9 @@
   margin: 0px 5px 0px 5px;
 }
 
-
 @for $i from 1 through 12 {
    .grid__col#{$i}{
       width: $i * 8.333%;
       padding: 10px;
-  } 
+  }
 }
