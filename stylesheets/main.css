@@ -2472,6 +2472,8 @@ figure.card-back,
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   margin: 0 2.5% 10% 2.5%; }
+  .form-title h1, .form-title2 h1 {
+    width: 100%; }
   .form-title i, .form-title2 i {
     padding-right: 2%; }
 
