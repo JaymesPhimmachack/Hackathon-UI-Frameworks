@@ -11,6 +11,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -211,7 +212,7 @@ h3 {
   border-radius: 10px;
   background: #ababab;
   color: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 25px;
   padding: 2px 3px;
   white-space: nowrap;
@@ -227,7 +228,8 @@ h3 {
   border-radius: 2px; }
 
 a .badge, a .badge--square {
-  padding: 4px; }
+  text-align: center;
+  padding: 2px 3px; }
 
 button .badge, button .badge--square {
   font-size: 0.9rem; }
@@ -2930,5 +2932,264 @@ input[id^="toggle"] {
 .navbar-list__item-icon {
   color: #fff;
   margin: 0 10px 0 5px; }
+
+.tab2-container {
+  width: 60%;
+  margin: 0 auto;
+  height: 700px;
+  max-height: 1000px; }
+
+.tab2 {
+  width: 100%;
+  height: 100%;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: left; }
+
+.tab2-img {
+  float: left;
+  margin-right: 50px;
+  margin-top: 40px; }
+
+.tab2-date {
+  opacity: 0.3;
+  font-size: smaller; }
+
+.tab2 .tab2-tab-content {
+  z-index: 200;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  padding: 30px;
+  background: #fff;
+  border-radius: 3px;
+  border-right: .2em solid #ce0000;
+  border-bottom: .2em solid #ce0000;
+  border-top: 0; }
+
+.tab2 .tab2-tab-content p {
+  font-size: smaller;
+  opacity: 0.5; }
+
+.tab2 .tab2-tab-content h2 {
+  margin: -5px;
+  font-size: 32px; }
+
+.tab2 li {
+  float: left;
+  display: block; }
+
+.tab2 li p {
+  font-size: 1rem;
+  line-height: 1.5rem; }
+
+.tab2 li input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.tab2 label {
+  position: relative;
+  display: inline-block;
+  padding: 1.5em 1.5em 1.0em;
+  width: 120px;
+  text-decoration: none;
+  color: #ce0000;
+  margin: 0 5px 0px 0px;
+  /* 0 10px 0 0px;*/ }
+
+.tab2-label-1 {
+  z-index: 100; }
+
+.tab2-label-2 {
+  z-index: 80; }
+
+.tab2-label-3 {
+  z-index: 60; }
+
+.tab2 label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 00px;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  border: .15em solid #ce0000;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  /*10px 10px 0 0;*/
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e5e5e5));
+  background: -webkit-linear-gradient(top, white 0%, #e5e5e5 100%);
+  background: -webkit-linear-gradient(top, white 0%, #e5e5e5 100%);
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%);
+  -webkit-transform: perspective(12px) rotateX(2deg);
+  transform: perspective(12px) rotateX(2deg);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left; }
+
+.tab2 [id^="tab"]:checked + label {
+  z-index: 200;
+  margin-bottom: -0px;
+  border-top-width: 1px; }
+
+.tab2 [id^="tab"]:checked + label:before {
+  background: #fff; }
+
+.tab2 [id^="tab"]:checked ~ .tab2-tab-content {
+  display: block; }
+
+.tab-btn-read-more {
+  float: right;
+  top: 300px;
+  z-index: 200;
+  position: relative;
+  margin: -10px 60px 60px 0px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+  height: 35px;
+  width: 100px;
+  text-transform: uppercase;
+  background: white;
+  border: 3px solid black; }
+
+.tab-btn-read-more a {
+  color: black;
+  font-style: bold; }
+
+.vert-tab {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: 40px auto;
+  position: relative;
+  width: 80%; }
+
+.vert-tab input[name="vert-tabs"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px; }
+
+.vert-tab section {
+  display: block; }
+
+.vert-tab section label {
+  background: #eee;
+  border-bottom: 3px solid #929292;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-left: 20px;
+  position: relative;
+  width: 150px;
+  opacity: 0.3;
+  z-index: 100; }
+
+.vert-tab section article {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px; }
+
+.vert-tab input[name="vert-tabs"]:checked + label {
+  background: white;
+  color: red;
+  border-bottom: 3px solid red;
+  opacity: 1;
+  margin-left: 0;
+  width: 170px; }
+
+.vert-tab input[name="vert-tabs"]:checked ~ article {
+  display: block; }
+
+@media (max-width: 533px) {
+  h1 {
+    width: 100%; }
+
+  .vert-tab {
+    width: 100%; }
+
+  .vert-tab section article {
+    left: 200px;
+    min-width: 200px; }
+
+  .vert-tab section article:after {
+    background-color: #f4f4f4;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: -199px;
+    position: absolute;
+    top: 0;
+    width: 160px; } }
+@media (max-width: 768px) {
+  h1 {
+    width: 96%; }
+
+  .vert-tab {
+    width: 96%; } }
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%; }
+
+  .vert-tab {
+    width: 70%; } }
+.vert-tab-img {
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px; }
+
+.vert-tab-content {
+  position: relative;
+  left: 275px;
+  top: -198px; }
+
+.vert-tab-content h2 {
+  font-size: 32px; }
+
+.vert-tab-content p {
+  opacity: .3;
+  font-size: smaller;
+  margin-right: 2.5em;
+  line-height: 0.5em; }
+
+.vert-tab-content .tab2-date {
+  opacity: 0.3;
+  font-size: smaller; }
+
+.vert-tab-btn-read-more {
+  position: relative;
+  left: 500px;
+  top: -195px;
+  margin-left: 0px;
+  background: white;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+  height: 40px;
+  width: 120px;
+  font-style: bold;
+  text-transform: none;
+  border: 2px solid black;
+  border-radius: 4px; }
+
+.vert-tab-btn-read-more a {
+  color: black; }
 
 /*# sourceMappingURL=main.css.map */
