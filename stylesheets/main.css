@@ -1425,14 +1425,16 @@ code, pre {
 
 .modal-cart-wrapper__description h5 {
   font-size: 2rem;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 1rem; }
 
 .modal-cart-wrapper__description p {
   font-size: 1.2rem; }
 
 .modal-cart-wrapper__color {
   margin-right: 0;
-  width: 6rem; }
+  width: 6rem;
+  text-align: center; }
 
 .modal-cart-wrapper__quantity {
   margin-right: 4rem; }
@@ -1533,12 +1535,13 @@ code, pre {
   width: 100%; }
 
 .modal-cart-wrapper__cart th {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 .modal-cart-wrapper__cart td, .modal-cart-wrapper__cart th {
   border-top: 1px solid #eceeef;
   padding-left: 1rem;
   text-align: left;
+  vertical-align: middle;
   width: 12rem; }
 
 .modal-cart-wrapper .btn span {
