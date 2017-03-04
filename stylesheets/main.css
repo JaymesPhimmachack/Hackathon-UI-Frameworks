@@ -926,33 +926,33 @@ code, pre {
   position: absolute;
   top: 50%;
   bottom: 0;
-  width: 15px;
-  height: 15px;
   z-index: 88;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s; }
-
-.carousel--nav::before {
-  font-size: 1.25rem;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none; }
-
-.carousel--nav:hover::before {
-  color: white; }
+  cursor: pointer; }
 
 .carousel--nav-previous {
-  left: 10px; }
+  left: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/leftarrow.png");
+  background-size: cover; }
 
 .carousel--nav-next {
-  left: 96%; }
+  right: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/rightarrow.png");
+  background-size: cover; }
+
+.carousel--nav-previous:hover, .carousel--nav-next:hover {
+  opacity: 1; }
 
 .carousel--bullet {
   font-size: 1rem;
@@ -1053,33 +1053,34 @@ code, pre {
   position: absolute;
   top: 50%;
   bottom: 0;
-  width: 15px;
-  height: 15px;
   z-index: 88;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.5); }
 
-.carousel-preview__nav::before {
-  font-size: 1.25rem;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s; }
-
-.carousel-preview__nav:hover::before {
-  color: white; }
-
 .carousel-preview__nav-previous {
-  left: 10px; }
+  left: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/leftarrow.png");
+  background-size: cover; }
 
 .carousel-preview__nav-next {
-  left: 96%; }
+  right: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/rightarrow.png");
+  background-size: cover; }
+
+.carousel-preview__nav-previous:hover, carousel-preview__nav-next:hover {
+  opacity: 1; }
 
 .carousel-preview__bullet {
   font-size: .75rem;
@@ -1292,14 +1293,16 @@ code, pre {
 
 .cart-wrapper__description h5 {
   font-size: 2rem;
-  margin: 0; }
+  margin: 0;
+  padding-bottom: 1rem; }
 
 .cart-wrapper__description p {
   font-size: 1.2rem; }
 
 .cart-wrapper__color {
   margin-right: 0;
-  width: 6rem; }
+  width: 6rem;
+  text-align: center; }
 
 .cart-wrapper__quantity {
   margin-right: 4rem; }
@@ -1312,7 +1315,7 @@ code, pre {
   color: #43484D;
   font-weight: 300; }
 
-.cart-wrapper__plus-btn, .cart-wrapper__minus-btn {
+.cart-wrapper__plus-btn, .cart-wrapper__minus-btn, .cart-wrapper__clear-btn {
   width: 3rem;
   height: 3rem;
   background-color: #4285f4;
@@ -1325,14 +1328,20 @@ code, pre {
   -moz-transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
   transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s; }
 
-.cart-wrapper__plus-btn:hover, .cart-wrapper__minus-btn:hover {
+.cart-wrapper__plus-btn:hover, .cart-wrapper__minus-btn:hover, .cart-wrapper__clear-btn {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.cart-wrapper__minus-btn img {
-  margin-bottom: 3px; }
+.cart-wrapper__plus-btn {
+  background-image: url("../images/add.png");
+  background-size: cover; }
 
-.cart-wrapper__plus-btn img {
-  margin-top: 2px; }
+.cart-wrapper__minus-btn {
+  background-image: url("../images/minus.png");
+  background-size: cover; }
+
+.cart-wrapper__clear-btn {
+  background-image: url("../images/clear_2x.png");
+  background-size: cover; }
 
 .cart-wrapper__total-price {
   float: right;
@@ -1400,13 +1409,14 @@ code, pre {
   width: 100%; }
 
 .cart-wrapper__cart th {
-  font-size: 1.5rem; }
+  font-size: 2.5rem; }
 
 .cart-wrapper__cart td, .cart-wrapper__cart th {
   border-top: 1px solid #eceeef;
   padding-top: 2rem;
   padding-left: 1rem;
-  text-align: left; }
+  text-align: left;
+  vertical-align: middle; }
 
 .cart-wrapper .btn span {
   padding: 0.5rem;
@@ -1576,7 +1586,7 @@ code, pre {
   color: #43484D;
   font-weight: 300; }
 
-.modal-cart-wrapper__plus-btn, .modal-cart-wrapper__minus-btn {
+.modal-cart-wrapper__plus-btn, .modal-cart-wrapper__minus-btn, .cart-wrapper__clear-btn {
   width: 3rem;
   height: 3rem;
   background-color: #4285f4;
@@ -1592,11 +1602,17 @@ code, pre {
 .modal-cart-wrapper__plus-btn:hover, .modal-cart-wrapper__minus-btn:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.modal-cart-wrapper__minus-btn img {
-  margin-bottom: 3px; }
+.modal-cart-wrapper__plus-btn {
+  background-image: url("../images/add.png");
+  background-size: cover; }
 
-.modal-cart-wrapper__plus-btn img {
-  margin-top: 2px; }
+.modal-cart-wrapper__minus-btn {
+  background-image: url("../images/minus.png");
+  background-size: cover; }
+
+.modal-cart-wrapper__clear-btn {
+  background-image: url("../images/clear_2x.png");
+  background-size: cover; }
 
 .modal-cart-wrapper__total-price {
   float: right;
