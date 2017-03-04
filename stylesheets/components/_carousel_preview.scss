@@ -56,40 +56,39 @@
   position: absolute;
   top: 50%;
   bottom: 0;
-  width: 15px;
-  height: 15px;
   z-index: 88;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.carousel-preview__nav::before {
-  font-size: 1.25rem;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
-
-}
-
-.carousel-preview__nav:hover::before {
-  color: rgba(255, 255, 255, 1);
-}
 
 .carousel-preview__nav-previous {
-  left: 10px;
+  left: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:  opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/leftarrow.png");
+  background-size: cover;
 }
 
 .carousel-preview__nav-next {
-  left: 96%;
+  right: 1px;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:  opacity 0.5s;
+  transition: opacity 0.5s;
+  background-image: url("../images/rightarrow.png");
+  background-size: cover;
 }
 
+.carousel-preview__nav-previous:hover, carousel-preview__nav-next:hover {
+  opacity: 1;
+}
 .carousel-preview__bullet {
   font-size: .75rem;
   width: 1rem;
