@@ -1,0 +1,159 @@
+.vert-tab {
+  color: #333;
+  display: block;
+  font-family: arial, sans-serif;
+  margin: 40px auto;
+  position: relative;
+  width: 80%;
+}
+
+.vert-tab input[name="vert-tabs"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.vert-tab section {
+  display: block;
+}
+
+.vert-tab section label {
+  background: #eee;
+  border-bottom:3px solid #929292;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-left: 20px;
+  position: relative;
+  width: 150px;
+  opacity: 0.3;
+  z-index:100;
+}
+
+.vert-tab section article {
+  display: none;
+  position: absolute;  
+  top: 0;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+}
+
+.vert-tab input[name="vert-tabs"]:checked + label { 
+  background: white;
+  color: red;
+  border-bottom: 3px solid red;
+  opacity:1;
+  margin-left:0;
+  width:170px;
+  
+}
+
+.vert-tab input[name="vert-tabs"]:checked ~ article {
+  display: block;
+}
+
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .vert-tab {
+    width: 100%;
+  }
+  
+  
+ .vert-tab section article {
+   
+   left: 200px;
+   min-width: 200px;
+ } 
+  
+  .vert-tab section article:after {
+    background-color: #f4f4f4;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 160px;
+
+  }  
+  
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .vert-tab {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .vert-tab {
+    width: 70%;
+  }
+}
+
+.vert-tab-img{
+  float:left;
+  margin-right:40px;
+  margin-top:20px;
+
+}
+
+.vert-tab-content {
+  position: relative;
+  left: 275px;
+  top:-198px;
+
+}
+.vert-tab-content h2{
+  font-size:32px;
+}
+.vert-tab-content p{
+  opacity: .3;
+  font-size: smaller;
+  margin-right: 2.5em;
+  line-height: 0.5em;
+}
+ .vert-tab-content .tab2-date{
+  
+   opacity: 0.3;
+   font-size: smaller;
+}
+  .vert-tab-btn-read-more {
+    position:relative;
+    left:500px;
+    top:-195px;
+    margin-left: 0px;
+	 background: white;
+	 font-size: 16px;
+	 font-weight: 400;
+	 letter-spacing: -0.5px;
+	 line-height: 24px;
+     height: 40px;
+     width: 120px;
+     font-style:bold;
+	  text-transform: none;
+     border: 2px solid black;
+     border-radius: 4px;
+ }
+ .vert-tab-btn-read-more a{
+   color: black;
+ }
+
