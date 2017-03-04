@@ -26,14 +26,14 @@
   visibility: hidden;
 }
 
-.carousel--item img {
+.carousel .carousel--item img {
   width: 80rem;
   height: 40rem;
   -webkit-background-size:cover;
   background-size:cover;
 }
 
-.carousel--item span {
+.carousel .carousel--item span {
   position: absolute;
   top: 20%;
   font-size: 2rem;
@@ -138,4 +138,8 @@
 .carousel-caption p {
   margin-top: 0;
   font-size: 1rem;
+}
+
+.carousel--nav #next:hover .preview {
+  display: block;
 }
