@@ -1091,6 +1091,7 @@
 
           <section>
             <h2>Carousel with Caption</h2>
+
             <div class = "carousel">
               <input type = "radio" name = "carousel-cap-item" id = "ci-1" checked = "checked"
                      class = "carousel--bullet"/>
@@ -1098,7 +1099,7 @@
                 <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
                 <label for = "ci-4" class = "carousel--nav carousel--nav-previous"><i
                     class = "fa fa-arrow-left"></i></label>
-                <label for = "ci-2" class = "carousel--nav carousel--nav-next"><i
+                <label id = "next" for = "ci-2" class = "carousel--nav carousel--nav-next"><i
                     class = "fa fa-arrow-right"></i></label>
                 <div class = "carousel-caption">
                   <h3>Heading 1</h3>
@@ -1146,7 +1147,83 @@
               </div>
               <label class = "carousel--bullet" for = "ci-4"></label>
             </div>
+
           </section>
+
+          <hr>
+
+          <section>
+              <h2>Carousel with Preview</h2>
+              <div class = "carousel-preview">
+                <input type = "radio" name = "carousel-pr-item" id = "cp-1" checked = "checked"
+                       class = "carousel-preview__bullet"/>
+                <div class = "carousel-preview__item">
+                  <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"/>
+                  <label for = "cp-4"
+                         class = "carousel-preview__nav carousel-preview__nav-previous fa fa-arrow-left"></label>
+                  <label for = "cp-2"
+                         class = "carousel-preview__nav carousel-preview__nav-next fa fa-arrow-right"></label>
+                  <div class = "carousel-caption">
+                    <h3>Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <label class = "carousel-preview__bullet" for = "cp-1">
+                  <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(3).jpg"
+                                                alt = ""></div>
+                </label>
+                <input type = "radio" name = "carousel-pr-item" id = "cp-2" class = "carousel-preview__bullet"/>
+                <div class = "carousel-preview__item">
+                  <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"/>
+                  <label for = "cp-1"
+                         class = "carousel-preview__nav carousel-preview__nav-previous fa fa-arrow-left"></label>
+                  <label for = "cp-3"
+                         class = "carousel-preview__nav carousel-preview__nav-next fa fa-arrow-right"></label>
+                  <div class = "carousel-caption">
+                    <h3>Heading 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <label class = "carousel-preview__bullet" for = "cp-2">
+                  <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(1).jpg"
+                                                alt = ""></div>
+                </label>
+                <input type = "radio" name = "carousel-pr-item" id = "cp-3" class = "carousel-preview__bullet"/>
+                <div class = "carousel-preview__item">
+                  <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"/>
+                  <label for = "cp-2"
+                         class = "carousel-preview__nav carousel-preview__nav-previous fa fa-arrow-left"></label>
+                  <label for = "cp-4"
+                         class = "carousel-preview__nav carousel-preview__nav-next fa fa-arrow-right"></label>
+                  <div class = "carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <label class = "carousel-preview__bullet" for = "cp-3">
+                  <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(10).jpg"
+                                                alt = ""></div>
+                </label>
+                <input type = "radio" name = "carousel-pr-item" id = "cp-4" class = "carousel-preview__bullet"/>
+                <div class = "carousel-preview__item">
+                  <img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"/>
+                  <label for = "cp-3"
+                         class = "carousel-preview__nav carousel-preview__nav-previous fa fa-arrow-left"></label>
+                  <label for = "cp-1"
+                         class = "carousel-preview__nav carousel-preview__nav-next fa fa-arrow-right"></label>
+                  <div class = "carousel-caption">
+                    <h3>Heading 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <label class = "carousel-preview__bullet" for = "cp-4">
+                  <div class = "thumb-img"><img src = "https://mdbootstrap.com/img/Photos/Slides/img%20(69).jpg"
+                                                alt = ""></div>
+                </label>
+              </div>
+          </section>
+          <hr>
+
           <section>
             <h2>Carousel with Thumb</h2>
             <div class = "slide-wrapper">
