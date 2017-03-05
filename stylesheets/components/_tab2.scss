@@ -21,13 +21,14 @@
 .tab2-img{
   float:left;
   margin-right:50px;
-  margin-top:40px;
+  margin-top:20px;
 
 }
 
  .tab2-date{
   opacity: 0.3;
   font-size: smaller;
+   margin-top: 20px;
 }
 
 .tab2 .tab2-tab-content {
@@ -48,12 +49,15 @@
   
 }
 
+.tab2-desc{
+  margin-top:20px;
+}
 .tab2 .tab2-tab-content p{
   font-size:smaller;
   opacity: 0.5;
 }
 .tab2 .tab2-tab-content h2{
-  margin:-5px;
+  margin:10px;
   font-size:32px;
 }
 
@@ -109,7 +113,7 @@
   border-left: none;
   border-bottom: none;
   border-radius: 5px 5px 0 0;/*10px 10px 0 0;*/
-  background: -webkit-gradient(linear, left top, left     bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1)));
   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
@@ -132,6 +136,7 @@
   background: #fff;
 }
 
+
 .tab2 [id^="tab"]:checked ~ .tab2-tab-content{
   display: block;
 }
@@ -142,13 +147,13 @@
   z-index:200;
   position:relative;
   margin: -10px 60px 60px 0px;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  line-height: 24px;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	line-height: 24px;
   height: 35px;
   width: 100px;
-  text-transform: uppercase;
+	text-transform: uppercase;
   background:white;
   border: 3px solid black;
 }
