@@ -3639,6 +3639,29 @@ input[type='checkbox'] {
   background: #c12e2a;
   border: 1px solid #DB0000; }
 
+.content-well {
+  padding: 30px;
+  border-radius: 4px;
+  margin: .5em;
+  background: #dedede;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.6); }
+
+.herotron {
+  padding: 3rem;
+  margin: 0;
+  background: #dedede; }
+
+.herotron .herotron-heading {
+  font-size: 70px;
+  margin: 0 0 .5em;
+  font-variant: small-caps; }
+
+.herotron .herotron-content {
+  font-size: 2.6rem;
+  font-weight: 200;
+  margin: 0 0 .5em;
+  line-height: 1.5; }
+
 .wave-button {
   position: relative;
   top: -10px;
@@ -3750,12 +3773,5 @@ input[type='checkbox'] {
   100% {
     opacity: 0;
     transform: scale(1); } }
-
-.content-well {
-  padding: 30px;
-  border-radius: 4px;
-  margin: .5em;
-  background: #dedede;
-  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
