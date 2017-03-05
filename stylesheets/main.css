@@ -3054,8 +3054,8 @@ input[class^="modal"] {
 #link-modal:checked ~ .modal-bg,
 #image-modal:checked ~ .image-modal,
 #image-modal:checked ~ .modal-bg,
-#video-moodal:checked ~ .video-modal,
-#image-modal:checked ~ .modal-bg {
+#video-modal:checked ~ .video-modal,
+#video-modal:checked ~ .modal-bg {
   display: block; }
 
 .modal__close {
@@ -3075,7 +3075,7 @@ input[class^="modal"] {
 
 .image-modal, .video-modal {
   position: relative;
-  top: 0;
+  bottom: 40px;
   left: 400px;
   width: 600px;
   height: 400px;
@@ -3090,11 +3090,11 @@ input[class^="modal"] {
 /* Link Modal */
 .link-modal {
   position: relative;
-  top: 0;
-  left: 400px;
+  top: 30px;
+  left: 300px;
   width: 500px;
   height: 250px;
-  border: 1px solid black;
+  border: 1px solid #000;
   padding: 20px;
   display: none;
   z-index: 1000;
@@ -3107,32 +3107,40 @@ input[class^="modal"] {
 
 .modal-bg {
   width: 100%;
-  height: 5000px;
+  height: 450px;
   background-color: #8c8c8c;
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
   z-index: -1;
-  /*
-    visibility: hidden;
-    width: 1000px;
-    height: 1000px;
-    background-color: #8c8c8c;*/
   display: none; }
 
 /* Image Modal */
 .image-modal__img {
-  top: 20px;
-  left: 20px;
-  width: 80%;
-  margin: 10px;
-  border: 1px solid black;
+  width: 90%;
+  margin: 0 10px;
+  border: 1px solid #000;
   display: block; }
+
+.modal__close--left-adjust {
+  left: 550px; }
+
+.modal-bg--img-position {
+  top: 690px;
+  left: 0;
+  height: 450px; }
 
 /* Video Modal */
 .video-modal__video {
   display: block;
   margin: 20px; }
+
+.modal-bg--vid-position {
+  top: 1270px;
+  left: 0; }
+
+.video {
+  margin-top: 10px; }
 
 /*  Progress Bar */
 .progress-example {
