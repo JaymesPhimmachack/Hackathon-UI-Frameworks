@@ -3613,4 +3613,26 @@ input[type='checkbox'] {
   transform: rotate(90deg);
   color: #00ff00; }
 
+.alert {
+  padding: 30px;
+  margin: .5em;
+  color: #fff;
+  border-radius: 4px; }
+
+.alert-success {
+  background: #00C851;
+  border: 1px solid #00D255; }
+
+.alert-info {
+  background: #33b5e5;
+  border: 1px solid #49BDE8; }
+
+.alert-warning {
+  background: #eb9316;
+  border: 1px solid #FF961F; }
+
+.alert-danger {
+  background: #c12e2a;
+  border: 1px solid #DB0000; }
+
 /*# sourceMappingURL=main.css.map */
