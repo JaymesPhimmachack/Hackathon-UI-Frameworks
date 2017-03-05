@@ -1075,7 +1075,7 @@ code, pre {
   background-image: url("../images/rightarrow.png");
   background-size: cover; }
 
-.carousel-preview__nav-previous:hover, carousel-preview__nav-next:hover {
+.carousel-preview__nav-previous:hover, .carousel-preview__nav-next:hover {
   opacity: 1; }
 
 .carousel-preview__bullet {
