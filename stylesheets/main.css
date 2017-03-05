@@ -2997,46 +2997,50 @@ figure.card-back,
   transform: rotateY(0deg); }
 
 /* Icon */
-.icon {
-  display: flex;
-  flex-direction: row;
-  width: 50px;
-  margin-top: 30px; }
+.icon-item--h-style {
+  background-color: #4285f4;
+  height: 50px;
+  padding: 10px 15px; }
 
-.icon1-item, .icon2-item {
-  padding: 10px;
-  background-color: #333; }
+.icon-item--v-style {
+  background-color: #4285f4;
+  height: 50px;
+  padding: 10px 12px; }
 
-.icon1-item:hover,
-.icon2-item:hover,
-.icon3:hover,
-.icon4:hover {
-  background-color: #4286f4;
-  cursor: pointer; }
-
-.icon1-item__icon, .icon2-item__icon, .icon4__item {
-  color: #b3d1ff; }
-
-.icon2 {
+.icon--vertical {
   display: flex;
   flex-direction: column;
   width: 50px; }
 
-.icon3 {
-  width: 50px;
-  height: 25px;
-  padding: 10px;
-  background-color: #333;
-  border-radius: 50%; }
+.icon--horizontal {
+  display: flex;
+  flex-direction: row; }
 
-.icon4 {
+.icon-item__icon {
+  color: #fff;
+  font-size: 24px; }
+
+.icon-item:hover {
+  background-color: #1aa3ff;
+  cursor: pointer; }
+
+.icon-item--circle {
+  margin-right: 7px;
+  border: 1px solid #fff;
+  border-radius: 50%;
   padding: 10px;
-  background-color: #333;
-  transform: rotate(45deg);
+  background-color: #4285f4; }
+
+.icon-item--diamond {
+  transform: rotate(-45deg);
+  height: 45px;
+  padding: 10px;
+  background-color: #4285f4;
+  transform: rotate(-45deg);
   margin: 0 10px; }
 
-.icon4__item {
-  transform: rotate(-45deg); }
+.icon-item__icon--rotate {
+  transform: rotate(45deg); }
 
 /* Modal */
 input[class^="modal"] {
@@ -3574,6 +3578,7 @@ input[id^="toggle"] {
 .vert-tab-btn-read-more a {
   color: black; }
 
+/* List Items */
 input[type='checkbox'] {
   display: none; }
 
@@ -3582,14 +3587,11 @@ input[type='checkbox'] {
 
 .list__item {
   list-style: none;
-  width: 90%;
-  height: 20px;
-  padding: 10px; }
+  width: 300px;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #000; }
 
-.fa-chevron-circle-right {
-  display: none; }
-
-.fa {
+.fa-chevron-circle-up {
   margin-right: 10px;
   color: #3366ff;
   font-size: 24px;
