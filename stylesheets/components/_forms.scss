@@ -28,6 +28,7 @@ $full-w: 100%;
 
 	i{
 		padding-right: 2%;
+		color: #373a3c;
 	}
 }
 
@@ -41,6 +42,7 @@ $full-w: 100%;
 		font-size: 35px;
 		padding-left: 2%;
 		bottom: 10px;
+		color: #373a3c;
 	}
 
 	input{
@@ -88,7 +90,8 @@ $full-w: 100%;
 		border-radius: 3px;
 		background: $primary-color;
 		border: 1px solid $primary-color;
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+		color: #fff;
 	}
 
 	button:hover{
@@ -126,7 +129,12 @@ $full-w: 100%;
 	border-bottom: 1px solid $primary-color;
 	padding-top: 2%;
 	color: #fff;
+
+	i{
+		color: #fff;
+	}
 }
+
 
 // Register Form
 .register-container{
@@ -138,7 +146,7 @@ $full-w: 100%;
 	}
 }
 
-.register1{
+.register1, .register2{
 	position: relative;
 	width: 30%;
 	height: auto;
@@ -148,30 +156,32 @@ $full-w: 100%;
 	margin: 0 5% 0 %5;
 }
 
-.register1-title{
+.register1-title, .register2-title{
 	position: relative;
 	width: 95%;
-	text-align: center;
+	text-align: center;	
 	font-family: $font-family;
 	font-weight: bold;
 	border-bottom: 1px solid $f-grey;
 	margin: 0 2.5% 10% 2.5%;
 
-	i{
-		padding-right: 2%;
+	h1{
+		width: 100%;
 	}
 }
 
-.register1-body{
+.register1-body, .register2-body{
 	position: relative;
 	width: 100%;
 	margin-bottom: 10%;
+	display: inline-block;
 
 	i{	
 		position: relative;
 		font-size: 35px;
 		padding-left: 2%;
 		bottom: 10px;
+		color: #373a3c;
 	}
 
 	input{
@@ -208,10 +218,13 @@ $full-w: 100%;
 	}
 }
 
-.register1-btn{
+.register1-btn, .register2-btn{
+	position: relative;
+	width: 95%;
 	text-align: center;
 	padding-bottom: 10%;
 	border-bottom: 1px solid $f-grey;
+	margin: 0 2.5% 0 2.5%;
 
 	button{
 		padding: 2% 10% 3% 10%;
@@ -219,7 +232,183 @@ $full-w: 100%;
 		border-radius: 3px;
 		background: $primary-color;
 		border: 1px solid $primary-color;
-		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+		color: #fff;
+	}
+
+	button:hover{
+		cursor: pointer;
+		opacity: 0.9;
+	}
+
+	button:focus{
+		outline: none;
+	}
+}
+
+.register1-footer, .register2-footer{
+	position: relative;
+	margin:10% 0 10% 0;
+	text-align: center;
+	font-weight: 400;
+
+	input[type='checkbox'] + label:before{
+		position: absolute;
+		content:'';
+		width: 10px;
+		height: 10px;
+		top: 0;
+		left: 8%;
+		border-radius: 1px;
+		border: 2px solid #5a5a5a;
+		z-index: 0;
+	}
+
+	input[type='checkbox']:checked + label:before{
+		position: absolue;
+		content:'\2713';
+		color: green;
+	}
+
+	input[type='checkbox'] + label:hover{
+		cursor: pointer;
+	}
+
+}
+
+//register 2
+.register2{
+	border: none;
+
+	.register2-title{
+		width: 100%;
+		margin: 0 0 10% 0;
+		border-bottom: none;
+		border-radius: 5px 5px 0 0;
+
+		h1{
+			padding: 8% 0 8% 0;
+		}
+	}
+}
+
+.register2-title{
+	background: $primary-color;
+}
+
+
+//subscribe form
+.subscribe-container{
+	margin-top: 10%;
+
+	p{
+		font-size: 20px;
+		margin-bottom: 3%;
+	}
+}
+
+//subscribe 1
+.subscribe1{
+	position: relative;
+	width: 30%;
+	height: auto;
+	border: 1px solid $f-grey;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0 5% 0 %5;
+
+	p{
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: -5%;
+		margin-bottom: 15%;
+	}
+}
+
+.subscribe1-title{
+	position: relative;
+	width: 95%;
+	text-align: center;	
+	font-family: $font-family;
+	font-weight: bold;
+	border-bottom: 1px solid $f-grey;
+	margin: 0 2.5% 10% 2.5%;
+
+	h1{
+		width: 100%;
+	}
+
+	i{
+		color: #373a3c;
+	}
+}
+
+.subscribe1-body{
+	position: relative;
+	width: 100%;
+	margin-bottom: 10%;
+	display: inline-block;
+
+	i{	
+		position: relative;
+		font-size: 35px;
+		padding-left: 2%;
+		bottom: 10px;
+		color: #373a3c;
+	}
+
+	input{
+		width: 80%;
+		font-size: 18px;
+		font-weight: 300;
+		float: right;
+		border: none;
+		border-bottom: 1px solid $f-grey;
+		margin-right: 3%;
+		opacity: 1;
+		padding: 2% 0 2% 0;
+	}
+
+	label{
+		position: absolute;
+		top: 9%;
+  		bottom: 0;
+  		left: 18%;
+		width: 100%;
+		color: $f-grey;
+	}
+
+	input:focus{
+		outline: none;
+		border-bottom: 3px solid $f-blue;
+	}
+
+	input:focus + label{
+		color: $f-blue;
+		top: -35%;
+		font-size: 13px;
+		transition: all .3s;
+	}
+}
+
+.subscribe1-btn{
+	position: relative;
+	width: 95%;
+	text-align: center;
+	padding-bottom: 10%;
+	border-bottom: 1px solid $f-grey;
+	margin: 0 2.5% 0 2.5%;
+	border-bottom: none;
+
+	button{
+		padding: 2% 10% 3% 10%;
+		font-size: 18px;
+		border-radius: 3px;
+		background: $primary-color;
+		border: 1px solid $primary-color;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+		color: #fff;
+		font-weight: 300;
 	}
 
 	button:hover{

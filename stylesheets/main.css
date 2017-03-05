@@ -2851,7 +2851,8 @@ figure.card-back,
   .form-title h1, .form-title2 h1 {
     width: 100%; }
   .form-title i, .form-title2 i {
-    padding-right: 2%; }
+    padding-right: 2%;
+    color: #373a3c; }
 
 .form-body, .form-body2 {
   position: relative;
@@ -2861,7 +2862,8 @@ figure.card-back,
     position: relative;
     font-size: 35px;
     padding-left: 2%;
-    bottom: 10px; }
+    bottom: 10px;
+    color: #373a3c; }
   .form-body input, .form-body2 input {
     width: 80%;
     font-size: 18px;
@@ -2898,7 +2900,8 @@ figure.card-back,
     border-radius: 3px;
     background: #ee6e73;
     border: 1px solid #ee6e73;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff; }
   .form-btn button:hover {
     cursor: pointer;
     opacity: 0.9; }
@@ -2922,6 +2925,8 @@ figure.card-back,
   border-bottom: 1px solid #ee6e73;
   padding-top: 2%;
   color: #fff; }
+  .form-title2 i {
+    color: #fff; }
 
 .register-container {
   margin-top: 10%; }
@@ -2929,7 +2934,7 @@ figure.card-back,
     font-size: 20px;
     margin-bottom: 3%; }
 
-.register1 {
+.register1, .register2 {
   position: relative;
   width: 30%;
   height: auto;
@@ -2938,7 +2943,7 @@ figure.card-back,
   display: inline-block;
   margin: 0 5% 0; }
 
-.register1-title {
+.register1-title, .register2-title {
   position: relative;
   width: 95%;
   text-align: center;
@@ -2946,19 +2951,21 @@ figure.card-back,
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   margin: 0 2.5% 10% 2.5%; }
-  .register1-title i {
-    padding-right: 2%; }
+  .register1-title h1, .register2-title h1 {
+    width: 100%; }
 
-.register1-body {
+.register1-body, .register2-body {
   position: relative;
   width: 100%;
-  margin-bottom: 10%; }
-  .register1-body i {
+  margin-bottom: 10%;
+  display: inline-block; }
+  .register1-body i, .register2-body i {
     position: relative;
     font-size: 35px;
     padding-left: 2%;
-    bottom: 10px; }
-  .register1-body input {
+    bottom: 10px;
+    color: #373a3c; }
+  .register1-body input, .register2-body input {
     width: 80%;
     font-size: 18px;
     font-weight: 300;
@@ -2968,37 +2975,169 @@ figure.card-back,
     margin-right: 3%;
     opacity: 1;
     padding: 2% 0 2% 0; }
-  .register1-body label {
+  .register1-body label, .register2-body label {
     position: absolute;
     top: 9%;
     bottom: 0;
     left: 18%;
     width: 100%;
     color: #ccc; }
-  .register1-body input:focus {
+  .register1-body input:focus, .register2-body input:focus {
     outline: none;
     border-bottom: 3px solid #4285f4; }
-  .register1-body input:focus + label {
+  .register1-body input:focus + label, .register2-body input:focus + label {
     color: #4285f4;
     top: -35%;
     font-size: 13px;
     transition: all .3s; }
 
-.register1-btn {
+.register1-btn, .register2-btn {
+  position: relative;
+  width: 95%;
   text-align: center;
   padding-bottom: 10%;
-  border-bottom: 1px solid #ccc; }
-  .register1-btn button {
+  border-bottom: 1px solid #ccc;
+  margin: 0 2.5% 0 2.5%; }
+  .register1-btn button, .register2-btn button {
     padding: 2% 10% 3% 10%;
     font-size: 20px;
     border-radius: 3px;
     background: #ee6e73;
     border: 1px solid #ee6e73;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-  .register1-btn button:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff; }
+  .register1-btn button:hover, .register2-btn button:hover {
     cursor: pointer;
     opacity: 0.9; }
-  .register1-btn button:focus {
+  .register1-btn button:focus, .register2-btn button:focus {
+    outline: none; }
+
+.register1-footer, .register2-footer {
+  position: relative;
+  margin: 10% 0 10% 0;
+  text-align: center;
+  font-weight: 400; }
+  .register1-footer input[type='checkbox'] + label:before, .register2-footer input[type='checkbox'] + label:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 8%;
+    border-radius: 1px;
+    border: 2px solid #5a5a5a;
+    z-index: 0; }
+  .register1-footer input[type='checkbox']:checked + label:before, .register2-footer input[type='checkbox']:checked + label:before {
+    position: absolue;
+    content: '\2713';
+    color: green; }
+  .register1-footer input[type='checkbox'] + label:hover, .register2-footer input[type='checkbox'] + label:hover {
+    cursor: pointer; }
+
+.register2 {
+  border: none; }
+  .register2 .register2-title {
+    width: 100%;
+    margin: 0 0 10% 0;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0; }
+    .register2 .register2-title h1 {
+      padding: 8% 0 8% 0; }
+
+.register2-title {
+  background: #ee6e73; }
+
+.subscribe-container {
+  margin-top: 10%; }
+  .subscribe-container p {
+    font-size: 20px;
+    margin-bottom: 3%; }
+
+.subscribe1 {
+  position: relative;
+  width: 30%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 5% 0; }
+  .subscribe1 p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -5%;
+    margin-bottom: 15%; }
+
+.subscribe1-title {
+  position: relative;
+  width: 95%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  margin: 0 2.5% 10% 2.5%; }
+  .subscribe1-title h1 {
+    width: 100%; }
+  .subscribe1-title i {
+    color: #373a3c; }
+
+.subscribe1-body {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10%;
+  display: inline-block; }
+  .subscribe1-body i {
+    position: relative;
+    font-size: 35px;
+    padding-left: 2%;
+    bottom: 10px;
+    color: #373a3c; }
+  .subscribe1-body input {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 300;
+    float: right;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-right: 3%;
+    opacity: 1;
+    padding: 2% 0 2% 0; }
+  .subscribe1-body label {
+    position: absolute;
+    top: 9%;
+    bottom: 0;
+    left: 18%;
+    width: 100%;
+    color: #ccc; }
+  .subscribe1-body input:focus {
+    outline: none;
+    border-bottom: 3px solid #4285f4; }
+  .subscribe1-body input:focus + label {
+    color: #4285f4;
+    top: -35%;
+    font-size: 13px;
+    transition: all .3s; }
+
+.subscribe1-btn {
+  position: relative;
+  width: 95%;
+  text-align: center;
+  padding-bottom: 10%;
+  border-bottom: 1px solid #ccc;
+  margin: 0 2.5% 0 2.5%;
+  border-bottom: none; }
+  .subscribe1-btn button {
+    padding: 2% 10% 3% 10%;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #ee6e73;
+    border: 1px solid #ee6e73;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    font-weight: 300; }
+  .subscribe1-btn button:hover {
+    cursor: pointer;
+    opacity: 0.9; }
+  .subscribe1-btn button:focus {
     outline: none; }
 
 .flip-card {
