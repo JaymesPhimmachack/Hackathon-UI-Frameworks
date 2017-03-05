@@ -315,10 +315,11 @@
 }
 
 /* ------------Social buttons----------------------*/
-.social-icon::before {
-  padding-right: 0.5rem;
+.social-icon:before {
   font-size: 1.5rem;
+  color: #ffffff;
 }
+
 .btn-fb {
   background-color: #3B5998;
 }
