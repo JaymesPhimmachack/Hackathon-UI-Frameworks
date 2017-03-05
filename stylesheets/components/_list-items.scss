@@ -1,3 +1,5 @@
+/* List Items */
+
 
 input[type='checkbox']{
   display: none;
@@ -8,25 +10,23 @@ input[type='checkbox']{
    counter-reset: li-counter;
 }
 
+
 .list__item {
   list-style: none;
-  width: 90%;
-  height: 20px;
-  padding: 10px;
+  width: 300px;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #000;
  
 }
 
-.fa-chevron-circle-right {
-  display: none;
-}
 
-.fa {
+
+.fa-chevron-circle-up {
   margin-right: 10px;
   color: #3366ff;
   font-size: 24px;
    transition: transform 0.5s;
 }
-
 
 
 .num-icon:before {

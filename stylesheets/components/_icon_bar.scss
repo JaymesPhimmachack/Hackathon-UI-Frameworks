@@ -1,58 +1,61 @@
 /* Icon */
 
-.icon{
-  display: flex;
-  flex-direction: row;
-  width: 50px;
-  margin-top: 30px;
-}
 
-.icon1-item, .icon2-item {
+.icon-item--h-style{
+   background-color: #4285f4;
+  height: 50px;
+  padding: 10px 15px;
   
-  padding: 10px;
- background-color: #333;
-
 }
 
-
-.icon1-item:hover,
-.icon2-item:hover,
-.icon3:hover,
-.icon4:hover{
-  background-color: #4286f4;
-  cursor: pointer;
+.icon-item--v-style {
+   background-color: #4285f4;
+   height: 50px;
+   padding: 10px 12px;
 }
 
-.icon1-item__icon, .icon2-item__icon, .icon4__item  {
-  color: #b3d1ff;
-}
-
-
-.icon2 {
-  display: flex;
+.icon--vertical {
+   display: flex;
   flex-direction: column;
-  width: 50px;
-}
-
-.icon3 {
-  width: 50px;
-  height: 25px;
-  padding: 10px;
-  background-color: #333;
-  border-radius: 50%;
-
+    width: 50px;
 }
 
 
-.icon4 {
+.icon--horizontal {
+   display: flex;
+  flex-direction: row;
+  
+}
+
+
+.icon-item__icon{
+  color: #fff; 
+  font-size: 24px;
+  
+}
+
+.icon-item:hover {
+  background-color: #1aa3ff;
+  cursor: pointer; 
+}
+
+.icon-item--circle {
+   margin-right: 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+  background-color: #4285f4;
+}
+
+.icon-item--diamond {
+   transform: rotate(-45deg);
+    height: 45px;
    padding: 10px;
-  background-color: #333;
+   background-color: #4285f4;
+   transform: rotate(-45deg);
+    margin: 0 10px; 
+}
+
+.icon-item__icon--rotate {
   transform: rotate(45deg);
-  margin: 0 10px;
 }
-
-.icon4__item {
-  transform: rotate(-45deg);
-}
-
-
