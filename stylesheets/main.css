@@ -3635,4 +3635,11 @@ input[type='checkbox'] {
   background: #c12e2a;
   border: 1px solid #DB0000; }
 
+.content-well {
+  padding: 30px;
+  border-radius: 4px;
+  margin: .5em;
+  background: #ccc;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.6); }
+
 /*# sourceMappingURL=main.css.map */
