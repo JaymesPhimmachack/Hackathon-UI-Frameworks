@@ -3658,4 +3658,54 @@ input[type='checkbox'] {
   margin: 0 0 .5em;
   line-height: 1.5; }
 
+.table {
+  width: 100%;
+  max-width: 100%; }
+
+.table thead {
+  border-bottom: 2px solid #ccc; }
+
+.table th {
+  padding: 10px;
+  text-align: left;
+  font-weight: 700; }
+
+.table td {
+  padding: 10px; }
+
+.table-bordered {
+  border: 2px solid #ccc; }
+
+.table-bordered thead tr th,
+.table-bordered tbody tr th {
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc; }
+
+.table-bordered tbody tr td {
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #dedede; }
+
+.table-hover-rows tbody tr {
+  -webkit-transition: background .5s;
+  transition: background .5s; }
+
+.table-hover-rows tbody tr:hover {
+  background: #dedede;
+  cursor: pointer; }
+
+.table tbody tr.info {
+  background: #33b5e5; }
+
+.table tbody tr.success {
+  background: #00C851; }
+
+.table tbody tr.warning {
+  background: #eb9316; }
+
+.table tbody tr.danger {
+  background: #c12e2a; }
+
 /*# sourceMappingURL=main.css.map */
