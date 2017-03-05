@@ -1,4 +1,3 @@
-
 /**
  * Created by hiepvo on 1/24/17.
  */
@@ -6,48 +5,71 @@
   var init = {};
 
   var transitionEnd  = transitionEndEventName();
-  var btnWaveEffects = document.querySelectorAll('.waves-effect');
+  //var btnWaveEffects = document.querySelectorAll('.waves-effect--border');
+  var btnWaveEffects = document.querySelectorAll('[class*="waves-effect"]');
 
   var cleanUp = function(){
-    var spans = document.querySelectorAll('.waves-effect--show');
+    var effectShowed = document.querySelectorAll('.waves-effect--show');
     setTimeout(function(){
-      for(var i = 0; i < spans.length; i++){
-        spans[i].remove();
+      for(var i = 0; i < effectShowed.length; i++){
+        effectShowed[i].remove();
       }
     }, 500);
+  };
+
+  function getElemPos(elem){
+    // (1) Get the enclosing rectangle
+    var box     = elem.getBoundingClientRect();
+    var body    = document.body;
+    var doc = document.documentElement;
+    // (2) Calculate the page scroll.
+    // All browsers except IE<9 support `pageXOffset/pageYOffset`, and in IE when DOCTYPE is set,
+    // the scroll can be taken from documentElement(<html>), otherwise from `body` - so we take what we can.
+    var scrollTop  = window.pageYOffset || doc.scrollTop || body.scrollTop;
+    var scrollLeft = window.pageXOffset || doc.scrollLeft || body.scrollLeft;
+    // (3) The document (`html` or `body`) can be shifted from left-upper corner in IE. Get the shift.
+    var clientTop  = doc.clientTop || body.clientTop || 0;
+    var clientLeft = doc.clientLeft || body.clientLeft || 0;
+    // (4) Add scrolls to window-relative coordinates
+    // and subtract the shift of `html/body` to get coordinates in the whole document.
+    var top        = box.top + scrollTop - clientTop;
+    var left       = box.left + scrollLeft - clientLeft;
+    return {
+      top: Math.round(top),
+      left: Math.round(left)
+    };
   }
 
   var addWaveEffect = function(e){
     this.removeEventListener(transitionEnd, addWaveEffect);
-    var rect       = this.getBoundingClientRect();
+    var rect       = getElemPos(this);
     var span       = document.createElement('span');
-    span.className = 'waves-effect__span';
+    if(this.className.indexOf('ring') != -1){
+      span.className = 'waves-effect--ring';
+    }
+    else if(this.className.indexOf('fill') != -1)
+      span.className = 'waves-effect--fill';
+    else
+      return;
 
     this.appendChild(span);
-    var posX         = this.offsetLeft,
-        posY         = this.offsetTop,
-        buttonWidth  = this.offsetWidth,
-        buttonHeight = this.offsetHeight;
+    var posX         = rect.left,
+        posY         = rect.top,
+        size  = this.offsetWidth;
 
-    //make it round
-    if(buttonWidth >= buttonHeight){
-      buttonHeight = buttonWidth;
-    } else{
-      buttonWidth = buttonHeight;
-    }
+    span.style.height = size + 'px';
+    span.style.width  = size + 'px';
 
-    span.style.height = buttonHeight + 'px';
-    span.style.width  = buttonWidth + 'px';
-
-    var top  = e.pageY - posY - buttonHeight / 2;
-    var left = e.pageX - posX - buttonWidth / 2;
+    var top  = e.pageY - posY - size / 2;
+    var left = e.pageX - posX - size / 2;
 
     span.style.top  = top + 'px';
     span.style.left = left + 'px';
 
+
     addClass(span, 'waves-effect--show');
     cleanUp();
-  }
+  };
 
   for(var i = 0; i < btnWaveEffects.length; i++){
     btnWaveEffects[i].addEventListener('click', addWaveEffect, false);

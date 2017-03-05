@@ -34,6 +34,7 @@
 .cart-wrapper__description h5 {
   font-size: 2rem;
   margin: 0;
+  padding-bottom: 1rem;
 }
 
 .cart-wrapper__description p {
@@ -44,6 +45,7 @@
 .cart-wrapper__color {
   margin-right: 0;
   width: 6rem;
+  text-align: center;
 }
 
 .cart-wrapper__quantity {
@@ -59,7 +61,7 @@
   font-weight: 300;
 }
 
-.cart-wrapper__plus-btn, .cart-wrapper__minus-btn {
+.cart-wrapper__plus-btn, .cart-wrapper__minus-btn, .cart-wrapper__clear-btn  {
   width: 3rem;
   height: 3rem;
   background-color: #4285f4;
@@ -73,18 +75,24 @@
   transition: background-color 0.2s ease-out 0s, box-shadow 0.2s ease-out 0s;
 }
 
-.cart-wrapper__plus-btn:hover, .cart-wrapper__minus-btn:hover {
+.cart-wrapper__plus-btn:hover, .cart-wrapper__minus-btn:hover, .cart-wrapper__clear-btn  {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.cart-wrapper__minus-btn img {
-  margin-bottom: 3px;
+.cart-wrapper__plus-btn {
+  background-image: url("../images/add.png");
+  background-size: cover;
 }
 
-.cart-wrapper__plus-btn img {
-  margin-top: 2px;
+.cart-wrapper__minus-btn {
+  background-image: url("../images/minus.png");
+  background-size: cover;
 }
 
+.cart-wrapper__clear-btn {
+  background-image: url("../images/clear_2x.png");
+  background-size: cover;
+}
 .cart-wrapper__total-price {
   float: right;
   font-weight: bold;
@@ -163,7 +171,7 @@
 }
 
 .cart-wrapper__cart th {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .cart-wrapper__cart td, .cart-wrapper__cart th {
@@ -171,6 +179,7 @@
   padding-top: 2rem;
   padding-left: 1rem;
   text-align: left;
+  vertical-align: middle;
 }
 
 

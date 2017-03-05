@@ -1,5 +1,7 @@
 $f-grey: #ccc;
 $f-blue: #4285f4;
+$f-blue: #4285f4;;
+$full-w: 100%;
 
 .form-container1, .form-container2{
 	position: relative;
@@ -19,6 +21,10 @@ $f-blue: #4285f4;
 	font-weight: bold;
 	border-bottom: 1px solid $f-grey;
 	margin: 0 2.5% 10% 2.5%;
+
+	h1{
+		width: $full-w;
+	}	
 
 	i{
 		padding-right: 2%;
