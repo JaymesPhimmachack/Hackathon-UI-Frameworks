@@ -312,17 +312,15 @@ html {
 body {
   font-size: 1.6em; }
 
-nav a {
+.nav-link {
   display: block;
   margin: 1.6em 0;
-  padding-left: 30px; }
+  padding-left: 30px;
+  text-decoration: none; }
 
 .section-content {
   margin: 0 0 30px;
   font-weight: 300; }
-
-a {
-  text-decoration: none; }
 
 section {
   position: relative; }
@@ -3249,13 +3247,11 @@ input[id^="toggle"] {
   display: none; }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   width: 90%;
-  height: 30px;
+  height: 40px;
   background-color: #4286f4;
-  padding: 10px; }
+  padding: 10px;
+  margin: .5em; }
 
 .navbar--left {
   display: flex;
@@ -3269,13 +3265,15 @@ input[id^="toggle"] {
 
 .navbar__title {
   margin-left: 20px;
-  color: #fff; }
+  color: #fff;
+  margin: 0;
+  padding: 0; }
 
 .navbar-list-sublist {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 160px;
+  width: 240px;
+  height: 170px;
   background-color: #fff;
   border: 1px solid black;
   padding: 10px;
@@ -3283,7 +3281,8 @@ input[id^="toggle"] {
   top: 10px;
   left: 70%;
   color: #8c8c8c;
-  display: none; }
+  display: none;
+  z-index: 5; }
 
 .navbar-list__item {
   color: #fff; }
@@ -3294,7 +3293,7 @@ input[id^="toggle"] {
 .navbar-list--right {
   position: relative;
   top: 0;
-  left: 65%; }
+  left: 38%; }
 
 .navbar-list-sublist__item:hover {
   background-color: #4286f4;
