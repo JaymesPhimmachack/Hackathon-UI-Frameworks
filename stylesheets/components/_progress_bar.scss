@@ -10,36 +10,37 @@
 
 .progress {
   width: 100%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px;
   background-color: #eee;
   margin: 5px;
+  overflow: hidden;
 }
 
 .progress__item--25-prog{
   width: 25%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #80bfff
 }
 
 .progress__item--50-prog{
   width: 50%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #80bfff;
 }
 
 .progress__item--75-prog{
   width: 75%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #80bfff
 }
 
 .progress__item--100-prog{
   width: 100%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px;
   background-color: #80bfff;
 }
@@ -48,21 +49,21 @@
 
 .progress__item--25-prog-qtr-color{
   width: 25%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #00ff00;
 }
 
 .progress__item--50-prog-half-color{
   width: 50%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #0080ff;
 }
 
 .progress__item--75-prog-three-qtr-color{
   width: 75%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px 0 0 5px;
   background-color: #ffbf00;
 }
@@ -70,7 +71,7 @@
 
 .progress__item--100-prog-full-color{
   width: 100%;
-  height: 5px;
+  height: 8px;
   border-radius: 5px;
   background-color: #ff0000;
 }
@@ -85,7 +86,7 @@
   position: relative;
   background-color: #0080ff;
   animation: progress 5s infinite;
-  -webkit-animation: progress 1.5s ease infinite; 
+  -webkit-animation: progress 1.7s linear infinite; 
 }
 
 
