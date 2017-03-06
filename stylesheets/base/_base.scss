@@ -56,16 +56,22 @@ section{
   margin: 0 auto;
 
   .list-group .list-group-item{
-    padding-bottom: 2rem;
+    padding-bottom: 2rem;   
     
-    img{
-      float: left;
-      margin-right: 1rem;
-    }
   }
 }
 
 #sidebar {
   
   background: #F3F5F8;
+}
+
+#drop-dot--example{
+  margin-bottom: 30rem;
+  margin-left: 10rem;
+  text-align: center;
+
+  .drop-dot{
+    margin: 0 auto;
+  }
 }
