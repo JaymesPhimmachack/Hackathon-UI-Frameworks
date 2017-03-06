@@ -12,6 +12,11 @@
     border: 1px solid $list-group__bg--gray;
     transition: all 0.25s;
 
+    > img{
+      float: left;
+      margin-right: 10px;
+    }
+
     &:first-child{
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;

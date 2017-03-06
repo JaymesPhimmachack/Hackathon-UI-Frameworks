@@ -23,22 +23,22 @@
 
 // Create our list of columns (grid__col1 - grid__col12) along with matching offset columns
 @for $i from 1 through 12 {
-   
-   .grid__col#{$i}{
-      width: $i * 8.333%;
-      float: left;
-      padding: 10px;
-      margin: 0 10px;
-      opacity: 0.7;
+  .grid__col#{$i}{
+    position: relative;     
+    width: $i * 8.333%;
+    float: left;
+    padding: 10px;
+    margin: 0 10px;
+    opacity: 0.7;
 
-      &:first-child{
-        margin-left: 0;
-      }
+    &:first-child{
+      margin-left: 0;
+    }
 
-      &:last-child{
-        margin-right: 0;
-      }
-   }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 
     .grid__offset-by-#{$i}{
       margin-left: $i * 8.333%;
