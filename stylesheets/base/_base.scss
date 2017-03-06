@@ -13,10 +13,11 @@ body {
   font-size: 1.6em;
 }
 
-nav a {
+.nav-link {
   display: block;
   margin: 1.6em 0;
   padding-left: 30px;
+  text-decoration: none;
 }
 
 .section-content {
@@ -24,9 +25,6 @@ nav a {
   font-weight: 300;
 }
 
-a{
-  text-decoration: none;
-}
 
 section{
   position: relative;
