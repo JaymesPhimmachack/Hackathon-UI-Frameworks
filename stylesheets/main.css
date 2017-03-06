@@ -3240,34 +3240,26 @@ input[class^="modal"] {
   100% {
     top: 0;
     left: 100%; } }
-.navbar-wrap {
-  margin: 100px 0; }
-
-input[id^="toggle"] {
-  display: none; }
-
+/* Nav Bar */
 .navbar {
-  width: 90%;
-  height: 40px;
-  background-color: #4286f4;
-  padding: 10px;
-  margin: .5em; }
-
-.navbar--left {
   display: flex;
   flex-direction: row;
+  height: 30px;
+  background-color: #4286f4;
+  padding-top: 6px; }
+
+.navbar--left {
   justify-content: flex-start; }
 
 .navbar--right {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end; }
 
 .navbar__title {
   margin-left: 20px;
-  color: #fff;
-  margin: 0;
-  padding: 0; }
+  color: #fff; }
+
+.navbar-list {
+  width: 500px; }
 
 .navbar-list-sublist {
   display: flex;
@@ -3282,7 +3274,7 @@ input[id^="toggle"] {
   left: 70%;
   color: #8c8c8c;
   display: none;
-  z-index: 5; }
+  z-index: 5p; }
 
 .navbar-list__item {
   color: #fff; }
@@ -3290,10 +3282,8 @@ input[id^="toggle"] {
 .navbar-list__item, .navbar-list-sublist__item {
   padding: 15px; }
 
-.navbar-list--right {
-  position: relative;
-  top: 0;
-  left: 38%; }
+.navbar__title--size {
+  flex-grow: 3; }
 
 .navbar-list-sublist__item:hover {
   background-color: #4286f4;
@@ -3307,13 +3297,14 @@ input[id^="toggle"] {
   height: 30px;
   padding: 5px;
   font-size: 16px;
-  position: relative;
-  top: 0;
-  left: 45%;
   background-color: #4286f4;
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff; }
+
+.search-wrap {
+  flex-grow: 3;
+  padding-left: 388px; }
 
 #toggle-dropdown1:checked + .navbar-list-sublist,
 #toggle-dropdown2:checked + .navbar-list-sublist {
