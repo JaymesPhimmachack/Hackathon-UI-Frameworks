@@ -3318,7 +3318,7 @@ input[class^="modal"] {
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 30px;
+  height: 40px;
   background-color: #4286f4;
   padding-top: 6px; }
 
@@ -3329,11 +3329,15 @@ input[class^="modal"] {
   justify-content: flex-end; }
 
 .navbar__title {
-  margin-left: 20px;
+  margin: 5px 20px 0 20px;
   color: #fff; }
 
 .navbar-list {
-  width: 500px; }
+  width: 450px;
+  margin-top: 5px; }
+
+.navbar-list--size-adjust {
+  width: 420px; }
 
 .navbar-list-sublist {
   display: flex;
@@ -3345,10 +3349,10 @@ input[class^="modal"] {
   padding: 10px;
   position: relative;
   top: 10px;
-  left: 70%;
+  left: 43%;
   color: #8c8c8c;
   display: none;
-  z-index: 5p; }
+  z-index: 5; }
 
 .navbar-list__item {
   color: #fff; }
@@ -3374,11 +3378,12 @@ input[class^="modal"] {
   background-color: #4286f4;
   border: none;
   border-bottom: 1px solid #fff;
-  color: #fff; }
+  color: #fff;
+  float: right;
+  margin-right: 40px; }
 
 .search-wrap {
-  flex-grow: 3;
-  padding-left: 388px; }
+  flex-grow: 3; }
 
 #toggle-dropdown1:checked + .navbar-list-sublist,
 #toggle-dropdown2:checked + .navbar-list-sublist {
@@ -4177,3 +4182,5 @@ input[type='checkbox'] {
 
 .table tbody tr.danger {
   background: #c12e2a; }
+
+/*# sourceMappingURL=main.css.map */
