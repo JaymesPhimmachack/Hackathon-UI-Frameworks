@@ -4183,4 +4183,109 @@ input[type='checkbox'] {
 .table tbody tr.danger {
   background: #c12e2a; }
 
+/* Innovative Accordian */
+.card-wrap {
+  perspective: 1000px;
+  margin: 50px; }
+
+input[name="card"] {
+  display: none; }
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 30px;
+  margin: 70px;
+  transition: transform 2s; }
+
+.card span {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 2s; }
+
+.front {
+  width: 550px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  color: #777;
+  background-color: #fafafa; }
+
+.front:hover {
+  background-color: #d1edf5; }
+
+.bottom {
+  transform: rotateX(-100deg);
+  width: 550px;
+  height: 350px;
+  display: block; }
+
+#img1 {
+  background-image: url("http://res.cloudinary.com/dcuvoemqb/image/upload/v1488845132/UI%20Accordian/beach-1836050_640.jpg");
+  background-size: cover; }
+
+#img2 {
+  background-image: url("http://res.cloudinary.com/dcuvoemqb/image/upload/v1488845132/UI%20Accordian/greece-1776226_640.jpg");
+  background-size: cover; }
+
+#img3 {
+  background-image: url("http://res.cloudinary.com/dcuvoemqb/image/upload/v1488845132/UI%20Accordian/beach-1209726_640.jpg");
+  background-size: cover; }
+
+#img4 {
+  background-image: url("http://res.cloudinary.com/dcuvoemqb/image/upload/v1488845132/UI%20Accordian/passion-fruit-daiquiri-906099_640.jpg");
+  background-size: cover; }
+
+#c1:checked ~ #card1.front, #c2:checked ~ #card2.front, #c3:checked ~ #card3.front {
+  transform: rotateX(100deg); }
+
+#c4:checked ~ #card4.front {
+  transform: rotateX(110deg); }
+
+#c1:checked ~ #card1.bottom, #c2:checked ~ #card2.bottom, #c3:checked ~ #card3.bottom, #c4:checked ~ #card4.bottom {
+  transform: translateY(-7px); }
+
+/* Card 1 */
+#c1:checked ~ #card2 {
+  transform: translateY(244px); }
+
+#c1:checked ~ #card3 {
+  transform: translateY(185px); }
+
+#c1:checked ~ #card4 {
+  transform: translateY(126px); }
+
+/* Card 2 */
+#c2:checked ~ #card2 {
+  transform: translateY(-52px); }
+
+#c2:checked ~ #card3 {
+  transform: translateY(193px); }
+
+#c2:checked ~ #card4 {
+  transform: translateY(134px); }
+
+/* Card 3 */
+#c3:checked ~ #card2 {
+  transform: translateY(-59px); }
+
+#c3:checked ~ #card3 {
+  transform: translateY(-110px); }
+
+#c3:checked ~ #card4 {
+  transform: translateY(134px); }
+
+/* Card 4 */
+#c4:checked ~ #card2 {
+  transform: translateY(-59px); }
+
+#c4:checked ~ #card3 {
+  transform: translateY(-118px); }
+
+#c4:checked ~ #card4 {
+  transform: translateY(-170px); }
+
 /*# sourceMappingURL=main.css.map */
