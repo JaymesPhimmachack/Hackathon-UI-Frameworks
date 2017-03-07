@@ -4421,7 +4421,7 @@ input[type='checkbox'] {
 /* Innovative Accordian */
 .inno-acc-wrap {
   perspective: 1000px;
-  margin: 50px; }
+  margin: 30px 20px 200px 50px; }
 
 input[name="inno-acc-ctrl"] {
   display: none; }
@@ -4442,7 +4442,7 @@ input[name="inno-acc-ctrl"] {
 
 .front {
   width: 550px;
-  height: 30px;
+  height: 40px;
   display: block;
   text-align: center;
   padding-top: 10px;
