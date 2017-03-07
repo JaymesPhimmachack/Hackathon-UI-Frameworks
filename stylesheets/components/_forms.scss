@@ -62,7 +62,7 @@ $full-w: 100%;
 		top: 9%;
   		bottom: 0;
   		left: 18%;
-		width: 100%;
+		width: 80%;
 		color: $f-grey;
 	}
 
@@ -125,8 +125,9 @@ $full-w: 100%;
 
 .form-title2{
 	background: $primary-color;
+	background: linear-gradient(to bottom, $primary-color, #fff);
 	border-radius: 5px 5px 0 0;
-	border-bottom: 1px solid $primary-color;
+	border-bottom: 1px solid #fff;
 	padding-top: 2%;
 	color: #fff;
 
@@ -201,7 +202,7 @@ $full-w: 100%;
 		top: 9%;
   		bottom: 0;
   		left: 18%;
-		width: 100%;
+		width: 80%;
 		color: $f-grey;
 	}
 
@@ -281,6 +282,8 @@ $full-w: 100%;
 	border: none;
 
 	.register2-title{
+		background: $primary-color;
+		background: linear-gradient(to bottom, $primary-color, #fff);
 		width: 100%;
 		margin: 0 0 10% 0;
 		border-bottom: none;
@@ -288,14 +291,11 @@ $full-w: 100%;
 
 		h1{
 			padding: 8% 0 8% 0;
+			color: #fff;
 		}
+
 	}
 }
-
-.register2-title{
-	background: $primary-color;
-}
-
 
 //subscribe form
 .subscribe-container{
@@ -308,7 +308,7 @@ $full-w: 100%;
 }
 
 //subscribe 1
-.subscribe1{
+.subscribe1, .subscribe2{
 	position: relative;
 	width: 30%;
 	height: auto;
@@ -325,7 +325,7 @@ $full-w: 100%;
 	}
 }
 
-.subscribe1-title{
+.subscribe1-title, .subscribe2-title{
 	position: relative;
 	width: 95%;
 	text-align: center;	
@@ -343,10 +343,10 @@ $full-w: 100%;
 	}
 }
 
-.subscribe1-body{
+.subscribe1-body, .subscribe2-body{
 	position: relative;
 	width: 100%;
-	margin-bottom: 10%;
+	margin-bottom: 13%;
 	display: inline-block;
 
 	i{	
@@ -374,7 +374,7 @@ $full-w: 100%;
 		top: 9%;
   		bottom: 0;
   		left: 18%;
-		width: 100%;
+		width: 80%;
 		color: $f-grey;
 	}
 
@@ -387,11 +387,11 @@ $full-w: 100%;
 		color: $f-blue;
 		top: -35%;
 		font-size: 13px;
-		transition: all .3s;
+		transition: all .2s;
 	}
 }
 
-.subscribe1-btn{
+.subscribe1-btn, .subscribe2-btn{
 	position: relative;
 	width: 95%;
 	text-align: center;
@@ -418,5 +418,26 @@ $full-w: 100%;
 
 	button:focus{
 		outline: none;
+	}
+}
+
+.subscribe2{
+	border: none;
+
+	.subscribe2-title{
+		background: $primary-color;
+		background: linear-gradient(to bottom, $primary-color, #fff);
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		border-radius: 5px 5px 0 0;
+
+		h1{
+			padding: 8% 0 0 0;
+			color: #fff;
+		}
+
+		i{
+			color: #fff;
+		}
 	}
 }

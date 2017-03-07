@@ -2879,7 +2879,7 @@ figure.card-back,
     top: 9%;
     bottom: 0;
     left: 18%;
-    width: 100%;
+    width: 80%;
     color: #ccc; }
   .form-body input:focus, .form-body2 input:focus {
     outline: none;
@@ -2921,8 +2921,9 @@ figure.card-back,
 
 .form-title2 {
   background: #ee6e73;
+  background: linear-gradient(to bottom, #ee6e73, #fff);
   border-radius: 5px 5px 0 0;
-  border-bottom: 1px solid #ee6e73;
+  border-bottom: 1px solid #fff;
   padding-top: 2%;
   color: #fff; }
   .form-title2 i {
@@ -2980,7 +2981,7 @@ figure.card-back,
     top: 9%;
     bottom: 0;
     left: 18%;
-    width: 100%;
+    width: 80%;
     color: #ccc; }
   .register1-body input:focus, .register2-body input:focus {
     outline: none;
@@ -3037,15 +3038,15 @@ figure.card-back,
 .register2 {
   border: none; }
   .register2 .register2-title {
+    background: #ee6e73;
+    background: linear-gradient(to bottom, #ee6e73, #fff);
     width: 100%;
     margin: 0 0 10% 0;
     border-bottom: none;
     border-radius: 5px 5px 0 0; }
     .register2 .register2-title h1 {
-      padding: 8% 0 8% 0; }
-
-.register2-title {
-  background: #ee6e73; }
+      padding: 8% 0 8% 0;
+      color: #fff; }
 
 .subscribe-container {
   margin-top: 10%; }
@@ -3053,7 +3054,7 @@ figure.card-back,
     font-size: 20px;
     margin-bottom: 3%; }
 
-.subscribe1 {
+.subscribe1, .subscribe2 {
   position: relative;
   width: 30%;
   height: auto;
@@ -3061,13 +3062,13 @@ figure.card-back,
   border-radius: 4px;
   display: inline-block;
   margin: 0 5% 0; }
-  .subscribe1 p {
+  .subscribe1 p, .subscribe2 p {
     font-size: 1.5rem;
     text-align: center;
     margin-top: -5%;
     margin-bottom: 15%; }
 
-.subscribe1-title {
+.subscribe1-title, .subscribe2-title {
   position: relative;
   width: 95%;
   text-align: center;
@@ -3075,23 +3076,23 @@ figure.card-back,
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   margin: 0 2.5% 10% 2.5%; }
-  .subscribe1-title h1 {
+  .subscribe1-title h1, .subscribe2-title h1 {
     width: 100%; }
-  .subscribe1-title i {
+  .subscribe1-title i, .subscribe2-title i {
     color: #373a3c; }
 
-.subscribe1-body {
+.subscribe1-body, .subscribe2-body {
   position: relative;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 13%;
   display: inline-block; }
-  .subscribe1-body i {
+  .subscribe1-body i, .subscribe2-body i {
     position: relative;
     font-size: 35px;
     padding-left: 2%;
     bottom: 10px;
     color: #373a3c; }
-  .subscribe1-body input {
+  .subscribe1-body input, .subscribe2-body input {
     width: 80%;
     font-size: 18px;
     font-weight: 300;
@@ -3101,23 +3102,23 @@ figure.card-back,
     margin-right: 3%;
     opacity: 1;
     padding: 2% 0 2% 0; }
-  .subscribe1-body label {
+  .subscribe1-body label, .subscribe2-body label {
     position: absolute;
     top: 9%;
     bottom: 0;
     left: 18%;
-    width: 100%;
+    width: 80%;
     color: #ccc; }
-  .subscribe1-body input:focus {
+  .subscribe1-body input:focus, .subscribe2-body input:focus {
     outline: none;
     border-bottom: 3px solid #4285f4; }
-  .subscribe1-body input:focus + label {
+  .subscribe1-body input:focus + label, .subscribe2-body input:focus + label {
     color: #4285f4;
     top: -35%;
     font-size: 13px;
-    transition: all .3s; }
+    transition: all .2s; }
 
-.subscribe1-btn {
+.subscribe1-btn, .subscribe2-btn {
   position: relative;
   width: 95%;
   text-align: center;
@@ -3125,7 +3126,7 @@ figure.card-back,
   border-bottom: 1px solid #ccc;
   margin: 0 2.5% 0 2.5%;
   border-bottom: none; }
-  .subscribe1-btn button {
+  .subscribe1-btn button, .subscribe2-btn button {
     padding: 2% 10% 3% 10%;
     font-size: 18px;
     border-radius: 3px;
@@ -3134,11 +3135,25 @@ figure.card-back,
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
     font-weight: 300; }
-  .subscribe1-btn button:hover {
+  .subscribe1-btn button:hover, .subscribe2-btn button:hover {
     cursor: pointer;
     opacity: 0.9; }
-  .subscribe1-btn button:focus {
+  .subscribe1-btn button:focus, .subscribe2-btn button:focus {
     outline: none; }
+
+.subscribe2 {
+  border: none; }
+  .subscribe2 .subscribe2-title {
+    background: #ee6e73;
+    background: linear-gradient(to bottom, #ee6e73, #fff);
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    border-radius: 5px 5px 0 0; }
+    .subscribe2 .subscribe2-title h1 {
+      padding: 8% 0 0 0;
+      color: #fff; }
+    .subscribe2 .subscribe2-title i {
+      color: #fff; }
 
 .flip-card {
   padding: 1em;
