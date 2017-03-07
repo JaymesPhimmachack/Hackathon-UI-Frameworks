@@ -3914,9 +3914,10 @@ input[type='checkbox'] {
       .drop-dot__list li:hover {
         background: #72B0D9; }
 
+/* Innovative button */
 .innovative-button-container {
   position: relative;
-  top: 150px; }
+  margin: 150px auto; }
 
 .button-lights-shadow {
   width: 400px;
@@ -4133,6 +4134,7 @@ input[type='checkbox'] {
 #buttonOh:hover {
   opacity: 1; }
 
+/* Innovative button end */
 .table {
   width: 100%;
   max-width: 100%; }
