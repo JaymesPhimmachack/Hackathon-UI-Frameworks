@@ -4184,14 +4184,14 @@ input[type='checkbox'] {
   background: #c12e2a; }
 
 /* Innovative Accordian */
-.card-wrap {
+.inno-acc-wrap {
   perspective: 1000px;
   margin: 50px; }
 
-input[name="card"] {
+input[name="inno-acc-ctrl"] {
   display: none; }
 
-.card {
+.inno-acc {
   position: relative;
   transform-style: preserve-3d;
   width: 200px;
@@ -4199,7 +4199,7 @@ input[name="card"] {
   margin: 70px;
   transition: transform 2s; }
 
-.card span {
+.inno-acc span {
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -4211,8 +4211,8 @@ input[name="card"] {
   display: block;
   text-align: center;
   padding-top: 10px;
-  color: #777;
-  background-color: #fafafa; }
+  color: #333;
+  background-color: #d9d9d9; }
 
 .front:hover {
   background-color: #d1edf5; }
@@ -4239,53 +4239,53 @@ input[name="card"] {
   background-image: url("http://res.cloudinary.com/dcuvoemqb/image/upload/v1488845132/UI%20Accordian/passion-fruit-daiquiri-906099_640.jpg");
   background-size: cover; }
 
-#c1:checked ~ #card1.front, #c2:checked ~ #card2.front, #c3:checked ~ #card3.front {
+#c1:checked ~ #inno-acc-tab1 .front, #c2:checked ~ #inno-acc-tab2 .front, #c3:checked ~ #inno-acc-tab3 .front {
   transform: rotateX(100deg); }
 
-#c4:checked ~ #card4.front {
+#c4:checked ~ #inno-acc-tab4 .front {
   transform: rotateX(110deg); }
 
-#c1:checked ~ #card1.bottom, #c2:checked ~ #card2.bottom, #c3:checked ~ #card3.bottom, #c4:checked ~ #card4.bottom {
+#c1:checked ~ #inno-acc-tab1 .bottom, #c2:checked ~ #inno-acc-tab2 .bottom, #c3:checked ~ #inno-acc-tab3 .bottom, #c4:checked ~ #inno-acc-tab4 .bottom {
   transform: translateY(-7px); }
 
-/* Card 1 */
-#c1:checked ~ #card2 {
+/* Tab 1 */
+#c1:checked ~ #inno-acc-tab2 {
   transform: translateY(244px); }
 
-#c1:checked ~ #card3 {
+#c1:checked ~ #inno-acc-tab3 {
   transform: translateY(185px); }
 
-#c1:checked ~ #card4 {
+#c1:checked ~ #inno-acc-tab4 {
   transform: translateY(126px); }
 
-/* Card 2 */
-#c2:checked ~ #card2 {
+/* Tab 2 */
+#c2:checked ~ #inno-acc-tab2 {
   transform: translateY(-52px); }
 
-#c2:checked ~ #card3 {
+#c2:checked ~ #inno-acc-tab3 {
   transform: translateY(193px); }
 
-#c2:checked ~ #card4 {
+#c2:checked ~ #inno-acc-tab4 {
   transform: translateY(134px); }
 
-/* Card 3 */
-#c3:checked ~ #card2 {
+/* Tab 3 */
+#c3:checked ~ #inno-acc-tab2 {
   transform: translateY(-59px); }
 
-#c3:checked ~ #card3 {
+#c3:checked ~ #inno-acc-tab3 {
   transform: translateY(-110px); }
 
-#c3:checked ~ #card4 {
+#c3:checked ~ #inno-acc-tab4 {
   transform: translateY(134px); }
 
-/* Card 4 */
-#c4:checked ~ #card2 {
+/* Tab 4 */
+#c4:checked ~ #inno-acc-tab2 {
   transform: translateY(-59px); }
 
-#c4:checked ~ #card3 {
+#c4:checked ~ #inno-acc-tab3 {
   transform: translateY(-118px); }
 
-#c4:checked ~ #card4 {
+#c4:checked ~ #inno-acc-tab4 {
   transform: translateY(-170px); }
 
 /*# sourceMappingURL=main.css.map */
