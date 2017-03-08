@@ -1,0 +1,69 @@
+.btn-tooltip{
+	overflow: visible;
+}
+.btn-tooltip span{
+  display: block;
+  opacity: 0;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  background: transparent;
+  color: transparent;
+  text-transform: none;
+  top: 0;
+  right: 0;
+  font-size: .001em;
+  -webkit-transition: opacity .5s, background .5s, width .5s,height .5s,font-size .5s;
+  transition: opacity .5s, background .5s, width .5s,height .5s,font-size .5s;
+}
+
+.btn-tooltip span:hover{
+	width: 100%;
+	height: inherit;
+	padding: 1em;
+	overflow: auto;
+	color: #fff;
+	z-index: 20;
+	opacity: 1;
+	background: #2BBBAD;
+	font-size: .8em;
+	border-radius: 0 0 4px 4px;
+}
+
+.btn-tooltip:before{
+	font-family: FontAwesome;
+	content: "\f129";
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
+}
+
+.btn-primary.btn-tooltip span {
+	background: #5A95F5;
+}
+
+.btn-default.btn-tooltip span {
+	background: #2EC8B9;
+}
+
+.btn-secondary.btn-tooltip span {
+	background: #B579D2;
+}
+
+.btn-success.btn-tooltip span {
+	background: #00D255;
+}
+
+.btn-info.btn-tooltip span {
+	background: #49BDE8;
+}
+
+.btn-warning.btn-tooltip span {
+	background: #FF961F;
+}
+
+.btn-danger.btn-tooltip span {
+	background: #DB0000;
+}
