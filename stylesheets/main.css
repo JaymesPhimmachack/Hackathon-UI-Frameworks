@@ -2030,7 +2030,7 @@ section.tab-content {
   margin-right: 50px;
   margin-top: 10px; }
 
-.tab-btn-read-more {
+.tab-btn-read-music {
   margin-left: 0px;
   background: #0EBFE9;
   font-size: 12px;
@@ -2042,7 +2042,7 @@ section.tab-content {
   text-transform: uppercase;
   border: 3px solid #72bcd4; }
 
-.tab-btn-read-more a {
+.tab-btn-read-music a {
   color: #fff; }
 
 .card-container {
@@ -4656,11 +4656,8 @@ input[name="inno-acc-ctrl"] {
   margin-top: 2px;
   margin-right: -3px; }
 
-.fa, .whiteColor {
+.rainbow-icon, .whiteColor {
   color: white; }
-
-i {
-  color: #555; }
 
 .rainbow-leftcontact {
   width: 49.5%;
