@@ -423,9 +423,9 @@ button .badge, button .badge--square {
   text-align: center; }
 
 .half {
-  float: left;
   width: 50%;
-  padding: 0 1em; }
+  padding: 0 1em;
+  margin: 5% auto; }
 
 .accordion-panel {
   position: relative;
