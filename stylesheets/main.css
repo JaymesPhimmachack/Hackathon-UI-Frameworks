@@ -412,7 +412,7 @@ a .badge, a .badge--square {
 button .badge, button .badge--square {
   font-size: 0.9rem; }
 
-/* Container */
+/* Accordion */
 .accordion {
   color: #2c3e50;
   background: #ecf0f1;
@@ -1956,7 +1956,8 @@ input#modal-cart--toggle:checked ~ .overlay-hugeinc {
 .tab-container {
   font: 14px/1  'Open Sans', sans-serif;
   color: #555;
-  background: #eee; }
+  background: #eee;
+  margin: 0 auto; }
 
 .tab-h1 {
   padding: 50px 0;
@@ -4751,33 +4752,4 @@ i {
 .btn-danger.btn-tooltip span {
   background: #DB0000; }
 
-.scrollspy {
-  display: flex; }
-  .scrollspy__topNav {
-    position: relative;
-    top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background: white; }
-    .scrollspy__topNav a {
-      text-decoration: none;
-      color: blue; }
-    .scrollspy__topNav ul {
-      margin: 10px 0 30px; }
-      .scrollspy__topNav ul li {
-        padding: 5px 20px;
-        display: inline-block;
-        transition: all 0.5s; }
-        .scrollspy__topNav ul li:hover {
-          text-decoration: underline; }
-  .scrollspy__page-content {
-    width: 960px;
-    margin: 0 auto;
-    padding-top: 2rem; }
-    .scrollspy__page-content div {
-      padding-bottom: 5rem;
-      border: 1px solid black; }
-
-.spied {
-  background: #ee6e73; }
+/*# sourceMappingURL=main.css.map */
