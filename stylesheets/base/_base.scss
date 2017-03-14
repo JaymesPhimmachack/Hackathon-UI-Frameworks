@@ -23,7 +23,10 @@ body {
     &:active{
       color: $link-active-color;
     }
+  }
 
+  #page-header{
+    align-items: center;
   }
 }
 
