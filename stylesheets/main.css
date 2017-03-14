@@ -340,6 +340,8 @@ body {
       color: #5f544e; }
     body a:active, body a:visited:active {
       color: #38251a; }
+  body #page-header {
+    align-items: center; }
 
 .grid-example .grid__col--primary-bg {
   background: #ee6e73; }
