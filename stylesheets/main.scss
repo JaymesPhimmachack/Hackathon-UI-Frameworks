@@ -4,6 +4,7 @@
 @import 'layout/_grid.scss';
 @import 'base/_base.scss';
 @import 'base/_header.scss';
+@import 'base/prism.css';
 
 //Place elements below
 @import 'components/_badge.scss';
@@ -60,3 +61,4 @@
 @import 'components/_innovative_rainbow_form.scss';
 @import 'components/_tooltip_button.scss';
 @import 'components/_scrollspy.scss';
+@import 'components/_code-reveal.scss';
