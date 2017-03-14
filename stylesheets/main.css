@@ -1537,6 +1537,7 @@ button .badge, button .badge--square {
   display: inline-block;
   font-weight: bold;
   text-align: center;
+  margin-right: -4px;
   background-color: #55ACEE;
   color: #FFFFFF;
   width: 15rem;
@@ -4819,3 +4820,5 @@ input[name="inno-acc-ctrl"] {
 </div>
 
 */
+
+/*# sourceMappingURL=main.css.map */
