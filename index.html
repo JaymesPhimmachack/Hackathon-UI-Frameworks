@@ -497,17 +497,41 @@
                 </section>
                 <!-- End Accordion -->
                 <hr>
-                <section class="" id="badges">
+                <section class="badge-example" id="badges">
                     <h2>Badges </h2>
                     <article class="section-content">
                         <h3>Basic Badge</h3>
                         <a href="#!">Inbox <span class = "badge">42</span></a>
                         <a href="#!">Inbox <span class = "badge">4223</span></a>
                         <a href="#!">Inbox <span class = "badge">1</span></a>
+                        <div class="code-reveal">
+                            <input  id="cr__basic-badge" type="checkbox">
+                            <label for="cr__basic-badge" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre><code class="language-html">
+&lt;a href="#!">Inbox 
+    &lt;span class = "badge">42&lt;/span>
+&lt;/a>                                
+                                </code></pre>
+                            </div>
+                        </div>
                         <h3>Basic Badge --square</h3>
                         <a href="#!">Inbox <span class = "badge--square">42</span></a>
                         <a href="#!">Inbox <span class = "badge--square">4223</span></a>
                         <a href="#!">Inbox <span class = "badge--square">1</span></a>
+                        <div class="code-reveal">
+                            <input  id="cr__basic-square-badge" type="checkbox">
+                            <label for="cr__basic-square-badge" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre><code class="language-html">
+&lt;a href="#!">Inbox 
+    &lt;span class = "badge-square">4223&lt;/span>
+&lt;/a>                                
+                                </code></pre>
+                            </div>
+                        </div>
                         <h3>Badge on a button</h3>
                         <button class="btn btn-primary" type="button">
                             Messages <span class="badge">42</span>
@@ -518,6 +542,19 @@
                         <button class="btn btn-primary" type="button">
                             Messages <span class="badge">1</span>
                         </button>
+                        <div class="code-reveal">
+                            <input  id="cr__button-badge" type="checkbox">
+                            <label for="cr__button-badge" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre><code class="language-html">
+&lt;button class="btn btn-primary" type="button">
+    Messages &lt;span class="badge">42&lt;/span>
+&lt;/button>
+                                </code></pre>
+                            </div>
+                        </div>
+
                         <h3>Badge on a button --square</h3>
                         <button class="btn btn-primary" type="button">
                             Messages <span class="badge--square">42</span>
@@ -528,6 +565,19 @@
                         <button class="btn btn-primary" type="button">
                             Messages <span class="badge--square">1</span>
                         </button>
+
+                        <div class="code-reveal">
+                            <input  id="cr__button-square-badge" type="checkbox">
+                            <label for="cr__button-square-badge" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre><code class="language-html">
+&lt;button class="btn btn-primary" type="button">
+    Messages &lt;span class="badge--square">42&lt;/span>
+&lt;/button>
+                                </code></pre>
+                            </div>
+                        </div>
                     </article>
                 </section>
                 <!-- End Badges -->
@@ -755,6 +805,20 @@
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Morbi leo risus</li>
                             </ul>
+                            <div class="code-reveal">
+                                <input  id="cr__basic-list-group" type="checkbox">
+                                <label for="cr__basic-list-group" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+&lt;ul class="list-group">
+    &lt;li class="list-group-item">Cras justo odio&lt;/li>
+    &lt;li class="list-group-item">Dapibus ac facilisis in&lt;/li>
+    &lt;li class="list-group-item">Morbi leo risus&lt;/li>
+&lt;/ul>
+                                    </code></pre>
+                                </div>
+                            </div>
                             <h3>list-group Contextual</h3>
                             <ul class="list-group">
                                 <li class="list-group-item--success">You have succeeded.</li>
@@ -762,17 +826,60 @@
                                 <li class="list-group-item--warning">We might have a problem here.</li>
                                 <li class="list-group-item--danger">Uh oh! Something went wrong.</li>
                             </ul>
+                            <div class="code-reveal">
+                                <input  id="cr__contextual-list-group" type="checkbox">
+                                <label for="cr__contextual-list-group" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+&lt;ul class="list-group">
+    &lt;li class="list-group-item--success">You have succeeded.&lt;/li>
+    &lt;li class="list-group-item--info">Just letting you know.&lt;/li>
+    &lt;li class="list-group-item--warning">We might have a problem here.&lt;/li>
+    &lt;li class="list-group-item--danger">Uh oh! Something went wrong.&lt;/li>
+&lt;/ul>
+                                    </code></pre>
+                                </div>
+                            </div>
                             <h3>Miscellaneous</h3>
                             <ul class="list-group">
                                 <li class="list-group-item disabled">I'm disabled.</li>
                                 <li class="list-group-item">Dapibus ac facilisis in</li>
                                 <li class="list-group-item">Morbi leo risus</li>
                             </ul>
+                             <div class="code-reveal">
+                                <input  id="cr__misc-list-group" type="checkbox">
+                                <label for="cr__misc-list-group" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+&lt;ul class="list-group">
+    &lt;li class="list-group-item disabled">I'm disabled.&lt;/li>
+    &lt;li class="list-group-item">Dapibus ac facilisis in&lt;/li>
+    &lt;li class="list-group-item">Morbi leo risus&lt;/li>
+&lt;/ul>
+                                    </code></pre>
+                                </div>
+                            </div>
                             <h3>list-group using Buttons</h3>
                             <div class="list-group">
                                 <a class='btn btn-primary waves-effect' href="#!">Send SMS Message</a>
                                 <a class='btn btn-primary waves-effect' href="#!">Send Email</a>
                                 <a class='btn btn-primary waves-effect' href="#!">Send Carrier Pidgeon</a>
+                            </div>
+                            <div class="code-reveal">
+                                <input  id="cr__btn-list-group" type="checkbox">
+                                <label for="cr__btn-list-group" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+&lt;div class="list-group">
+    &lt;a class='btn btn-primary waves-effect' href="#!">Send SMS Message&lt;/a>
+    &lt;a class='btn btn-primary waves-effect' href="#!">Send Email&lt;/a>
+    &lt;a class='btn btn-primary waves-effect' href="#!">Send Carrier Pidgeon&lt;/a>
+&lt;/div>
+                                    </code></pre>
+                                </div>
                             </div>
                             <h4>list-group with Custom Content</h4>
                             <div class="list-group">
@@ -790,6 +897,32 @@
                                     <h4>Emotional Heading</h4>
                                     <img src="https://placehold.it/50x50" alt="">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ratione nostrum, eius vel libero et delectus maxime, illum officia magni placeat architecto distinctio, cupiditate. Deleniti, dolorem aspernatur. Fuga, quisquam, minus?</p>
+                                </div>
+                            </div>
+                            <div class="code-reveal">
+                                <input  id="cr__custom-list-group" type="checkbox">
+                                <label for="cr__custom-list-group" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+&lt;div class="list-group">
+    &lt;div class="list-group-item">
+        &lt;h4>Stirring Heading&lt;/h4>
+        &lt;img src="https://placehold.it/50x50" alt="">
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ratione nostrum, eius vel libero et delectus maxime, illum officia magni placeat architecto distinctio, cupiditate. Deleniti, dolorem aspernatur. Fuga, quisquam, minus?&lt;/p>
+    &lt;/div>
+    &lt;div class="list-group-item">
+        &lt;h4>Captivating Heading&lt;/h4>
+        &lt;img src="https://placehold.it/50x50" alt="">
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ratione nostrum, eius vel libero et delectus maxime, illum officia magni placeat architecto distinctio, cupiditate. Deleniti, dolorem aspernatur. Fuga, quisquam, minus?&lt;/p>
+    &lt;/div>
+    &lt;div class="list-group-item">
+        &lt;h4>Emotional Heading&lt;/h4>
+        &lt;img src="https://placehold.it/50x50" alt="">
+        &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, ratione nostrum, eius vel libero et delectus maxime, illum officia magni placeat architecto distinctio, cupiditate. Deleniti, dolorem aspernatur. Fuga, quisquam, minus?&lt;/p>
+    &lt;/div>
+&lt;/div>
+                                    </code></pre>
                                 </div>
                             </div>
                         </div>
@@ -873,6 +1006,48 @@
                                 </ul>
                             </div>
                         </div>
+                            <div class="code-reveal">
+                                <input  id="cr__dropdown-elements" type="checkbox">
+                                <label for="cr__dropdown-elements" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre><code class="language-html">
+                                        
+&lt;!-- Example 1-->
+&lt;div class="dropdown">
+    &lt;input type="checkbox" id="dd-menu-4">
+    &lt;label for="dd-menu-4" class="btn btn-warning dropdown-toggle">
+        .popup warning
+        &lt;i class="fa fa-caret-up">&lt;/i>
+    &lt;/label>
+    &lt;ul class="popup-menu btn btn-warning">
+        &lt;li>&lt;a href="#!">Action&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#!">Another action&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#!">Something else here&lt;/a>&lt;/li>
+        &lt;li role="separator" class="divider">&lt;/li>
+        &lt;li>&lt;a href="#!">Separated link&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+&lt;!-- Example 2-->
+&lt;div class="dropdown">
+    &lt;input type="checkbox" id="dd-menu-5">
+    &lt;label for="dd-menu-5" class="btn btn-primary dropdown-toggle disabled">
+        .dropdown .disabled
+        &lt;i class="fa fa-caret-down">&lt;/i>
+    &lt;/label>
+    &lt;ul class="dropdown-menu btn btn-primary">
+        &lt;li>&lt;a href="#!">Action&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#!">Another action&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#!">Something else here&lt;/a>&lt;/li>
+        &lt;li role="separator" class="divider">&lt;/li>
+        &lt;li>&lt;a href="#!">Separated link&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/div>
+                                    </code></pre>
+                                </div>
+                            </div>
+                        
                     </article>
                 </section>
                 <!-- End Dropdowns-->
@@ -884,10 +1059,12 @@
                             <ol class="breadcrumb">
                                 <li class="active">Home</li>
                             </ol>
+                            <br>
                             <ol class="breadcrumb">
                                 <li><a href="#!">Home</a></li>
                                 <li class="active">Library</li>
                             </ol>
+                            <br>
                             <ol class="breadcrumb">
                                 <li><a href="#!">Home</a></li>
                                 <li><a href="#!">Library</a></li>
@@ -895,6 +1072,30 @@
                             </ol>
                         </div>
                     </article>
+                    <div class="code-reveal">
+                        <input  id="cr__breadcrumb-element" type="checkbox">
+                        <label for="cr__breadcrumb-element" class="code-toggle">Show Markup</label>
+                        <div class="code-container">
+                            <h5>HTML</h5>
+                            <pre><code class="language-html">
+&lt;ol class="breadcrumb">
+      &lt;li class="active">Home&lt;/li>
+  &lt;/ol>
+  
+  &lt;ol class="breadcrumb">
+      &lt;li>&lt;a href="#!">Home&lt;/a>&lt;/li>
+      &lt;li class="active">Library&lt;/li>
+  &lt;/ol>
+  
+  &lt;ol class="breadcrumb">
+      &lt;li>&lt;a href="#!">Home&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#!">Library&lt;/a>&lt;/li>
+      &lt;li class="active">Data&lt;/li>
+  &lt;/ol>
+                            
+                            </code></pre>
+                        </div>
+                        </div>
                 </section>
                 <!-- End Breadcrumbs -->
                 <hr>
@@ -2514,9 +2715,36 @@
                         </div>
                         <!--end row-->
                     </div>
+                    <div class="code-reveal">
+                        <input  id="cr__dropdot" type="checkbox">
+                        <label for="cr__dropdot" class="code-toggle">Show Markup</label>
+                        <div class="code-container">
+                            <h5>HTML</h5>
+                            <pre><code class="language-html">
+&lt;!--A drop-dot lives inside a label element-->
+&lt;label for="cb__drop-dot-1" class="drop-dot">
+    &lt;span class="drop-dot__top">
+      &lt;img src="path/to/img" alt="" />
+    &lt;/span>
+    &lt;input type="checkbox" id="cb__drop-dot-1" />
+    &lt;i class="caret">&lt;/i>
+    &lt;ul class="drop-dot__list">
+        &lt;li>
+            &lt;a href="#!">View Profile&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="#!">Send Email&lt;/a>
+        &lt;/li>
+        &lt;li>
+            &lt;a href="#!">Send PM&lt;/a>
+        &lt;/li>
+    &lt;/ul>
+&lt;/label>     
+                            </code></pre>
+                        </div>
+                    </div>
                 </section>
-                <!--</div>        
-    </div>-->
+            
                 <hr>
                 <section class="" id="innovative-btn-switch">
                     <h3>Innovative button switch color</h3>

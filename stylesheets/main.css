@@ -333,6 +333,13 @@ html {
 
 body {
   font-size: 1.6em; }
+  body a, body a:visited {
+    text-decoration: none;
+    color: #45362E; }
+    body a:hover, body a:visited:hover {
+      color: #5f544e; }
+    body a:active, body a:visited:active {
+      color: #38251a; }
 
 .grid-example .grid__col--primary-bg {
   background: #ee6e73; }
@@ -359,6 +366,8 @@ section {
 
 .badge-example {
   font-size: 2rem; }
+  .badge-example h3 {
+    margin-top: 5rem; }
 
 .breadcrumb-example {
   width: 80%;
@@ -403,10 +412,9 @@ section {
 .badge, .badge--square {
   display: inline-block;
   position: relative;
-  top: -2px;
   border: 1px solid #757575;
   border-radius: 10px;
-  background: #ababab;
+  background: #ee6e73;
   color: inherit;
   font-size: 1rem;
   min-width: 25px;
@@ -2151,7 +2159,9 @@ figure.card-back,
     .breadcrumb li:first-child::before {
       content: ""; }
     .breadcrumb li.active {
-      color: #212121; }
+      color: #38251a; }
+    .breadcrumb li:hover {
+      color: #5f544e; }
 
 .dropdown {
   text-align: left;
@@ -2414,7 +2424,9 @@ figure.card-back,
     .breadcrumb li:first-child::before {
       content: ""; }
     .breadcrumb li.active {
-      color: #212121; }
+      color: #38251a; }
+    .breadcrumb li:hover {
+      color: #5f544e; }
 
 .dot-nav,
 .dot-nav__flip,

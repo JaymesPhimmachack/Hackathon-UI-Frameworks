@@ -17,7 +17,11 @@
     }
 
     &.active{
-      color: $breadcrumb-active;
+      color: $link-active-color;
+    }
+
+    &:hover{
+      color: $link-hover-color;
     }
   }
 }
