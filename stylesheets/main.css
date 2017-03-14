@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url(base/prism.css);
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
@@ -888,46 +889,6 @@ button .badge, button .badge--square {
   -webkit-transform: scale(10);
   -moz-transform: scale(10);
   transform: scale(10); }
-
-pre[class*="language-"]::before {
-  background: #e8e6e3 none repeat scroll 0 0;
-  border-color: -moz-use-text-color rgba(51, 51, 51, 0.12);
-  color: #555;
-  content: attr(class);
-  font-family: "Roboto",sans-serif;
-  font-size: 0.9rem;
-  left: 0;
-  top: 0;
-  padding: 1px 5px;
-  position: absolute; }
-
-pre[class*="language-"] {
-  border: 1px solid rgba(51, 51, 51, 0.12);
-  padding: 25px 12px 7px; }
-
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: #f5f2f0 none repeat scroll 0 0; }
-
-pre[class*="language-"] {
-  margin: 0.5em 0;
-  overflow: auto;
-  padding: 1em; }
-
-code[class*="language-"], pre[class*="language-"] {
-  -moz-tab-size: 4;
-  color: black;
-  direction: ltr;
-  font-family: "Inconsolata",Monaco,Consolas,"Andale Mono",monospace;
-  hyphens: none;
-  line-height: 1.4;
-  text-align: left;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal; }
-
-code, pre {
-  font-size: 1.2rem;
-  position: relative; }
 
 .carousel input[type=radio] {
   display: none; }
@@ -3370,8 +3331,8 @@ input[class^="modal"] {
   display: none; }
 
 .modal {
-  margin: 40px 10px;
-  height: 400px; }
+  position: relative;
+  margin: 40px 10px; }
 
 #link-modal:checked ~ .link-modal,
 #link-modal:checked ~ .modal-bg,
@@ -3387,7 +3348,8 @@ input[class^="modal"] {
   left: 450px;
   margin: 20px 0;
   color: #8c8c8c;
-  font-size: 24px; }
+  font-size: 24px;
+  cursor: pointer; }
 
 .modal-button {
   width: 100px;
@@ -3415,8 +3377,7 @@ input[class^="modal"] {
   position: relative;
   top: 30px;
   left: 300px;
-  width: 500px;
-  height: 250px;
+  width: 50%;
   border: 1px solid #000;
   padding: 20px;
   display: none;
@@ -3429,10 +3390,7 @@ input[class^="modal"] {
   color: blue; }
 
 .modal-bg {
-  width: 100%;
-  height: 450px;
   background-color: #8c8c8c;
-  position: absolute;
   top: 100px;
   left: 0;
   z-index: -1;
@@ -3447,11 +3405,6 @@ input[class^="modal"] {
 
 .modal__close--left-adjust {
   left: 550px; }
-
-.modal-bg--img-position {
-  top: 690px;
-  left: 0;
-  height: 450px; }
 
 /* Video Modal */
 .video-modal__video {
@@ -4750,4 +4703,93 @@ input[name="inno-acc-ctrl"] {
 .spied {
   background: #ee6e73; }
 
-/*# sourceMappingURL=main.css.map */
+.code-reveal {
+  margin: 1rem; }
+  .code-reveal label {
+    align-content: center; }
+  .code-reveal input[type="checkbox"] {
+    display: hidden; }
+    .code-reveal input[type="checkbox"]:checked ~ .code-container {
+      max-height: 1000px; }
+    .code-reveal input[type="checkbox"]:checked ~ .code-toggle::after {
+      -webkit-transition: all, 0.3s;
+      -moz-transition: all, 0.3s;
+      -ms-transition: all, 0.3s;
+      -o-transition: all, 0.3s;
+      transition: all, 0.3s;
+      transform: rotateX(180deg); }
+  .code-reveal .code-toggle {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ee6e73; }
+    .code-reveal .code-toggle::after {
+      display: inline-block;
+      -webkit-transition: all, 0.5s;
+      -moz-transition: all, 0.5s;
+      -ms-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s;
+      font-family: FontAwesome;
+      margin-left: 5px;
+      content: '\f063'; }
+  .code-reveal .code-container {
+    border-left: 1px solid #ee6e73;
+    margin: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    -webkit-transition: height, 0.25s;
+    -moz-transition: height, 0.25s;
+    -ms-transition: height, 0.25s;
+    -o-transition: height, 0.25s;
+    transition: height, 0.25s; }
+  .code-reveal pre[class*="language-"]::before {
+    background: #e8e6e3 none repeat scroll 0 0;
+    border-color: -moz-use-text-color rgba(51, 51, 51, 0.12);
+    color: #555;
+    content: attr(class);
+    font-family: "Roboto",sans-serif;
+    font-size: 0.9rem;
+    left: 0;
+    top: 0;
+    padding: 1px 5px;
+    position: absolute; }
+  .code-reveal pre[class*="language-"] {
+    border: 1px solid rgba(51, 51, 51, 0.12);
+    padding: 25px 12px 7px; }
+  .code-reveal :not(pre) > code[class*="language-"], .code-reveal pre[class*="language-"] {
+    background: #f5f2f0 none repeat scroll 0 0; }
+  .code-reveal pre[class*="language-"] {
+    margin: 0.5em 0;
+    overflow: auto;
+    padding: 1em; }
+  .code-reveal code[class*="language-"], .code-reveal pre[class*="language-"] {
+    -moz-tab-size: 4;
+    color: black;
+    direction: ltr;
+    font-family: "Inconsolata",Monaco,Consolas,"Andale Mono",monospace;
+    hyphens: none;
+    line-height: 1.4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal; }
+  .code-reveal code, .code-reveal pre {
+    font-size: 1.2rem;
+    position: relative; }
+
+/*
+<div class="code-reveal">
+  <input  id="cr__ELEMENT" type="checkbox">
+  <label for="cr__ELEMENT" class="code-toggle">Show Markup</label>
+  <div class="code-container">
+      <h5>HTML</h5>
+      <pre><code class="language-html">
+
+<!--PREFORMMTED CODE GOES HERE -->
+      
+      </code></pre>
+  </div>
+</div>
+
+*/
