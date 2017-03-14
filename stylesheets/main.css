@@ -139,7 +139,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-1 {
-  margin-left: 8.333%; }
+  margin-left: 8.333%;
+  margin-right: 10px; }
 
 .grid__col2 {
   position: relative;
@@ -154,7 +155,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-2 {
-  margin-left: 16.666%; }
+  margin-left: 16.666%;
+  margin-right: 10px; }
 
 .grid__col3 {
   position: relative;
@@ -169,7 +171,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-3 {
-  margin-left: 24.999%; }
+  margin-left: 24.999%;
+  margin-right: 10px; }
 
 .grid__col4 {
   position: relative;
@@ -184,7 +187,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-4 {
-  margin-left: 33.332%; }
+  margin-left: 33.332%;
+  margin-right: 10px; }
 
 .grid__col5 {
   position: relative;
@@ -199,7 +203,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-5 {
-  margin-left: 41.665%; }
+  margin-left: 41.665%;
+  margin-right: 10px; }
 
 .grid__col6 {
   position: relative;
@@ -214,7 +219,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-6 {
-  margin-left: 49.998%; }
+  margin-left: 49.998%;
+  margin-right: 10px; }
 
 .grid__col7 {
   position: relative;
@@ -229,7 +235,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-7 {
-  margin-left: 58.331%; }
+  margin-left: 58.331%;
+  margin-right: 10px; }
 
 .grid__col8 {
   position: relative;
@@ -244,7 +251,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-8 {
-  margin-left: 66.664%; }
+  margin-left: 66.664%;
+  margin-right: 10px; }
 
 .grid__col9 {
   position: relative;
@@ -259,7 +267,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-9 {
-  margin-left: 74.997%; }
+  margin-left: 74.997%;
+  margin-right: 10px; }
 
 .grid__col10 {
   position: relative;
@@ -274,7 +283,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-10 {
-  margin-left: 83.33%; }
+  margin-left: 83.33%;
+  margin-right: 10px; }
 
 .grid__col11 {
   position: relative;
@@ -289,7 +299,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-11 {
-  margin-left: 91.663%; }
+  margin-left: 91.663%;
+  margin-right: 10px; }
 
 .grid__col12 {
   position: relative;
@@ -304,7 +315,8 @@ h6,
     margin-right: 0; }
 
 .grid__offset-by-12 {
-  margin-left: 99.996%; }
+  margin-left: 99.996%;
+  margin-right: 10px; }
 
 .grid__row--border {
   border: 1px solid black; }

@@ -1,0 +1,115 @@
+@mixin transition($prop, $time){
+  
+  -webkit-transition: $prop, $time;
+     -moz-transition: $prop, $time;
+      -ms-transition: $prop, $time;
+       -o-transition: $prop, $time;
+          transition: $prop, $time;
+}
+
+.code-reveal{
+  margin: 1rem;
+  
+  label{
+    align-content: center;
+  }
+  
+  input[type="checkbox"]{
+    display: hidden;
+    
+    &:checked{
+      & ~ .code-container{
+        max-height: 1000px;
+     }
+
+      & ~ .code-toggle::after{
+        @include transition(all, 0.3s);
+        transform: rotateX(180deg)
+      }
+    }
+  }
+  
+  .code-toggle{  
+    cursor: pointer;
+    font-size: 2rem;
+    color: $primary-color;
+
+    &::after{
+      display: inline-block;
+       @include transition(all, 0.5s);
+      font-family: FontAwesome;
+      margin-left: 5px;
+      content: '\f063';
+    }
+  }
+
+  .code-container{
+    border-left: 1px solid $primary-color;
+    margin: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    @include transition(height, 0.25s);
+  }
+
+  pre[class*="language-"]::before {
+    background: #e8e6e3 none repeat scroll 0 0;
+    border-color: -moz-use-text-color rgba(51, 51, 51, 0.12);
+    color: #555;
+    content: attr(class);
+    font-family: "Roboto",sans-serif;
+    font-size: 0.9rem;
+    left: 0;
+    top: 0;
+    padding: 1px 5px;
+    position: absolute;
+  }
+
+  pre[class*="language-"] {
+    border: 1px solid rgba(51, 51, 51, 0.12);
+    padding: 25px 12px 7px;
+  }
+  :not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #f5f2f0 none repeat scroll 0 0;
+  }
+
+  pre[class*="language-"] {
+    margin: 0.5em 0;
+    overflow: auto;
+    padding: 1em;
+  }
+  code[class*="language-"], pre[class*="language-"] {
+    -moz-tab-size: 4;
+    color: black;
+    direction: ltr;
+    font-family: "Inconsolata",Monaco,Consolas,"Andale Mono",monospace;
+    hyphens: none;
+    line-height: 1.4;
+    text-align: left;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+  }
+
+  code, pre {
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+}
+
+/*
+<div class="code-reveal">
+  <input  id="cr__ELEMENT" type="checkbox">
+  <label for="cr__ELEMENT" class="code-toggle">Show Markup</label>
+  <div class="code-container">
+      <h5>HTML</h5>
+      <pre><code class="language-html">
+
+<!--PREFORMMTED CODE GOES HERE -->
+      
+      </code></pre>
+  </div>
+</div>
+
+*/
