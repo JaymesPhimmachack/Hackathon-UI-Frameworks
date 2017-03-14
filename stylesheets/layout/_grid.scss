@@ -42,7 +42,7 @@
 
     .grid__offset-by-#{$i}{
       margin-left: $i * 8.333%;
-
+      margin-right: 10px;
     }
 }
 
