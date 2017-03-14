@@ -340,6 +340,8 @@ body {
       color: #5f544e; }
     body a:active, body a:visited:active {
       color: #38251a; }
+  body #page-header {
+    align-items: center; }
 
 .grid-example .grid__col--primary-bg {
   background: #ee6e73; }
@@ -1535,6 +1537,7 @@ button .badge, button .badge--square {
   display: inline-block;
   font-weight: bold;
   text-align: center;
+  margin-right: -4px;
   background-color: #55ACEE;
   color: #FFFFFF;
   width: 15rem;
@@ -4817,3 +4820,5 @@ input[name="inno-acc-ctrl"] {
 </div>
 
 */
+
+/*# sourceMappingURL=main.css.map */
