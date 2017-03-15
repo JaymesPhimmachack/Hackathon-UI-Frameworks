@@ -3305,6 +3305,87 @@ figure.card-back,
 .flip-card-card:hover .flip-card-back {
   transform: rotateY(0deg); }
 
+.log--container {
+  position: relative;
+  width: 375px;
+  height: 667px;
+  border-radius: 2px;
+  background: url("https://s20.postimg.org/iombn9l25/code_art.jpg") 100% 100% repeat repeat; }
+
+.log--header {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  z-index: 999; }
+
+.img--circle {
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+  width: 30%; }
+
+.log--body {
+  z-index: 999;
+  position: relative;
+  margin: 10px;
+  top: 30%;
+  left: 20%;
+  text-align: center; }
+  .log--body #log--name, .log--body #log--pass {
+    margin: 2% 0 2% 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    padding: 3% 6% 3% 6%;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #d8d8d8;
+    background: transparent; }
+  .log--body input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  .log--body input:focus {
+    outline: none; }
+  .log--body .log--button {
+    display: block;
+    padding: 3% 22% 3% 22%;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #42f4b3;
+    border: none;
+    color: #d8d8d8;
+    opacity: 0.8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+  .log--body .log--button:focus {
+    outline: none; }
+  .log--body .log--button:hover {
+    color: #fff;
+    background-color: #42f4b3;
+    opacity: 1; }
+
+.log--footer {
+  z-index: 9999;
+  position: relative;
+  text-align: center;
+  top: 40%; }
+  .log--footer p {
+    color: #fff;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    padding: 3px 10px 3px 10px; }
+  .log--footer #left {
+    border-right: 1px solid #d8d8d8; }
+  .log--footer a {
+    color: #3b5c9b; }
+  .log--footer a:hover {
+    color: #6d9fff; }
+
 /* Icon */
 .icon-item--h-style {
   background-color: #4285f4;
