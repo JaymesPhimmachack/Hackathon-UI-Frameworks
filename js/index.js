@@ -15,11 +15,18 @@ window.addEventListener("scroll", () => {
   } else {
     sidebar.style.position = "absolute";    
   }
+  //TODO: Scroll the sidebar up/down to keep "spied" recievers in view
+
 });
 
 //End Sticky sidebar
-var stickyElements = document.getElementsByClassName('sticky');
 
-for (var i = stickyElements.length - 1; i >= 0; i--) {
-    Stickyfill.add(stickyElements[i]);
-}
+
+
+
+//???
+// var stickyElements = document.getElementsByClassName('sticky');
+
+// for (var i = stickyElements.length - 1; i >= 0; i--) {
+//     Stickyfill.add(stickyElements[i]);
+// }
