@@ -351,7 +351,7 @@ body {
   text-align: right; }
 
 .nav-link:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #33b5e5; }
 
 .section-content {
@@ -398,7 +398,7 @@ section {
   position: relative; }
 
 .spied {
-  color: #fff;
+  color: #fff !important;
   background-color: #33b5e5; }
 
 #drop-dot--example {
@@ -4804,9 +4804,6 @@ input[name="inno-acc-ctrl"] {
     .scrollspy__page-content div {
       padding-bottom: 5rem;
       border: 1px solid black; }
-
-.spied {
-  background: #ee6e73; }
 
 .code-reveal {
   margin: 1rem; }
