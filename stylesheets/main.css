@@ -374,33 +374,39 @@ section {
   margin: 0 auto; }
 
 .dropdown-example {
-  margin: 1rem auto 10rem;
   display: flex;
+  margin: 1rem auto 10rem;
   flex-wrap: wrap;
   width: 50%; }
   .dropdown-example .dropdown {
     margin: 0 auto; }
 
-.list-group-example {
-  max-width: 50%;
-  margin: 0 auto; }
+.list-group-example .list-group {
+  margin: 0 auto;
+  max-width: 50%; }
   .list-group-example .list-group .list-group-item, .list-group-example .list-group .list-group-item--success, .list-group-example .list-group .list-group-item--info, .list-group-example .list-group .list-group-item--warning, .list-group-example .list-group .list-group-item--danger {
     padding-bottom: 2rem; }
 
 #sidebar {
-  background: #F3F5F8; }
+  background: #F3F5F8;
+  max-height: 100vh;
+  overflow: scroll;
+  position: absolute; }
 
 #scrollspy--example {
-  position: relative;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  position: relative; }
 
 .spied {
-  background: #ee6e73; }
+  color: #fff;
+  background-color: #33b5e5; }
 
 #drop-dot--example {
-  margin-bottom: 30rem;
+  margin-bottom: 20rem;
   margin-left: 10rem;
   text-align: center; }
+  #drop-dot--example a {
+    color: #ecf0f1; }
   #drop-dot--example .drop-dot {
     margin: 0 auto; }
 
@@ -4811,5 +4817,3 @@ input[name="inno-acc-ctrl"] {
 </div>
 
 */
-
-/*# sourceMappingURL=main.css.map */

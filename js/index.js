@@ -2,19 +2,22 @@
 // Create a 'sticky' sidebar. ie. Once the sidebar reaches
 // the top of the window, it becomes `fixed`.
 
-// const sidebar = document.getElementById('sidebar');
-// // let sidebarBox = sidebar.getBoundingClientRect();
-// window.addEventListener("scroll", () => {
-//   let sidebarBox = sidebar.getBoundingClientRect();
-//   if(sidebarBox.top <= 0){
-//     sidebar.classList.add("is-sticky");
-//     console.log(`is-sticky - top: ${sidebarBox.top}`);
-//   } else {
-//     sidebar.classList.remove("is-sticky");
-//     console.log(`NOT-sticky - top: ${sidebarBox.top}`);
-//   }
-// });
+const sidebar = document.getElementById('sidebar');
+const header = document.getElementById('page-header');
+// let sidebarBox = sidebar.getBoundingClientRect();
+window.addEventListener("scroll", () => {
+  let sidebarBox = sidebar.getBoundingClientRect();
+  let headerBox = header.getBoundingClientRect();
 
+  if(headerBox.bottom <= 0){
+    sidebar.style.position = "fixed";
+    sidebar.style.top = "0";
+  } else {
+    sidebar.style.position = "absolute";    
+  }
+});
+
+//End Sticky sidebar
 var stickyElements = document.getElementsByClassName('sticky');
 
 for (var i = stickyElements.length - 1; i >= 0; i--) {

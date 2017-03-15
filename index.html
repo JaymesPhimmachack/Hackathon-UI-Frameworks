@@ -66,7 +66,7 @@
                     <a class="nav-link" href="#rainbow-form">Rainbow Form</a>
                 </nav>
             </div>
-            <div class="grid__col9" id="components-content">
+            <div class="grid__offset-by-3 grid__col9" id="components-content">
                 <section class="" id="grid-layouts">
                     <h2>Grid Layout</h2>
                     <article class="section-content">
@@ -893,7 +893,7 @@
                                     </code></pre>
                                 </div>
                             </div>
-                            <h3>list-group Contextual</h3>
+                            <h3>Contextual list-group</h3>
                             <ul class="list-group">
                                 <li class="list-group-item--success">You have succeeded.</li>
                                 <li class="list-group-item--info">Just letting you know.</li>
@@ -2071,26 +2071,24 @@
                             <p>Dennis Kimetto and Emmanuel Mutai en route to the two of the four fastest times in history on a record-eligible course at the 2014 Berlin Marathon.</p>
                             <p>They will face off again at the 2017 Boston Marathon.</p>
                         </div>
-                    </div>
-                    <div class="code-reveal">
-                            <input  id="cr__flip-card" type="checkbox">
-                            <label for="cr__flip-card" class="code-toggle">Show Markup</label>
-                            <div class="code-container">
-                               <h5>HTML</h5>
-                                <pre><code class="language-html">
-
-&lt;h3&gt;The World’s Fastest Marathoners&lt;/h3&gt;
-&lt;div class="flip-card-card" id="card"&gt;
-&lt;div class="flip-card-marathon flip-card-front"&gt;&lt;/div&gt;
-&lt;div class="flip-card-marathon flip-card-back"&gt;
-&lt;p&gt;Dennis Kimetto and Emmanuel Mutai en route to the two of the four fastest times in history on a record-eligible course at the 2014 Berlin Marathon.&lt;/p&gt;
-&lt;p&gt;They will face off again at the 2017 Boston Marathon.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-                               </code></pre>
-                            </div>
-                    </div>                                                 
+                    </div>                                
                 </section>
+                <div class="code-reveal">
+                        <input  id="cr__flip-card" type="checkbox">
+                        <label for="cr__flip-card" class="code-toggle">Show Markup</label>
+                        <div class="code-container">
+                            <h5>HTML</h5>
+                            <pre><code class="language-html">
+&lt;div class="flip-card-card" id="card"&gt;
+    &lt;div class="flip-card-marathon flip-card-front"&gt;&lt;/div&gt;
+    &lt;div class="flip-card-marathon flip-card-back"&gt;
+        &lt;p&gt;Dennis Kimetto and Emmanuel Mutai en route to the two of the four fastest times in history on a record-eligible course at the 2014 Berlin Marathon.&lt;/p&gt;
+        &lt;p&gt;They will face off again at the 2017 Boston Marathon.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>                 
                 <!-- End Flip Vards -->
                 <hr>
                 <section class="" id="misc-tab">
@@ -2891,6 +2889,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laboriosam vo
                         <li><a href="#!">6</a></li>
                         <li><a href="#!">></a></li>
                     </ul>
+                </section>
                     <div class="code-reveal">
                             <input  id="cr__pagination-simple" type="checkbox">
                             <label for="cr__pagination-simple" class="code-toggle">Show Markup</label>
@@ -2898,24 +2897,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laboriosam vo
                                <h5>HTML</h5>
                                 <pre><code class="language-html">
 &lt;section id="pagination" class="pagination"&gt;
-&lt;h2&gt;Simple button pagination&lt;/h2&gt;
-&lt;ul id="pagination-menu"&gt;
-&lt;li&gt;
-&lt;a href="#!"&gt;
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;1&gt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;6&lt;/a&lt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#!"&gt;7&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+    &lt;h2&gt;Simple button pagination&lt;/h2&gt;
+    &lt;ul id="pagination-menu"&gt;
+        &lt;li&gt;
+            &lt;a href="#!"&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;1&gt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;6&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#!"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section>
                          </code></pre>
                        </div>
                    </div>
-                </section>
                 <!-- End Pagination -->
                 <hr>
                 <section id="pagination-moving" class="pagination2">
@@ -3602,6 +3600,7 @@ The `spied` class was added to the first element to style it prior to scrolling.
     </div>
 </body>
 <script src="js/buttons.js"></script>
+<script src="js/index.js"></script>
 <script src="js/dot-nav.js"></script>
 <script src="js/scrollspy.js"></script>
 <script src="js/prism.js"></script>
