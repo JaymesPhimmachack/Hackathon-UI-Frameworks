@@ -14,7 +14,7 @@ body {
 
   a, a:visited{
     text-decoration: none;
-    color: $link-color;
+
 
     &:hover{
       color: $link-hover-color;
@@ -38,6 +38,7 @@ body {
   padding: 1rem 3rem 1rem 0;
   text-decoration: none;
   text-align: right;
+   color: #fff;
 }
 
 .nav-link:hover {
@@ -50,13 +51,11 @@ body {
   font-weight: 300;
 }
 
-#components-content{
-  overflow: hidden;
-}
 
 
 section{
   position: relative;
+  padding: 15px;
 }
 
 .badge-example{
@@ -67,6 +66,10 @@ section{
   }
 
 
+}
+
+.sidebar-heading{
+  color: #fff;
 }
 
 .breadcrumb-example{
@@ -97,10 +100,10 @@ section{
 }
 
 #sidebar {
-  background: #F3F5F8;
   max-height: 100vh;
   overflow: scroll;
   position: absolute;
+  background-color: #2E2E2E;
 }
 
 #scrollspy--example{

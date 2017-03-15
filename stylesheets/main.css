@@ -10,12 +10,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
-<<<<<<< HEAD
-=======
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
->>>>>>> upstream/master
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,7 +70,8 @@ h6
   line-height: 1.1;
   color: inherit;
   margin-top: .5em;
-  margin-bottom: 1.2em; }
+  margin-bottom: 1.2em;
+  text-align: left; }
 
 h1 small,
 .h1 small,
@@ -137,8 +134,7 @@ h6,
   width: 8.333%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col1:first-child {
     margin-left: 0; }
   .grid__col1:last-child {
@@ -153,8 +149,7 @@ h6,
   width: 16.666%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col2:first-child {
     margin-left: 0; }
   .grid__col2:last-child {
@@ -169,8 +164,7 @@ h6,
   width: 24.999%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col3:first-child {
     margin-left: 0; }
   .grid__col3:last-child {
@@ -185,8 +179,7 @@ h6,
   width: 33.332%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col4:first-child {
     margin-left: 0; }
   .grid__col4:last-child {
@@ -201,8 +194,7 @@ h6,
   width: 41.665%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col5:first-child {
     margin-left: 0; }
   .grid__col5:last-child {
@@ -217,8 +209,7 @@ h6,
   width: 49.998%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col6:first-child {
     margin-left: 0; }
   .grid__col6:last-child {
@@ -233,8 +224,7 @@ h6,
   width: 58.331%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col7:first-child {
     margin-left: 0; }
   .grid__col7:last-child {
@@ -249,8 +239,7 @@ h6,
   width: 66.664%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col8:first-child {
     margin-left: 0; }
   .grid__col8:last-child {
@@ -265,8 +254,7 @@ h6,
   width: 74.997%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col9:first-child {
     margin-left: 0; }
   .grid__col9:last-child {
@@ -281,8 +269,7 @@ h6,
   width: 83.33%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col10:first-child {
     margin-left: 0; }
   .grid__col10:last-child {
@@ -297,8 +284,7 @@ h6,
   width: 91.663%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col11:first-child {
     margin-left: 0; }
   .grid__col11:last-child {
@@ -313,8 +299,7 @@ h6,
   width: 99.996%;
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  opacity: 0.7; }
+  margin-right: 10px; }
   .grid__col12:first-child {
     margin-left: 0; }
   .grid__col12:last-child {
@@ -340,8 +325,7 @@ html {
 body {
   font-size: 1.6em; }
   body a, body a:visited {
-    text-decoration: none;
-    color: #45362E; }
+    text-decoration: none; }
     body a:hover, body a:visited:hover {
       color: #5f544e; }
     body a:active, body a:visited:active {
@@ -354,7 +338,8 @@ body {
   display: block;
   padding: 1rem 3rem 1rem 0;
   text-decoration: none;
-  text-align: right; }
+  text-align: right;
+  color: #fff; }
 
 .nav-link:hover {
   color: #fff !important;
@@ -364,16 +349,17 @@ body {
   margin: 0 0 30px;
   font-weight: 300; }
 
-#components-content {
-  overflow: hidden; }
-
 section {
-  position: relative; }
+  position: relative;
+  padding: 15px; }
 
 .badge-example {
   font-size: 2rem; }
   .badge-example h3 {
     margin-top: 5rem; }
+
+.sidebar-heading {
+  color: #fff; }
 
 .breadcrumb-example {
   width: 80%;
@@ -394,10 +380,10 @@ section {
     padding-bottom: 2rem; }
 
 #sidebar {
-  background: #F3F5F8;
   max-height: 100vh;
   overflow: scroll;
-  position: absolute; }
+  position: absolute;
+  background-color: #2E2E2E; }
 
 #scrollspy--example {
   margin-bottom: 20rem;
@@ -4025,7 +4011,7 @@ input[class^="modal"] {
 .image-modal, .video-modal {
   position: fixed;
   top: 20%;
-  left: 50%;
+  left: 30%;
   width: 33%;
   padding: 10px;
   display: none;
@@ -4038,7 +4024,7 @@ input[class^="modal"] {
 .link-modal {
   position: fixed;
   top: 30%;
-  left: 50%;
+  left: 30%;
   width: 32%;
   padding: 20px;
   display: none;
