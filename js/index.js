@@ -10,7 +10,6 @@ const slowScrollOffset = 10
 window.addEventListener("scroll", () => {
   let sidebarBox = sidebar.getBoundingClientRect();
   let headerBox = header.getBoundingClientRect();
-  console.log(window.pageYOffset);
   if(headerBox.bottom <= 0){
     sidebar.style.position = "fixed";
     sidebar.style.top = "0";

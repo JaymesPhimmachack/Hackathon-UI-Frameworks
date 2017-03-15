@@ -373,6 +373,12 @@ section {
   .dropdown-example .dropdown {
     margin: 0 auto; }
 
+.section-button {
+  text-align: center;
+  margin-top: 5rem; }
+  .section-button .code-reveal {
+    text-align: left; }
+
 .list-group-example .list-group {
   margin: 0 auto;
   max-width: 50%; }
@@ -632,10 +638,6 @@ button .badge, button .badge--square {
 - li-hover-color : #0092E4;
 
  */
-.section-button {
-  text-align: center;
-  margin-top: 5rem; }
-
 .btn {
   position: relative;
   font-size: 1.4rem;
@@ -5450,5 +5452,3 @@ input[name="inno-acc-ctrl"] {
 </div>
 
 */
-
-/*# sourceMappingURL=main.css.map */
