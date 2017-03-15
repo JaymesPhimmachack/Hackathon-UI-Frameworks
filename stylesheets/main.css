@@ -3371,8 +3371,7 @@ input[class^="modal"] {
 
 .modal__close {
   position: relative;
-  top: 5px;
-  left: 450px;
+  left: calc(98% - 10px);
   margin: 20px 0;
   color: #8c8c8c;
   font-size: 24px;
@@ -3386,41 +3385,43 @@ input[class^="modal"] {
   background-color: #008cba; }
 
 .image-modal, .video-modal {
-  position: relative;
-  bottom: 40px;
-  left: 400px;
-  width: 600px;
-  height: 400px;
-  border: 1px solid black;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  width: 33%;
   padding: 10px;
-  margin: 20px;
   display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   z-index: 1000;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 1%; }
 
 /* Link Modal */
 .link-modal {
-  position: relative;
-  top: 30px;
-  left: 300px;
-  width: 50%;
-  border: 1px solid #000;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 32%;
   padding: 20px;
   display: none;
   z-index: 1000;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 1%; }
 
-.modal-link--toggle {
+.modal-link--cursor {
   cursor: pointer;
   color: blue; }
 
 .modal-bg {
-  background-color: #8c8c8c;
-  top: 100px;
+  width: 100%;
+  height: 100%;
+  background-color: #b3b3b3;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 10;
   display: none; }
 
 /* Image Modal */
@@ -3430,20 +3431,12 @@ input[class^="modal"] {
   border: 1px solid #000;
   display: block; }
 
-.modal__close--left-adjust {
-  left: 550px; }
-
 /* Video Modal */
 .video-modal__video {
+  margin-top: 10px;
   display: block;
-  margin: 20px; }
-
-.modal-bg--vid-position {
-  top: 1270px;
-  left: 0; }
-
-.video {
-  margin-top: 10px; }
+  width: 100%;
+  height: 315px; }
 
 /*  Progress Bar */
 .progress-example {
