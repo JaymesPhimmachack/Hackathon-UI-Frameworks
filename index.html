@@ -2920,119 +2920,104 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laboriosam vo
                    </div>
                 <!-- End Pagination -->
                 <hr>
-                <section id="pagination-moving" class="pagination2 spy-target">
-                    <h2>Pagination Moving</h2>
-                    <div class="pagination-holder">
-                        <input type="radio" name="pagination-switch" id="pagination-switch-1" checked>
-                        <input type="radio" name="pagination-switch" id="pagination-switch-2">
-                        <input type="radio" name="pagination-switch" id="pagination-switch-3">
-                        <input type="radio" name="pagination-switch" id="pagination-switch-4">
-                        <div class="pagination-items">
-                            <ul>
-                                <div class="pagination-item-1">
-                                    <h2>Page 1</h2>
-                                    <li>Item10</li>
-                                    <li>Item11</li>
-                                    <li>Item12</li>
-                                </div>
-                                <div class="pagination-item-2">
-                                    <h2>Page 2</h2>
-                                    <li>Item20</li>
-                                    <li>Item21</li>
-                                    <li>Item22</li>
-                                </div>
-                                <div class="pagination-item-3">
-                                    <h2>Page 3</h2>
-                                    <li>Item30</li>
-                                    <li>Item31</li>
-                                    <li>Item32</li>
-                                </div>
-                                <div class="pagination-item-4">
-                                    <h2>Page 4</h2>
-                                    <li>Item40</li>
-                                    <li>Item41</li>
-                                    <li>Item42</li>
-                                </div>
-                            </ul>
-                            <div class="btn-pagination">
-                                <ul>
-                                    <li>
-                                        <label for="pagination-switch-1">1</label>
-                                    </li>
-                                    <li>
-                                        <label for="pagination-switch-2">2</label>
-                                    </li>
-                                    <li>
-                                        <label for="pagination-switch-3">3</label>
-                                    </li>
-                                    <li>
-                                        <label for="pagination-switch-4">4</label>
-                                    </li>
-                                </ul>
-                            </div>
+                <section class="pagination-moving spy-target">
+                  <h3>Pagination Moving</h3>
+                  <div class="pagination-holder">
+                    <input type="radio" name="input-pagination" id="pagination1" checked>
+                    <input type="radio" name="input-pagination" id="pagination2">
+                    <input type="radio" name="input-pagination" id="pagination3">
+                    <input type="radio" name="input-pagination" id="pagination4">
+                    <div class="box-items">
+                      <ul>
+                        <div class="item1">
+                          <h2>Page 1</h2>
+                          <li>Item11</li>
+                          <li>Item12</li>
+                          <li>Item13</li>
                         </div>
-                    </div>
-                    <div class="code-reveal">
+                        <div class="item2">
+                          <h2>Page 2</h2>
+                          <li>Item21</li>
+                          <li>Item22</li>
+                          <li>Item23</li>
+                        </div>
+                        <div class="item3">
+                          <h2>Page 3</h2>
+                          <li>Item31</li>
+                          <li>Item32</li>
+                          <li>Item33</li>
+                        </div>
+                        <div class="item4">
+                          <h2>Page 4</h2>
+                          <li>Item41</li>
+                          <li>Item42</li>
+                          <li>Item43</li>
+                        </div>
+                     </ul>                  
+                   <div class="btn-pagination">
+                     <ul>
+                       <li><label for="pagination1">1</label></li>
+                       <li><label for="pagination2">2</label></li>
+                       <li><label for="pagination3">3</label></li>
+                       <li><label for="pagination4">4</label></li>
+                     </ul>
+                   </div>
+                 </div>
+               </div>
+               <div class="code-reveal">
                             <input  id="cr__pagination-moving" type="checkbox">
                             <label for="cr__pagination-moving" class="code-toggle">Show Markup</label>
                             <div class="code-container">
                                <h5>HTML</h5>
                                 <pre><code class="language-html">
-&lt;h2&gt;Pagination Moving&lt;/h2&gt;
+&lt;h3&gt;Pagination Moving&lt;/h3&gt;
 &lt;div class="pagination-holder"&gt;
-&lt;input type="radio" name="pagination-switch" id="pagination-switch-1" checked&gt;
-&lt;input type="radio" name="pagination-switch" id="pagination-switch-2"&gt;
-&lt;input type="radio" name="pagination-switch" id="pagination-switch-3"&gt;
-&lt;input type="radio" name="pagination-switch" id="pagination-switch-4"&gt;
-&lt;div class="pagination-items"&gt;
+&lt;input type="radio" name="input-pagination" id="pagination1" checked&gt;
+&lt;input type="radio" name="input-pagination" id="pagination2"&gt;
+&lt;input type="radio" name="input-pagination" id="pagination3"&gt;
+&lt;input type="radio" name="input-pagination" id="pagination4"&gt;
+&lt;div class="box-items"&gt;
 &lt;ul&gt;
-&lt;div class="pagination-item-1"&gt;
+&lt;div class="item1"&gt;
 &lt;h2&gt;Page 1&lt;/h2&gt;
-&lt;li&gt;Item10&lt;/li&gt;
 &lt;li&gt;Item11&lt;/li&gt;
 &lt;li&gt;Item12&lt;/li&gt;
+&lt;li&gt;Item13&lt;/li&gt;
 &lt;/div&gt;
-&lt;div class="pagination-item-2"&gt;
+&lt;div class="item2"&gt;
 &lt;h2&gt;Page 2&lt;/h2&gt;
-&lt;li&gt;Item20&lt;/li&gt;
 &lt;li&gt;Item21&lt;/li&gt;
 &lt;li&gt;Item22&lt;/li&gt;
+&lt;li&gt;Item23&lt;/li&gt;
 &lt;/div&gt;
-&lt;div class="pagination-item-3"&gt;
+&lt;div class="item3"&gt;
 &lt;h2&gt;Page 3&lt;/h2&gt;
-&lt;li&gt;Item30&lt;/li&gt;
 &lt;li&gt;Item31&lt;/li&gt;
-&lt;li&gt;Item32&lt;/li&lt;
-&lt;/div>&gt;
-&lt;div class="pagination-item-4"&gt;
+&lt;li&gt;Item32&lt;/li&gt;
+&lt;li&gt;Item33&lt;/li&gt;
+&lt;/div&gt;
+&lt;div class="item4"&gt;
 &lt;h2&gt;Page 4&lt;/h2&gt;
-&lt;li&gt;Item40&lt;/li&gt;
 &lt;li&gt;Item41&lt;/li&gt;
 &lt;li&gt;Item42&lt;/li&gt;
+&lt;li&gt;Item43&lt;/li&gt;
 &lt;/div&gt;
-&lt;/ul&lt;&lt;
+&lt;/ul&gt;                  
 &lt;div class="btn-pagination"&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;label for="pagination-switch-1"&gt;1&lt;/label&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;label for="pagination-switch-2"&gt;2&lt;/label&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;label for="pagination-switch-3"&gt;3&lt;/label&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;label for="pagination-switch-4"&gt;4&lt;/label&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;label for="pagination1"&gt;1&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label for="pagination1"&gt;2&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label for="pagination1"&gt;3&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label for="pagination1"&gt;4&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-                          </code></pre>
-                        </div>
-                   </div>                                       
-                </section>
+                            </code></pre>
+                          </div>
+                   </div>                                            
+               </section>
+
                 <!-- End Pagination Moving -->
                 <hr>
                 <section class="spy-target" id="shopCart-table">
