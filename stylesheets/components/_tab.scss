@@ -1,27 +1,8 @@
 /*------------- TAB -----------------*/
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-
-
-//colors
-
-$tab-container-bg-color: #eee;
-$tab-container-color: #555; 
-$tab-section-border-color: #ddd;
-$tab-label-color: #bbb;
-$tab-background-color: #fff;
-$tab-label-hover-color: #888;
-$tab-input-checked-color: #555;
-$tab-input-checked-border-color: #ddd;
-$tab-input-checked-border-bottom-color: #0EBFE9;
-$tab-input-checked-border-top-color: #fff;
-$tab-btn-bg-color: #0EBFE9;
-$tab-btn-color: #fff;
-$tab-btn-border-color: #72bcd4;
-
 
 .tab-container{
-  font: 14px/1  'Open Sans', sans-serif;
+  //font: 14px/1  'Open Sans', sans-serif;
   color: $tab-container-color;
   background: $tab-container-bg-color;
   margin: 0 auto;
