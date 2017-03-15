@@ -17,13 +17,12 @@ window.addEventListener("scroll", () => {
   } else {
     sidebar.style.position = "absolute";    
   }
-  //TODO: Scroll the sidebar up/down to keep "spied" recievers in view
-  
+  //Scroll the sidebar up/down to keep "spied" recievers in view  
   sidebar.scrollTop = (window.pageYOffset - startScroll) / slowScrollOffset;
+
 });
 
 //End Sticky sidebar
-
 
 //???
 // var stickyElements = document.getElementsByClassName('sticky');
