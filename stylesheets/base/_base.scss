@@ -49,9 +49,8 @@ body {
 .section-content {
   margin: 0 0 30px;
   font-weight: 300;
+  overflow-x: hidden;
 }
-
-
 
 section{
   position: relative;
@@ -64,8 +63,6 @@ section{
   h3{
     margin-top: 5rem;
   }
-
-
 }
 
 .sidebar-heading{
@@ -110,7 +107,7 @@ section{
 
 #sidebar {
   max-height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
   position: absolute;
   background-color: #2E2E2E;
 }
