@@ -3922,10 +3922,10 @@ figure.card-back,
     font-size: 18px;
     background-color: #42f4b3;
     border: none;
-    color: #d8d8d8;
+    color: #ededed;
     opacity: 0.8;
     font-family: "Roboto", sans-serif;
-    font-weight: 300; }
+    font-weight: 500; }
   .log--body .log--button:focus {
     outline: none; }
   .log--body .log--button:hover {
