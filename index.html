@@ -227,17 +227,56 @@
                     <h2>Labels </h2>
                     <article class="section-content">
                         <div class='label-container'>
-                            <button class="la la-btn-default">Default</button>
-                            <button class='la la-btn-primary'>Primary</button>
-                            <button class='la la-btn-success'>Success</button>
-                            <button class='la la-btn-info'>Info</button>
-                            <button class='la la-btn-danger'>Danger</button>
-                            <button class='la la-btn-warning'>Warning</button>
+                            <button class="la-square la-btn-default">Default</button>
+                            <button class='la-square la-btn-primary'>Primary</button>
+                            <button class='la-square la-btn-success'>Success</button>
+                            <button class='la-square la-btn-info'>Info</button>
+                            <button class='la-square la-btn-danger'>Danger</button>
+                            <button class='la-square la-btn-warning'>Warning</button>
+                        </div>
+                        <div class='label-container'>
+                            <button class="la-round-corner la-btn-default">Default</button>
+                            <button class='la-round-corner la-btn-primary'>Primary</button>
+                            <button class='la-round-corner la-btn-success'>Success</button>
+                            <button class='la-round-corner la-btn-info'>Info</button>
+                            <button class='la-round-corner la-btn-danger'>Danger</button>
+                            <button class='la-round-corner la-btn-warning'>Warning</button>
+                        </div>
+                        <div class='label-container'>
+                            <button class="la-circle la-btn-default">Default</button>
+                            <button class='la-circle la-btn-primary'>Primary</button>
+                            <button class='la-circle la-btn-success'>Success</button>
+                            <button class='la-circle la-btn-info'>Info</button>
+                            <button class='la-circle la-btn-danger'>Danger</button>
+                            <button class='la-circle la-btn-warning'>Warning</button>
+                        </div>
+                        <!-- Label element markup -->
+                        <div class="code-reveal">
+                            <input id="cr__switch1" type="checkbox">
+                            <label for="cr__switch1" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                    <pre>
+                                        <code class="language-html">
+&lt;!-- For a round corner effect in each button, replace "la-square" class for "la-round-corner" class.
+For a circle effect in each button, replace "la-square" class in button for "la-circle" classs. -->                                    
+&lt;div class='label-container'>
+    &lt;button class="la-square la-btn-default">Default&lt;/button>
+    &lt;button class='la-square la-btn-primary'>Primary&lt;/button>
+    &lt;button class='la-square la-btn-success'>Success&lt;/button>
+    &lt;button class='la-square la-btn-info'>Info&lt;/button>
+    &lt;button class='la-square la-btn-danger'>Danger&lt;/button>
+    &lt;button class='la-square la-btn-warning'>Warning&lt;/button>
+&lt;/div>
+                                        </code>
+                                    </pre>
+                            </div>
                         </div>
                     </article>
                 </section>
                 <!-- End Labels -->
                 <hr>
+                <!-- Switch element -->
                 <section id="switches" class='switches spy-target'>
                     <h2>Input Switches</h2>
                     <article class="section-content">
@@ -245,12 +284,13 @@
                             <div class='s-container'>
                                 <label for='s1'>Toggle Switch</label>
                                 <div class='s-background'>
-                                    <input type="checkbox" id='s1'>
+                                    <input type="checkbox" id='s1'/>
                                     <label for='s1'></label>
                                 </div>
-                            </div>
+                            </div>  
+
                             <div class='s-container2'>
-                                <label>Switch</label>
+                                <label>Switch Button</label>
                                 <div class='switch-background'>
                                     <input id='r1' type="radio" name="fancy" checked='checked'>
                                     <label for='r1'>true</label>
@@ -258,6 +298,37 @@
                                     <label for='r2'>false</label>
                                 </div>
                             </div>
+                            <!-- switch markup -->
+                            <div class="code-reveal">
+                                <input id="cr__switch1" type="checkbox">
+                                <label for="cr__switch1" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre>
+                                        <code class="language-html">
+&lt;!-- Markup for Toggle Switch -->                                        
+&lt;div class="s-container">
+    &lt;label for="s1">Toggle Switch&lt;/label>
+    &lt;div class="s-container">
+        &lt;input type="checkbox" id="s1"/>
+        &lt;label for="s1">&lt;/label>
+    &lt;/div>    
+&lt;/div>
+
+&lt;!-- Markup for Switch Button -->
+&lt;div class="s-container2"> 
+    &lt;label>Siwtch Button:&lt;/label>
+    &lt;div class="switch-background">
+        &lt;input id="r1" type="radio" name="fancy"checked="checked"/>
+        &lt;label for="r1">true&lt;/label>
+        &lt;input id="r2" type="radio" name="fancy"/>
+        &lt;label for="r2">false&lt;/label>    
+    &lt;/div>
+&lt;/div>                                        
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>      
                         </div>
                     </article>
                 </section>
@@ -320,6 +391,46 @@
                                 <p>Forgot <a href="#!">password?</a></p>
                             </div>
                         </div>
+
+                        <div class="code-reveal">
+                                <input id="cr__form-login1" type="checkbox">
+                                <label for="cr__form-login1" class="code-toggle">Show Markup</label>
+                                <div class="code-container">
+                                    <h5>HTML</h5>
+                                    <pre>
+                                        <code class="language-html">
+&lt;!-- Login form markup -->                                        
+&lt;div class="form-container1">
+    &lt;div class="form-title">
+        &lt;h1>&lt;i class = 'fa fa-lock'>&lt;/i>Login:&lt;/h1>
+    &lt;/div>
+    &lt;div class="form-body">
+        &lt;i class='fa fa-envelope'>&lt;/i>
+        &lt;input type="text" name="email" id='form-email'/>
+        &lt;label for='form-email'>Your email&lt;/label>
+    &lt;/div>
+    &lt;div class="form-body">
+        &lt;i class="fa fa-lock">&lt;/i>
+        &lt;input type="password" id='form-pass'/>
+        &lt;label for='form-pass'>Your password&lt;/label>
+    &lt;/div>
+    &lt;div class="form-btn">
+        &lt;button>Login&lt;/button>
+    &lt;/div>
+    &lt;div class="form-footer">
+        &lt;p>Not a Member? &lt;a href="#!">Sign up&lt;/a>&lt;/p>
+        &lt;p>Forgot &lt;a href="#!">password?&lt;/a>&lt;/p>
+    &lt;/div>
+&lt;/div>
+
+&lt;!-- for login form on the right side, change form-container1 class for 
+form-container2, form-title class for form-title2 -->
+
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>     
+
                         <div class="register-container">
                             <p>Simple register form:</p>
                             <!-- register 1 -->
@@ -385,6 +496,51 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Register form markup -->
+                        <div class="code-reveal">
+                            <input id="cr__form-register" type="checkbox">
+                            <label for="cr__form-register" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre>
+                                    <code class="language-html">
+&lt;div class="register1">
+    <!-- header -->
+    &lt;div class="register1-title">
+        &lt;h1>Register:&lt;/h1>
+    &lt;/div>
+    <!-- body -->
+    &lt;div class="register1-body">
+        &lt;i class="fa fa-user">&lt;/i>
+        &lt;input type="text" id='reg-uname'/>
+        &lt;label for="reg-uname">Your name&lt;/label>
+    &lt;/div>
+    &lt;div class="register1-body">
+        &lt;i class="fa fa-envelope">&lt;/i>
+        &lt;input type="text" id="reg-email" />
+        &lt;label for="reg-email">Your email&lt;/label>
+    &lt;/div>
+    &lt;div class="register1-body">
+        &lt;i class="fa fa-lock">&lt;/i>
+        &lt;input type="text" id="reg-pass"/>
+        &lt;label for='reg-pass'>Your password&lt;/label>
+    &lt;/div>
+    &lt;div class="register1-btn">
+        &lt;button>Register&lt;/button>
+    &lt;/div>
+    <!-- foooter -->
+    &lt;div class="register1-footer">
+        &lt;input type="checkbox" id='subscribe'/ >
+        &lt;label for='subscribe'>Subscribe me to the newsletter&lt;/label>
+    &lt;/div>
+&lt;/div>
+
+&lt;!-- For register form appearance on the right replace "register1" class for
+        "register2" class and "register1-tittle" for "register2-title" -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>             
                         <!-- subscribe form -->
                         <div class="subscribe-container">
                             <p>Simple subscribe form:</p>
@@ -435,6 +591,45 @@
                                 </div>
                             </div>
                         </div>
+<!-- Subscibe markup -->
+                        <div class="code-reveal">
+                            <input id="cr__form-subscribe" type="checkbox">
+                            <label for="cr__form-subscribe" class="code-toggle">Show Markup</label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre>
+                                    <code class="language-html">
+
+&lt;div class="subscribe1">
+    &lt;!-- header -->
+    &lt;div class="subscribe1-title">
+        &lt;h1>&lt;i class='fa fa-pencil'>&lt;/i>Subscribe:&lt;/h1>
+    &lt;/div>
+    &lt;!-- body -->
+    &lt;p id="subs-message">Fresh content each week,
+        &lt;br> be the first to get it!&lt;/p>
+    &lt;div class="subscribe1-body">
+        &lt;i class="fa fa-user">&lt;/i>
+        &lt;input type="text" id="subs-uname"/>
+        &lt;label for="subs-uname">Your name&lt;/label>
+    &lt;/div>
+    &lt;div class="subscribe1-body">
+        &lt;i class="fa fa-envelope">&lt;/i>
+        &lt;input type="email" id="subs-email"/>
+        &lt;label for="subs-email">Your email&lt;/label>
+    &lt;/div>
+    &lt;div class="subscribe1-btn">
+        &lt;button>SUBSCRIBE&lt;/button>
+    &lt;/div>
+&lt;/div>
+
+&lt;!-- For subscribe form appearance on the right replace "subscribe1" class for
+        "subscribe2" class and "subscribe1-tittle" for "subscribe2-title" -->
+
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>                      
                     </article>
                 </section>
                 <!-- End Forms -->
@@ -1186,7 +1381,7 @@
                                 <div class="icon icon--horizontal icon--bg-style">
                                     <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-home" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"></i></a>
-                                    <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-info-circle" aria-hidden = "true"></i></a>
+                                    <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-info-round" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--h-style"><i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"></i></a>
                                 </div>
@@ -1199,7 +1394,7 @@
 &lt;div class="icon icon--horizontal icon--bg-style"&gt;
 &lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-home" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-info-circle" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-info-round" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--h-style"&gt;&lt;i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/div&gt;
@@ -1211,7 +1406,7 @@
                                 <div class="icon icon--vertical icon--bg-style">
                                     <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-home" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-bookmark-o" aria-hidden = "true"></i></a>
-                                    <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-info-circle" aria-hidden = "true"></i></a>
+                                    <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-info-round" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-envelope-open-o" aria-hidden = "true"></i></a>
                                     <a class="icon-item icon-item--v-style"><i class = "icon-item__icon  fa fa-thumbs-o-up" aria-hidden = "true"></i></a>
                                 </div>
@@ -1224,7 +1419,7 @@
 &lt;div class="icon icon--vertical icon--bg-style"&gt;
 &lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-home" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-bookmark-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-info-circle" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-info-round" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-envelope-open-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="icon-item icon-item--v-style"&gt;&lt;i class = "icon-item__icon  fa fa-thumbs-o-up" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/div&gt;
@@ -1232,13 +1427,13 @@
                                     </div>
                                 </div>
                                 <div class="icon-wrap">
-                                    <h3>Circle Icon Bar</h3>
+                                    <h3>round Icon Bar</h3>
                                     <div class="icon icon--horizontal icon--bg-style">
-                                        <a class="icon-item icon-item--circle"><i class = "icon-item__icon fa fa-home" aria-hidden = "true"></i></a>
-                                        <a class="icon-item icon-item--circle"><i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"></i></a>
-                                        <a class="icon-item icon-item--circle"><i class = "icon-item__icon fa fa-info-circle" aria-hidden = "true"></i></a>
-                                        <a class="icon-item icon-item--circle"><i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"></i></a>
-                                        <a class="icon-item icon-item--circle"><i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"></i></a>
+                                        <a class="icon-item icon-item--round"><i class = "icon-item__icon fa fa-home" aria-hidden = "true"></i></a>
+                                        <a class="icon-item icon-item--round"><i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"></i></a>
+                                        <a class="icon-item icon-item--round"><i class = "icon-item__icon fa fa-info-round" aria-hidden = "true"></i></a>
+                                        <a class="icon-item icon-item--round"><i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"></i></a>
+                                        <a class="icon-item icon-item--round"><i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"></i></a>
                                     </div>
 
                                     <div class="code-reveal">
@@ -1248,11 +1443,11 @@
                                             <h5>HTML</h5>
                                             <pre><code class="language-html">
     &lt;div class="icon icon--horizontal icon--bg-style"&gt;
-&lt;a class="icon-item icon-item--circle"&gt;&lt;i class = "icon-item__icon fa fa-home" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--circle"&gt;&lt;i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--circle"&gt;&lt;i class = "icon-item__icon fa fa-info-circle" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--circle"&gt;&lt;i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="icon-item icon-item--circle"&gt;&lt;i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--round"&gt;&lt;i class = "icon-item__icon fa fa-home" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--round"&gt;&lt;i class = "icon-item__icon fa fa-bookmark-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--round"&gt;&lt;i class = "icon-item__icon fa fa-info-round" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--round"&gt;&lt;i class = "icon-item__icon fa fa-envelope-open-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="icon-item icon-item--round"&gt;&lt;i class = "icon-item__icon fa fa-thumbs-o-up" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/div&gt;
                                             </code> </pre>
                                         </div>
@@ -1263,7 +1458,7 @@
                                         <div class="icon  icon--horizontal icon--bg-style">
                                             <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-home" aria-hidden = "true"></i></a>
                                             <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-bookmark-o" aria-hidden = "true"></i></a>
-                                            <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-info-circle" aria-hidden = "true"></i></a>
+                                            <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-info-round" aria-hidden = "true"></i></a>
                                             <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-envelope-open-o" aria-hidden = "true"></i></a>
                                             <a class="icon-item icon-item--diamond"><i class = "icon-item__icon icon-item__icon--rotate fa fa-thumbs-o-up" aria-hidden = "true"></i></a>
                                         </div>
@@ -1278,7 +1473,7 @@
 &lt;div class="icon  icon--horizontal icon--bg-style"&gt;
     &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-home" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-bookmark-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-info-circle" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-info-round" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-envelope-open-o" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;a class="icon-item icon-item--diamond"&gt;&lt;i class = "icon-item__icon icon-item__icon--rotate fa fa-thumbs-o-up" aria-hidden = "true"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;/div&gt;
@@ -1617,16 +1812,16 @@
                         <input type="checkbox" id="ul-lbl4">
                         <ul class="list">
                             <li class="list__item">
-                                <label for="ul-lbl1"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>Item 1</label>
+                                <label for="ul-lbl1"><i class="fa fa-chevron-round-up" aria-hidden="true"></i>Item 1</label>
                             </li>
                             <li class="list__item">
-                                <label for="ul-lbl2"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>Item 2</label>
+                                <label for="ul-lbl2"><i class="fa fa-chevron-round-up" aria-hidden="true"></i>Item 2</label>
                             </li>
                             <li class="list__item">
-                                <label for="ul-lbl3"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>Item 3</label>
+                                <label for="ul-lbl3"><i class="fa fa-chevron-round-up" aria-hidden="true"></i>Item 3</label>
                             </li>
                             <li class="list__item">
-                                <label for="ul-lbl4"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>Item 4</label>
+                                <label for="ul-lbl4"><i class="fa fa-chevron-round-up" aria-hidden="true"></i>Item 4</label>
                             </li>
                         </ul>
                         <div class="code-reveal">
@@ -1642,16 +1837,16 @@
     &lt;input type="checkbox" id="ul-lbl4"&gt;
     &lt;ul class="list"&gt;
         &lt;li class="list__item"&gt;
-            &lt;label for="ul-lbl1"&gt;&lt;i class="fa fa-chevron-circle-up" aria-hidden="true"&gt;&lt;/i&gt;Item 1&lt;/label&gt;
+            &lt;label for="ul-lbl1"&gt;&lt;i class="fa fa-chevron-round-up" aria-hidden="true"&gt;&lt;/i&gt;Item 1&lt;/label&gt;
         &lt;/li&gt;
         &lt;li class="list__item"&gt;
-            &lt;label for="ul-lbl2"&gt;&lt;i class="fa fa-chevron-circle-up" aria-hidden="true"&gt;&lt;/i&gt;Item 2&lt;/label&gt;
+            &lt;label for="ul-lbl2"&gt;&lt;i class="fa fa-chevron-round-up" aria-hidden="true"&gt;&lt;/i&gt;Item 2&lt;/label&gt;
         &lt;/li&gt;
         &lt;li class="list__item"&gt;
-            &lt;label for="ul-lbl3"&gt;&lt;i class="fa fa-chevron-circle-up" aria-hidden="true"&gt;&lt;/i&gt;Item 3&lt;/label&gt;
+            &lt;label for="ul-lbl3"&gt;&lt;i class="fa fa-chevron-round-up" aria-hidden="true"&gt;&lt;/i&gt;Item 3&lt;/label&gt;
         &lt;/li&gt;
         &lt;li class="list__item"&gt;
-            &lt;label for="ul-lbl4"&gt;&lt;i class="fa fa-chevron-circle-up" aria-hidden="true"&gt;&lt;/i&gt;Item 4&lt;/label&gt;
+            &lt;label for="ul-lbl4"&gt;&lt;i class="fa fa-chevron-round-up" aria-hidden="true"&gt;&lt;/i&gt;Item 4&lt;/label&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div>
@@ -3586,7 +3781,8 @@ The `spied` class was added to the first element to style it prior to scrolling.
                 <hr>
                 <section class="spy-target" id="inno-login-form">
                     <h2>Innovative Login Form</h2>
-                    <p>This minimalistic login form works well for mobile background.</p>
+                    <p>This minimalistic login form works better for mobile background.</p>
+                    <br>
                     <div class='log--container'>
                       <div class="log--header">
                         <img src="https://s20.postimg.org/iombn9l25/code_art.jpg" class='img--circle'/>
@@ -3600,6 +3796,34 @@ The `spied` class was added to the first element to style it prior to scrolling.
                         <p id="left">Forgot <a href="#">password?</a></p>
                         <p><a href="#">Register</a></p>
                       </div>
+                    </div>
+                    <!-- show markup -->
+                    <div class="code-reveal">
+                            <input id="cr__innovative--log" type="checkbox">
+                            <label for="cr__innovative--log" class="code-toggle">Show Markup
+
+                            </label>
+                            <div class="code-container">
+                                <h5>HTML</h5>
+                                <pre><code class="language-html">
+
+&lt;div class="log--container">
+    &lt;div class="log--header">
+        &lt;img src="your img link" class="img-circle"/> &lt;!-- space for your logo image -->
+    &lt;/div>
+    &lt;div class="log--body">
+        &lt;input type="text" id="log--name" placeholder="Your name"/>
+        &lt;input type="password" id="log--pass" placeholder="Your password"/>
+        &lt;button class="log--button">LOGIN&lt;/button>
+    &lt;/div>
+    &lt;div class="log--footer">
+        &lt;p id="left">Forgot&lt;a>password?&lt;/a>&lt;p/>
+        &lt;p>&lt;a>Register&lt;/a>&lt;/p>
+    &lt;/div>
+
+&lt;/div>
+                                </code></pre>
+                            </div>
                     </div>
                 </section>
                 </div>
