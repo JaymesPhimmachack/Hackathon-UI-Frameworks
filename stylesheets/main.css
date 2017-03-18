@@ -391,6 +391,9 @@ section {
   position: absolute;
   background-color: #2E2E2E; }
 
+#right-border {
+  background-color: #2E2E2E; }
+
 #scrollspy--example {
   margin-bottom: 20rem;
   position: relative; }
@@ -407,6 +410,11 @@ section {
     color: #ecf0f1; }
   #drop-dot--example .drop-dot {
     margin: 0 auto; }
+
+footer {
+  background-color: #2E2E2E;
+  height: 150px;
+  width: 100%; }
 
 #page-header {
   padding: 5% 10px 5%;
