@@ -6,7 +6,7 @@
   width:100%;
   height:550px;
   margin: 10% auto;
-  background-color: #e2e3e3;
+  background-color: white;
   overflow: hidden;
 	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
@@ -47,12 +47,13 @@
   border-radius: 0px 5px 5px 0px;
   border: 3px solid #eee;
   margin-bottom: 5px;
-  width: 75%;
+  width: 88%;
   height: 40px;
   float: left;
   color:white;
   font-size:1.1em;
   padding: 0px 10px 0px 17px;
+  border-left:1px solid #696969;;
 }
 .rainbow input:focus{
   color:white;
@@ -121,7 +122,9 @@
   margin-top:15px;
   margin-right:0px;
   padding: 0px 0px;
+  font-size: 1.1em;
   text-align:left;
+  color:white;
 }
 
 .rainbow-rightcontact .rainbow-form-group,
@@ -129,24 +132,6 @@
   overflow: hidden;
   clear: both;
 }
-
-.rainbow .rainbow-contentForm .rainbow-icon-case {
-  width: 40px;
-  float: left;
-  border-radius: 5px 0px 0px 5px;
-  background: #696969;
-  color:white;
-  height:40px;
-  position: relative;
-  text-align: center;
-  line-height:45px;
-  margin-top: 2px;
-  margin-right:-3px;
-}
-
-.rainbow-icon, .whiteColor{
-  color:white;
-} 
 
 .rainbow .contentform {
   padding: 40px 30px;
